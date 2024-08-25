@@ -15,6 +15,7 @@ const config: Config = {
       },
       colors: {
         'tetra': '#BB985E',
+        'tetra-alt': '#434055'
       },
     },
   },
