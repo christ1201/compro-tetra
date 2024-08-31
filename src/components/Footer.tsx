@@ -20,10 +20,14 @@ const Footer = () => {
             </div>
             <div className="flex gap-x-2">
               <FontAwesomeIcon icon={faLocationDot} className="!h-5" style={{ color: '#BB985E' }} />
-              <Link href="https://maps.app.goo.gl/" target="_blank" rel="noopener">
+              <Link href="https://maps.app.goo.gl/71jSQiJ8fZ4z3r2u8" target="_blank" rel="noopener">
                 <div className="flex-col font-normal hover:underline text-md">
                   <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quam arcu, gravida laoreet nisi vel, rutrum tempor justo.
+                  Sudirman 7.8 Tower Level 16 Unit 182<br/>
+                  Jl. Jend. Sudirman Kav. 7-8 <br/>
+                  Kel. Karet Tengsin, Kec. Tanah Abang,<br/>
+                  Jakarta Pusat, DKI Jakarta - Indonesia<br/>
+                  10220
                   </p>
                 </div>
               </Link>
@@ -35,12 +39,14 @@ const Footer = () => {
             <div className="text-tetra font-semibold text-xl">
               Contact
             </div>
-            <div className="flex gap-x-2">
-              <FontAwesomeIcon icon={faEnvelope} className="!h-5" style={{ color: '#BB985E' }} />
-              <div className="flex-col font-normal hover:underline text-md">
-                <p>tetra.logistic@gmail.com</p>
+            <a href='mailto:admin@tetralogistic.com' target='_blank'>
+              <div className="flex gap-x-2">
+                <FontAwesomeIcon icon={faEnvelope} className="!h-5" style={{ color: '#BB985E' }} />
+                <div className="flex-col font-normal hover:underline text-md">
+                  <p>admin@tetralogistic.com</p>
+                </div>
               </div>
-            </div>
+            </a>
             <div className="flex gap-x-2">
               <FontAwesomeIcon icon={faWhatsapp} className="!h-6" style={{ color: '#BB985E' }} />
               <Link href={"https://wa.me/"+no_wa} target="_blank" rel="noopener">
