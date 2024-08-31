@@ -41,22 +41,22 @@ export default function Home() {
     {
       icon: faHandshake,
       title: 'Custom Consultation',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quam arcu, gravida laoreet nisi vel, rutrum tempor justo. Cras venenatis eget justo sed fringilla. Maecenas faucibus eu nulla id sagittis.'
+      description: 'Unlock the full potential of your supply chain with our Custom Consultation services. At PT Tetra Mitra Logistic, we take the time to understand your unique business needs, offering tailored solutions that streamline your logistics processes. From optimizing routes to reducing costs, our expert consultants are here to guide you every step of the way, ensuring your operations run smoothly and efficiently.'
     },
     {
       icon: faGlobeAsia,
       title: 'International Freight Forwarding',
-      description: 'Cras venenatis eget justo sed fringilla. Maecenas faucibus eu nulla id sagittis. Integer et orci non urna tempus fermentum. Cras venenatis eget justo sed fringilla. Maecenas faucibus eu nulla id sagittis.'
+      description: 'Expand your business horizons with our International Freight Forwarding services. We manage the complexities of global shipping, providing reliable and efficient transportation solutions that connect your products to markets around the world. With a global network of partners and cutting-edge tracking technology, we ensure your cargo arrives safely, on time, and within budget.'
     },
     {
       icon: faBoxes,
       title: 'Customs Brokerage',
-      description: 'Suspendisse potenti. Nullam sit amet turpis quis ligula ultricies eleifend non nec urna. Fusce non velit augue. Cras venenatis eget justo sed fringilla. Maecenas faucibus eu nulla id sagittis.'
+      description: 'Navigate the complexities of international trade with ease through our Customs Brokerage services. Our team of seasoned professionals simplifies the customs clearance process, ensuring your goods comply with all regulations and reach their destination without delays. Trust us to handle the paperwork, so you can focus on what matters most—growing your business.'
     },
     {
       icon: faShippingFast,
       title: 'Domestic Interisland',
-      description: 'Pellentesque eget nunc nec velit suscipit vehicula. Curabitur euismod, sem nec venenatis feugiat, augue arcu aliquam leo. Cras venenatis eget justo sed fringilla. Maecenas faucibus eu nulla id sagittis.'
+      description: 'Seamlessly connect Indonesia’s vast archipelago with our Domestic Interisland services. Whether you need to move goods between islands or within regions, PT Tetra Mitra Logistic offers reliable and cost-effective transportation solutions that ensure your products reach even the most remote locations. From planning to delivery, we provide end-to-end support, making domestic logistics hassle-free.'
     }
   ];
 
@@ -96,7 +96,7 @@ export default function Home() {
         <div className="absolute top-0 left-0 w-full h-full bg-black opacity-10 z-[1]"></div>
         {/* Centered Text */}
         <div className="absolute w-full h-full flex flex-col items-center justify-end px-16 pb-32">
-          <h1 className="text-white text-5xl sm:text-6xl font-bold text-center">Connecting Your Business to the World</h1>
+          <h1 className="text-white text-5xl sm:text-6xl font-bold text-center">Driving Global Connections,<br/>Delivering Excellence.</h1>
         </div>
       </div>
       {/* New Container After the Video */}
@@ -167,11 +167,10 @@ export default function Home() {
             <FontAwesomeIcon icon={faUsers} className='!w-12 !h-12' color="#BB985E" />
           </div>
           <div className="flex flex-col text-tetra-alt text-4xl sm:text-5xl font-bold">
-            Connect with Our Team 
-            We're Ready to Assist You!
+            Partner with Our Team – We’re Here to Elevate Your Success!
           </div>
           <div className="text-tetra-alt">
-            Reach out to our dedicated team for expert assistance and personalized support.<br/>We're here to help you every step of the way.
+          Partner with our dedicated team for expert insights and customized solutions.<br/>We’re here to support you at every stage of your journey.
           </div>
           <div className="">
           <a href={"https://wa.me/"+no_wa} target="_blank">
