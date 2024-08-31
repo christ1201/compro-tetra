@@ -83,7 +83,8 @@ export default function Navbar() {
       <div className="flex-shrink-0 pr-6">
         <Link href="/" passHref>
           {/* <img className="h-12 w-auto" src="/img/logo.jpeg" alt="Logo" /> */}
-          <img className="h-12 w-auto" src="/img/logo_hz.png" alt="Logo" />
+          <img className="h-12 w-auto" src="/img/logo.png" alt="Logo" />
+          {/* <img className="h-12 w-auto" src="/img/logo_hz.png" alt="Logo" /> */}
         </Link>
       </div>
       {/* Links Section */}

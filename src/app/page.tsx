@@ -35,7 +35,7 @@ export default function Home() {
 
   // Duplicate the data to make the marquee seamless
   const loopedData = [...marqueeData, ...marqueeData]; // Duplicating data for seamless loop
-
+  const no_wa = '628123456789'
 
   const services = [
     {
@@ -104,19 +104,21 @@ export default function Home() {
         <div className="space-y-8 flex flex-col min-w-full">
           <div className="text-tetra-alt text-4xl sm:text-5xl font-bold max-sm:text-center">Who We Are</div>
           <div className="flex flex-col md:flex-row md:space-x-10">
-            <img className="h-[320px] w-auto object-contain max-md:pb-8" src="/img/logo.jpeg" alt="Logo" />
+            <img className="h-[320px] w-auto object-contain max-md:pb-8" src="/img/logo.png" alt="Logo" />
             <div className="flex flex-col justify-between">
               <div className="text-tetra-alt pb-4 max-sm:text-center text-xl">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quam arcu, gravida laoreet nisi vel, rutrum tempor justo. Cras venenatis eget justo sed fringilla. Maecenas faucibus eu nulla id sagittis. Nam viverra, sem eu pretium scelerisque, magna massa cursus ligula, in pellentesque libero magna in magna. Nullam quis consectetur orci. Sed vel lacus sed diam maximus vestibulum. Integer tortor tellus, sollicitudin ac purus quis, maximus blandit felis. Integer in gravida justo.
+              At PT Tetra Mitra Logistic, we are more than just a logistics provider; we are your strategic partner in delivering seamless and innovative forwarding solutions. With a passion for excellence and a commitment to your success, our experienced team works tirelessly to ensure that your goods reach their destination safely, efficiently, and on time. We blend cutting-edge technology with personalized service to create tailored logistics solutions that drive your business forward. Trust us to handle your logistics needs so you can focus on what you do best—growing your business. Leveraging advanced technology and a team of experienced professionals, the company ensures seamless operations, timely delivery, and cost-effective logistics solutions that drive business success. Whether it's local or international shipping, PT Tetra Mitra Logistic is your trusted partner in navigating the complexities of the global supply chain.
               </div>
               {/* <div>
                 test
               </div> */}
-              <div className="flex max-sm:items-center max-sm:justify-center">
-                <button className="bg-tetra max-w-36 min-w-36 min-h-12 rounded-lg hover:bg-opacity-90">
-                  <span className="text-white font-semibold text-lg">Contact Us</span>
-                </button>
-              </div>
+              <a href={"https://wa.me/"+no_wa} target="_blank">
+                <div className="flex max-sm:items-center max-sm:justify-center">
+                  <button className="bg-tetra max-w-36 min-w-36 min-h-12 rounded-lg hover:bg-opacity-90">
+                    <span className="text-white font-semibold text-lg">Contact Us</span>
+                  </button>
+                </div>
+              </a>
             </div>
           </div>
         </div>
@@ -169,12 +171,14 @@ export default function Home() {
             We're Ready to Assist You!
           </div>
           <div className="text-tetra-alt">
-            Reach out to our dedicated team for expert assistance and personalized support. We're here to help you every step of the way.
+            Reach out to our dedicated team for expert assistance and personalized support.<br/>We're here to help you every step of the way.
           </div>
           <div className="">
+          <a href={"https://wa.me/"+no_wa} target="_blank">
             <button className="bg-tetra max-w-36 min-w-36 min-h-12 rounded-lg hover:bg-opacity-90">
               <span className="text-white font-semibold text-lg">Contact Us</span>
             </button>
+          </a>
           </div>
         </div>
       </div>

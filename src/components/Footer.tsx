@@ -5,11 +5,14 @@ import { faLocationDot, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faInstagram, faTiktok, faYoutube, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
+  const no_wa = '628123456789'
+
   return (
     <>
     <footer className="bg-tetra-alt px-8 md:px-24">
       <div className="grid md:grid-cols-3 container py-6 gap-y-4 gap-x-6 text-xs md:text-sm text-white">
         {/* Address Section */}
+        {/* <img className="h-[320px] w-auto object-contain max-md:pb-8" src="/img/logo.png" alt="Logo" /> */}
         <div className="space-y-4">
           <section className="space-y-2">
             <div className="text-tetra font-semibold text-xl">
@@ -40,9 +43,9 @@ const Footer = () => {
             </div>
             <div className="flex gap-x-2">
               <FontAwesomeIcon icon={faWhatsapp} className="!h-6" style={{ color: '#BB985E' }} />
-              <Link href="https://wa.me/" target="_blank" rel="noopener">
+              <Link href={"https://wa.me/"+no_wa} target="_blank" rel="noopener">
                 <div className="flex-col font-normal hover:underline text-md">
-                  <p>+62 812 3456 789</p>
+                  <p>{"+" + no_wa}</p>
                 </div>
               </Link>
             </div>
