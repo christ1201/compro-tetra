@@ -54,8 +54,8 @@ export default function Services() {
             >
               <div className="md:w-1/2 relative">
                 <div
-                  className={`${styles.parallax} shadow-lg w-full lg:h-[600px] h-[400px] bg-contain bg-center -z-0 ${
-                    index % 2 === 0 ? "rounded-r-full" : "rounded-l-full"
+                  className={`${styles.parallax} shadow-lg w-full lg:h-[600px] h-[400px] bg-contain ${
+                    index % 2 === 0 ? "rounded-r-full bg-left" : "rounded-l-full bg-right"
                   }`}
                   style={{
                     backgroundImage: `url(${service.image})`,
