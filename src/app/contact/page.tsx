@@ -8,8 +8,10 @@ import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import Footer from "@/components/Footer";
 
 export default function Contact() {
+  const no_wa = '628123456789'
+  const text_color = '#BB985E'
   const openMaps = () => {
-    window.open("https://maps.app.goo.gl/sqtGeqN3VoHgjD8M6", "_blank");
+    window.open("https://maps.app.goo.gl/71jSQiJ8fZ4z3r2u8", "_blank");
   };
 
   return (
@@ -31,16 +33,19 @@ export default function Contact() {
                 {/* <font-awesome-icon :icon="['far', 'envelope']" className="!h-8"/> */}
                 <FontAwesomeIcon
                   icon={faLocationDot}
-                  className="!w-12 !h-12"
+                  className="!w-12 !h-10"
                   color="#BB985E"
                 />
                 <div>
                   <div className="text-tetra-alt  sm:text-2xl text-xl font-semibold">
                     Address
                   </div>
-                  <div className="hover:underline font-normal text-xl">
-                    Jalan Kemana saja no. 1, Kebon Jeruk, Jakarta Barat,
-                    Indonesia 31313
+                  <div className="hover:underline font-normal text-xl" style={{ color: text_color }} >
+                  Sudirman 7.8 Tower Level 16 Unit 182<br/>
+                  Jl. Jend. Sudirman Kav. 7-8 <br/>
+                  Kel. Karet Tengsin, Kec. Tanah Abang,<br/>
+                  Jakarta Pusat, DKI Jakarta - Indonesia<br/>
+                  10220
                   </div>
                 </div>
               </div>
@@ -48,20 +53,20 @@ export default function Contact() {
               <div className="flex gap-x-4 items-center">
                 <FontAwesomeIcon
                   icon={faWhatsapp}
-                  className="!w-12 !h-12"
+                  className="!w-12 !h-10"
                   color="#BB985E"
                 />
                 <div>
-                  <div className="text-tetra-alt  sm:text-2xl text-xl font-semibold">
+                  <div className="text-tetra-alt  sm:text-2xl text-xl font-semibold ">
                     Whatsapp
                   </div>
                   <a
-                    href="https://wa.me/6282211111111"
+                    href={"https://wa.me/"+no_wa}
                     target="_blank"
                     rel="noopener"
                   >
-                    <div className="hover:underline font-normal text-xl">
-                      +62 822 1111 1111
+                    <div className="hover:underline font-normal text-xl" style={{ color: text_color }}>
+                      {"+"+no_wa}
                     </div>
                   </a>
                 </div>
@@ -70,16 +75,16 @@ export default function Contact() {
               <div className="flex gap-x-4 items-center">
                 <FontAwesomeIcon
                   icon={faEnvelope}
-                  className="!w-12 !h-12"
+                  className="!w-12 !h-10"
                   color="#BB985E"
                 />
                 <div>
                   <div className="text-tetra-alt  sm:text-2xl text-xl font-semibold">
                     Email
                   </div>
-                  <a href="mailto:tetra.logistic@gmail.com">
-                    <div className="hover:underline font-normal text-xl">
-                      tetra.logistic@gmail.com
+                  <a href="mailto:admin@tetralogistic.com">
+                    <div className="hover:underline font-normal text-xl" style={{ color: text_color }}>
+                      admin@tetralogistic.com
                     </div>
                   </a>
                 </div>
@@ -94,16 +99,17 @@ export default function Contact() {
             data-aos-duration="1000"
           >
             <div className="w-full group relative">
-              <img
+              {/* <img
                 src="/img/map.png"
                 className="w-full h-[400px] md:h-[500px] object-cover object-center"
-              />
-              <button
+              /> */}
+              <iframe width="900" height="450" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15865.67173531245!2d106.8202529!3d-6.208477!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f4031fe69b99%3A0x4987961ef4203d98!2sSudirman%207.8!5e0!3m2!1sen!2sid!4v1725127904923!5m2!1sen!2sid" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              {/* <button
                 className="opacity-0 h-[400px] md:h-[500px] group-hover:opacity-100 transition-opacity absolute inset-0 bg-black/40 text-white font-bold text-xl"
                 onClick={openMaps}
               >
                 <p>Buka Maps</p>
-              </button>
+              </button> */}
             </div>
           </div>
         </section>

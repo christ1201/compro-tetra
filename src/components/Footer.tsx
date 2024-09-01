@@ -5,11 +5,14 @@ import { faLocationDot, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faInstagram, faTiktok, faYoutube, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
+  const no_wa = '628123456789'
+
   return (
     <>
     <footer className="bg-tetra-alt px-8 md:px-24">
       <div className="grid md:grid-cols-3 container py-6 gap-y-4 gap-x-6 text-xs md:text-sm text-white">
         {/* Address Section */}
+        {/* <img className="h-[320px] w-auto object-contain max-md:pb-8" src="/img/logo.png" alt="Logo" /> */}
         <div className="space-y-4">
           <section className="space-y-2">
             <div className="text-tetra font-semibold text-xl">
@@ -17,10 +20,14 @@ const Footer = () => {
             </div>
             <div className="flex gap-x-2">
               <FontAwesomeIcon icon={faLocationDot} className="!h-5" style={{ color: '#BB985E' }} />
-              <Link href="https://maps.app.goo.gl/" target="_blank" rel="noopener">
+              <Link href="https://maps.app.goo.gl/71jSQiJ8fZ4z3r2u8" target="_blank" rel="noopener">
                 <div className="flex-col font-normal hover:underline text-md">
                   <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quam arcu, gravida laoreet nisi vel, rutrum tempor justo.
+                  Sudirman 7.8 Tower Level 16 Unit 182<br/>
+                  Jl. Jend. Sudirman Kav. 7-8 <br/>
+                  Kel. Karet Tengsin, Kec. Tanah Abang,<br/>
+                  Jakarta Pusat, DKI Jakarta - Indonesia<br/>
+                  10220
                   </p>
                 </div>
               </Link>
@@ -32,17 +39,19 @@ const Footer = () => {
             <div className="text-tetra font-semibold text-xl">
               Contact
             </div>
-            <div className="flex gap-x-2">
-              <FontAwesomeIcon icon={faEnvelope} className="!h-5" style={{ color: '#BB985E' }} />
-              <div className="flex-col font-normal hover:underline text-md">
-                <p>tetra.logistic@gmail.com</p>
+            <a href='mailto:admin@tetralogistic.com' target='_blank'>
+              <div className="flex gap-x-2">
+                <FontAwesomeIcon icon={faEnvelope} className="!h-5" style={{ color: '#BB985E' }} />
+                <div className="flex-col font-normal hover:underline text-md">
+                  <p>admin@tetralogistic.com</p>
+                </div>
               </div>
-            </div>
+            </a>
             <div className="flex gap-x-2">
               <FontAwesomeIcon icon={faWhatsapp} className="!h-6" style={{ color: '#BB985E' }} />
-              <Link href="https://wa.me/" target="_blank" rel="noopener">
+              <Link href={"https://wa.me/"+no_wa} target="_blank" rel="noopener">
                 <div className="flex-col font-normal hover:underline text-md">
-                  <p>+62 812 3456 789</p>
+                  <p>{"+" + no_wa}</p>
                 </div>
               </Link>
             </div>
@@ -89,7 +98,7 @@ const Footer = () => {
               </div>
             </Link>
             <div className="bg-tetra-alt text-tetra text-base p-1 border-tetra border-t">
-              © 2024 Copyright Tetra Logistic
+            Copyright © 2024 PT Tetra Mitra Logistic
             </div>
           </div>
         </div>

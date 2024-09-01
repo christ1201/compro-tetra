@@ -33,8 +33,9 @@ export default function Home() {
     { id: 4, text: "PT. Bersama Kita", logo: "/img/logo.jpeg" },
   ];
 
-  const loopedData = [...marqueeData, ...marqueeData];
-  const no_wa = '628123456789';
+  // Duplicate the data to make the marquee seamless
+  const loopedData = [...marqueeData, ...marqueeData]; // Duplicating data for seamless loop
+  const no_wa = '628123456789'
 
   const services = [
     {
@@ -98,7 +99,6 @@ export default function Home() {
           <h1 className="text-white text-5xl sm:text-6xl font-bold text-center">Driving Global Connections,<br/>Delivering Excellence.</h1>
         </div>
       </div>
-
       {/* New Container After the Video */}
       <div className="bg-white min-h-[480px] flex p-8 md:p-20">
         <div className="space-y-8 flex flex-col min-w-full">
@@ -107,8 +107,11 @@ export default function Home() {
             <img className="h-[320px] w-auto object-contain max-md:pb-8" src="/img/logo.png" alt="Logo" />
             <div className="flex flex-col justify-between">
               <div className="text-tetra-alt pb-4 max-sm:text-center text-xl">
-                At PT Tetra Mitra Logistic, we are more than just a logistics provider; we are your strategic partner in delivering seamless and innovative forwarding solutions. With a passion for excellence and a commitment to your success, our experienced team works tirelessly to ensure that your goods reach their destination safely, efficiently, and on time. We blend cutting-edge technology with personalized service to create tailored logistics solutions that drive your business forward. Trust us to handle your logistics needs so you can focus on what you do best—growing your business. Leveraging advanced technology and a team of experienced professionals, the company ensures seamless operations, timely delivery, and cost-effective logistics solutions that drive business success. Whether it's local or international shipping, PT Tetra Mitra Logistic is your trusted partner in navigating the complexities of the global supply chain.
+              At PT Tetra Mitra Logistic, we are more than just a logistics provider; we are your strategic partner in delivering seamless and innovative forwarding solutions. With a passion for excellence and a commitment to your success, our experienced team works tirelessly to ensure that your goods reach their destination safely, efficiently, and on time. We blend cutting-edge technology with personalized service to create tailored logistics solutions that drive your business forward. Trust us to handle your logistics needs so you can focus on what you do best—growing your business. Leveraging advanced technology and a team of experienced professionals, the company ensures seamless operations, timely delivery, and cost-effective logistics solutions that drive business success. Whether it's local or international shipping, PT Tetra Mitra Logistic is your trusted partner in navigating the complexities of the global supply chain.
               </div>
+              {/* <div>
+                test
+              </div> */}
               <a href={"https://wa.me/"+no_wa} target="_blank">
                 <div className="flex max-sm:items-center max-sm:justify-center">
                   <button className="bg-tetra max-w-36 min-w-36 min-h-12 rounded-lg hover:bg-opacity-90">
@@ -120,9 +123,8 @@ export default function Home() {
           </div>
         </div>
       </div>
-
-      {/* Services Section with Parallax Effect */}
-      <div className={`${styles.parallax} min-h-screen flex flex-col p-8 md:p-20`}>
+      {/* Services Section*/}
+      <div className="bg-tetra min-h-screen flex flex-col p-8 md:p-20">
         <div className="text-white text-4xl sm:text-5xl font-bold text-center pb-16">
           Our Core Services
         </div>
@@ -142,25 +144,22 @@ export default function Home() {
           ))}
         </div>
       </div>
-
       {/* Marquee Title Section */}
       <div className="bg-white flex flex-col p-8 md:p-20">
         <div className="flex flex-col text-tetra-alt text-4xl sm:text-5xl font-bold ">
           Customer Satisfaction at Its Best: <a className="text-tetra">Our Valued Clients</a>
         </div>
       </div>
-
       {/* Marquee Section */}
       <div className={`${styles.marqueeContainer} bg-white max-h-[35vh] p-6`}>
         <div className={styles.marqueeContent}>
           {loopedData.map((item) => (
             <div key={item.id} className={styles.card}>
-              <img className="object-contain" src={item.logo} alt={item.text} />
+                <img className="object-contain" src={item.logo} alt={item.text} />
             </div>
           ))}
         </div>
       </div>
-
       {/* Connect Section */}
       <div className="bg-white min-h-[60vh] flex flex-col p-8 md:p-20 text-center items-center">
         <div className="max-w-2xl flex flex-col items-center space-y-6">
@@ -171,20 +170,19 @@ export default function Home() {
             Partner with Our Team – We’re Here to Elevate Your Success!
           </div>
           <div className="text-tetra-alt">
-            Partner with our dedicated team for expert insights and customized solutions.<br/>We’re here to support you at every stage of your journey.
+          Partner with our dedicated team for expert insights and customized solutions.<br/>We’re here to support you at every stage of your journey.
           </div>
           <div className="">
-            <a href={"https://wa.me/"+no_wa} target="_blank">
-              <button className="bg-tetra max-w-36 min-w-36 min-h-12 rounded-lg hover:bg-opacity-90">
-                <span className="text-white font-semibold text-lg">Contact Us</span>
-              </button>
-            </a>
+          <a href={"https://wa.me/"+no_wa} target="_blank">
+            <button className="bg-tetra max-w-36 min-w-36 min-h-12 rounded-lg hover:bg-opacity-90">
+              <span className="text-white font-semibold text-lg">Contact Us</span>
+            </button>
+          </a>
           </div>
         </div>
       </div>
-
-      {/* Footer */}
-      <Footer />
+      { /*Footer */ }
+      <Footer></Footer>
     </div>
   );
 }
