@@ -1,11 +1,20 @@
 "use client";
 
+import { useEffect } from "react";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import the AOS styles
 
 export default function About() {
   const no_wa = "628123456789";
-
+  useEffect(() => {
+    AOS.init({
+      duration: 2000, // Animation duration
+      // easing: "ease-in-out", // Animation easing
+      // once: true, // Whether animation should happen only once - while scrolling down
+    });
+  }, []);
   return (
     <div className="bg-white">
       <Navbar></Navbar>
@@ -13,13 +22,14 @@ export default function About() {
         className="bg-black bg-opacity-50 bg-cover bg-center h-40 w-full"
         style={{ backgroundImage: "url(/img/container.png)" }}
       >
-        <div className="text-5xl text-center pt-14 text-white font-bold bg-black bg-opacity-30 h-full">
+        <div className="text-5xl text-center pt-14 text-white font-bold bg-black bg-opacity-30 h-full" >
           About Us
         </div>
       </div>
       <section
         className="grid grid-cols-1 lg:grid-cols-2 justify-between p-6 lg:p-24 sm:p-14"
         id="about_tetra"
+        data-aos="fade-zoom-in"
       >
         <div className="text-start max-lg:pb-8 lg:text-end text-4xl md:text-5xl font-bold text-tetra-alt order-1 lg:order-2">
           Empowering Your Business with Reliable and Customized Logistics
@@ -46,12 +56,21 @@ export default function About() {
           </div>
         </div>
       </section>
-      <section className="bg-gray-100 pb-16" id="visi&misi">
-        <div className="text-center text-4xl md:text-5xl font-bold text-tetra-alt pt-14">
+      <section className="bg-gray-100 pb-16" id="visi&misi"  
+      >
+        <div 
+          className="text-center text-4xl md:text-5xl font-bold text-tetra-alt pt-14"        
+          data-aos="fade-right"
+          data-aos-easing="ease-in"
+          data-aos-duration="1500"
+        >
           Vision & Mission
         </div>
-        <div className="flex flex-col p-6 lg:p-18 sm:p-14 mx-16">
-          <div className="flex flex-row">
+        <div className="flex flex-col p-6 lg:p-18 sm:p-14 mx-16"
+        >
+          <div className="flex flex-row"    data-aos="fade-right"
+          data-aos-easing="ease-in"
+          data-aos-duration="1000">
             <div className="pr-5">
               <img src="/img/target.png" className="w-24 h-12"></img>
             </div>
@@ -64,7 +83,9 @@ export default function About() {
               </div>
             </div>
           </div>
-          <div className="flex flex-row pt-12">
+          <div className="flex flex-row pt-12"    data-aos="fade-right"
+          data-aos-easing="ease-in"
+          data-aos-duration="1000">
             <div className="pr-5">
               <img src="/img/idea.png" className="w-24 h-12"></img>
             </div>
@@ -79,7 +100,9 @@ export default function About() {
           </div>
         </div>
       </section>
-      <section className="flex flex-col  p-6 lg:p-24 sm:p-14 my-5">
+      <section className="flex flex-col  p-6 lg:p-24 sm:p-14 my-5"    
+       data-aos="fade-zoom-in"
+       >
         <div className="md:text-4xl text-3xl font-bold text-tetra-alt">
           Ready to Elevate Your Logistics Experience?
         </div>
