@@ -20,7 +20,7 @@ const Footer = () => {
             </div>
             <div className="flex gap-x-2">
               <FontAwesomeIcon icon={faLocationDot} className="!h-5" style={{ color: '#BB985E' }} />
-              <Link href="https://maps.app.goo.gl/71jSQiJ8fZ4z3r2u8" target="_blank" rel="noopener">
+              <Link href="https://maps.app.goo.gl/iUXMuyNvvt76v5nM9" target="_blank" rel="noopener">
                 <div className="flex-col font-normal hover:underline text-md">
                   <p>
                   Sudirman 7.8 Tower Level 16 Unit 182<br/>
@@ -97,14 +97,14 @@ const Footer = () => {
                 <p>Vision & Mission</p>
               </div>
             </Link>
-            <div className="bg-tetra-alt text-tetra text-base p-1 border-tetra border-t">
+            {/* <div className="bg-tetra-alt text-tetra text-base p-1 border-tetra border-t">
             Copyright © 2024 PT Tetra Mitra Logistic
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
     </footer>
-    {/* <div className="bg-tetra-alt text-tetra text-center text-base p-1 border-tetra border-t">© 2024 Copyright Tetra Logistic</div> */}
+    <div className="bg-tetra text-tetra-alt text-center text-base p-1 border-tetra-alt border-t">© 2024 Copyright Tetra Logistic</div>
     </>
   );
 };
