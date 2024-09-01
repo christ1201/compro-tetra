@@ -47,4 +47,13 @@
       margin: 0 24px; /* Adjust spacing between cards */
     }
   }
+
+  /* Paralax */
+  .parallax {
+    background-image: url('/img/parallax-background.jpg'); /* Add your parallax background image */
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+  }
+  
   
