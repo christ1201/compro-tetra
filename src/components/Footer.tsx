@@ -87,12 +87,12 @@ const Footer = () => {
         <div className="space-y-2">
           <div className="text-tetra font-semibold text-xl">About</div>
           <div className="flex flex-col space-y-3">
-            <Link href="/about/#">
+            <Link href="/about/#tetra_about">
               <div className="text-md flex-col font-base hover:underline">
                 <p>Company</p>
               </div>
             </Link>
-            <Link href="/about/#">
+            <Link href="/about/#visi&misi">
               <div className="text-md flex-col font-base hover:underline md:pb-16">
                 <p>Vision & Mission</p>
               </div>
