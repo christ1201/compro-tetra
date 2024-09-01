@@ -104,7 +104,9 @@ const Footer = () => {
         </div>
       </div>
     </footer>
-    <div className="bg-tetra text-tetra-alt text-center text-base p-1 border-tetra-alt border-t">© 2024 Copyright Tetra Logistic</div>
+    <div className="bg-tetra text-tetra-alt text-center text-base p-1 border-tetra-alt border-t">
+     Copyright © 2024 PT Tetra Mitra Logistic
+    </div>
     </>
   );
 };
