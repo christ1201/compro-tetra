@@ -50,7 +50,7 @@
 
   /* Paralax */
   .parallax {
-    background-image: url('/img/parallax-background.jpg'); /* Add your parallax background image */
+    background-image: url('/img/parallax-bg.jpg'); /* Add your parallax background image */
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
