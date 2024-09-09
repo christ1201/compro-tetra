@@ -9,7 +9,7 @@ import Footer from "@/components/Footer";
 import Link from "next/link";
 
 export default function Contact() {
-  const no_wa = "628123456789";
+  const no_wa = "6281586571234";
   const text_color = "#BB985E";
   const openMaps = () => {
     window.open("https://maps.app.goo.gl/SnreWWyNtGTdgs4X9", "_blank");

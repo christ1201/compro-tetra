@@ -5,7 +5,7 @@ import { faLocationDot, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faInstagram, faTiktok, faYoutube, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
-  const no_wa = '628123456789'
+  const no_wa = '6281586571234'
 
   return (
     <>
