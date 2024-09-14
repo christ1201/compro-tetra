@@ -3,9 +3,7 @@
 import { useEffect, useState } from "react";
 import Navbar from "@/components/Navbar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faUsers,
-} from "@fortawesome/free-solid-svg-icons";
+import { faUsers } from "@fortawesome/free-solid-svg-icons";
 import styles from "./page.module.css";
 import Footer from "@/components/Footer";
 import AOS from "aos";
@@ -87,7 +85,7 @@ export default function Home() {
         <div className="absolute top-0 left-0 w-full h-full bg-black opacity-10 z-[1]"></div>
         {/* Centered Text */}
         <div className="absolute w-full h-full flex flex-col items-center justify-end px-16 pb-32">
-          <h1 className="text-white text-5xl sm:text-6xl font-bold text-center">
+          <h1 className="text-white text-4xl sm:text-6xl font-bold text-center drop-shadow-2xl">
             Driving Global Connections,
             <br />
             Delivering Excellence.
@@ -99,13 +97,6 @@ export default function Home() {
       <div className="bg-white min-h-[480px] flex p-8 md:p-20">
         <div className="space-y-8 flex flex-col min-w-full">
           <div
-            className="text-tetra-alt text-4xl sm:text-5xl font-bold max-sm:text-center"
-            data-aos="fade-right"
-            data-aos-duration="1000"
-          >
-            Who We Are
-          </div>
-          <div
             className="flex flex-col md:flex-row md:space-x-10"
             data-aos="fade-left"
           >
@@ -115,28 +106,39 @@ export default function Home() {
               alt="Logo"
             />
             <div className="flex flex-col justify-between">
-              <div className="text-tetra-alt pb-4 max-sm:text-center text-xl">
-                At PT Tetra Mitra Logistic, we are more than just a logistics
-                provider; we are your strategic partner in delivering seamless
-                and innovative forwarding solutions. With a passion for
-                excellence and a commitment to your success, our experienced
-                team works tirelessly to ensure that your goods reach their
-                destination safely, efficiently, and on time. We blend
-                cutting-edge technology with personalized service to create
-                tailored logistics solutions that drive your business forward.
-                Trust us to handle your logistics needs so you can focus on what
-                you do best—growing your business. Leveraging advanced
-                technology and a team of experienced professionals, the company
-                ensures seamless operations, timely delivery, and cost-effective
-                logistics solutions that drive business success. Whether it's
-                local or international shipping, PT Tetra Mitra Logistic is your
-                trusted partner in navigating the complexities of the global
-                supply chain.
+              <div
+                className="text-tetra-alt text-4xl sm:text-5xl font-bold max-sm:text-center"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+              >
+                Who We Are
               </div>
-              <a href={"https://wa.me/" + no_wa} target="_blank">
+              <div className="text-tetra-alt pb-4 max-sm:text-center text-xl pt-4">
+                <div>
+                  At <b>PT Tetra Mitra Logistic</b>, we are more than just a
+                  logistics provider; we are your strategic partner in
+                  delivering seamless and innovative forwarding solutions. With
+                  a passion for excellence and a commitment to your success, our
+                  experienced team works tirelessly to ensure that your goods
+                  reach their destination safely.
+                </div>
+                <div className="mt-4 mb-2">
+                  We blend cutting-edge technology with personalized service to
+                  create tailored logistics solutions that drive your business
+                  forward. Trust us to handle your logistics needs so you can
+                  focus on what you do best—growing your business. Leveraging
+                  advanced technology and a team of experienced professionals,
+                  the company ensures seamless operations, timely delivery, and
+                  cost-effective logistics solutions that drive business
+                  success. Whether it's local or international shipping, PT
+                  Tetra Mitra Logistic is your trusted partner in navigating the
+                  complexities of the global supply chain.
+                </div>
+              </div>
+              <a href="/contact">
                 <div className="flex max-sm:items-center max-sm:justify-center">
-                  <button className="bg-tetra max-w-36 min-w-36 min-h-12 rounded-lg hover:bg-opacity-90">
-                    <span className="text-white font-semibold text-lg">
+                  <button className="bg-tetra max-w-40 min-w-40 min-h-14 rounded-lg hover:bg-opacity-90">
+                    <span className="text-white font-semibold text-xl">
                       Contact Us
                     </span>
                   </button>
@@ -205,8 +207,8 @@ export default function Home() {
 
       {/* Connect Section */}
       <div className="bg-white min-h-[60vh] flex flex-col p-8 md:p-20 text-center items-center">
-        <div 
-          className="max-w-2xl flex flex-col items-center space-y-6"         
+        <div
+          className="max-w-2xl flex flex-col items-center space-y-6"
           data-aos="fade-down"
           data-aos-easing="ease-out"
           data-aos-duration="1000"
@@ -228,12 +230,14 @@ export default function Home() {
             We’re here to support you at every stage of your journey.
           </div>
           <div className="">
-            <a href={"https://wa.me/" + no_wa} target="_blank">
-              <button className="bg-tetra max-w-36 min-w-36 min-h-12 rounded-lg hover:bg-opacity-90">
-                <span className="text-white font-semibold text-lg">
-                  Contact Us
-                </span>
-              </button>
+            <a href="/contact">
+              <div className="flex max-sm:items-center max-sm:justify-center">
+                <button className="bg-tetra max-w-40 min-w-40 min-h-14 rounded-lg hover:bg-opacity-90">
+                  <span className="text-white font-semibold text-xl">
+                    Contact Us
+                  </span>
+                </button>
+              </div>
             </a>
           </div>
         </div>

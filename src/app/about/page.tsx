@@ -27,7 +27,7 @@ export default function About() {
         </div>
       </div>
       <section
-        className="grid grid-cols-1 lg:grid-cols-2 justify-between p-6 lg:p-24 sm:p-14"
+        className="grid grid-cols-1 lg:grid-cols-2 justify-between p-6 lg:p-14 sm:p-10"
         id="about_tetra"
         data-aos="fade-zoom-in"
       >
@@ -35,7 +35,7 @@ export default function About() {
           Empowering Your Business with Reliable and Customized Logistics
           Solutions
         </div>
-        <div className="flex flex-col space-y-4 text-tetra-alt order-2 lg:order-1 text-lg max-sm:text-base">
+        <div className="flex flex-col space-y-4 text-tetra-alt order-2 lg:order-1 text-lg max-sm:text-base text-end">
           <div>
             <b>PT. TETRA MITRA LOGISTIK</b> is one of the leading freight
             forwarding and custom broker acquired in 2003, then rebranded in
@@ -56,7 +56,7 @@ export default function About() {
           </div>
         </div>
       </section>
-      <section className="bg-gray-100 pb-16" id="visi&misi">
+      <section className="bg-gray-100 py-8 " id="vision&mission">
         <div
           className="text-center text-4xl md:text-5xl font-bold text-tetra-alt pt-14"
           data-aos="fade-right"
@@ -65,18 +65,21 @@ export default function About() {
         >
           Vision & Mission
         </div>
-        <div className="flex flex-col p-6 lg:p-18 sm:p-14 md:mx-16">
+        <div className="flex flex-col p-6 lg:p-14 sm:p-6 md:p-12">
           <div
-            className="flex md:flex-row flex-col"
+            className="flex md:flex-row flex-col max-lg:text-center"
             data-aos="fade-right"
             data-aos-easing="ease-in"
             data-aos-duration="1000"
           >
-            <div className="pr-5">
-              <img src="/img/target.png" className="w-24 md:h-12 h-24"></img>
+            <div className="pr-5 max-lg:hidden">
+              <img src="/img/target.png" className="w-20 lg:h-fit h-16"></img>
             </div>
             <div className="font-bold">
-              <div className="text-tetra text-2xl md:text-3xl ">Vision</div>
+              <div className="w-full flex items-center justify-center lg:hidden pb-4">
+                <img src="/img/target.png" className="w-16 lg:h-fit h-16"></img>
+              </div>
+              <div className="text-tetra text-3xl md:text-4xl">Vision</div>
               <div className="text-tetra-alt text-xl md:text-2xl pt-2">
                 "To be the most trusted and innovative logistics partner,
                 transforming the way businesses connect with global markets
@@ -85,16 +88,19 @@ export default function About() {
             </div>
           </div>
           <div
-            className="flex flex-col md:flex-row pt-12"
+            className="flex flex-col md:flex-row pt-12 max-lg:text-center w-full"
             data-aos="fade-right"
             data-aos-easing="ease-in"
             data-aos-duration="1000"
           >
-            <div className="pr-5">
-              <img src="/img/idea.png" className="w-24 md:h-12 h-24"></img>
+            <div className="pr-5 flex max-lg:hidden">
+              <img src="/img/idea.png" className="w-24 lg:h-fit h-24"></img>
             </div>
-            <div className="font-bold">
-              <div className="text-tetra text-2xl md:text-3xl ">Mission</div>
+            <div className="flex flex-col font-bold">
+              <div className="w-full flex items-center justify-center lg:hidden pb-4">
+                <img src="/img/idea.png" className="w-16 lg:h-fit h-16"></img>
+              </div>
+              <div className="text-tetra text-3xl md:text-4xl">Mission</div>
               <div className="text-tetra-alt text-xl md:text-2xl pt-2">
                 “To build long-lasting relationships with our clients by
                 offering expert consultation, transparent communication, and
@@ -119,11 +125,15 @@ export default function About() {
           Let's work together to simplify your supply chain and ensure your
           goods reach their destination efficiently and securely. <br></br>
         </div>
-        <a href={"https://wa.me/" + no_wa} target="_blank">
-          <button className="bg-tetra max-w-36 min-w-36 min-h-12 rounded-lg hover:bg-opacity-90">
-            <span className="text-white font-semibold text-lg">Contact Us</span>
-          </button>
-        </a>
+        <a href="/contact">
+                <div className="flex max-sm:items-center max-sm:justify-center">
+                  <button className="bg-tetra max-w-40 min-w-40 min-h-14 rounded-lg hover:bg-opacity-90">
+                    <span className="text-white font-semibold text-xl">
+                      Contact Us
+                    </span>
+                  </button>
+                </div>
+              </a>
       </section>
       <Footer></Footer>
     </div>

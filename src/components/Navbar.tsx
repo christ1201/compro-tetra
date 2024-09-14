@@ -10,7 +10,9 @@ export default function Navbar() {
   const router = useRouter();
 
   const links = [
+    { name: '', label: 'Home' },
     { name: 'about', label: 'About Us' },
+    { name: 'about#vision&mission', label: 'Vision & Mission' },
     { name: 'services', label: 'Our Services' },
     { name: 'contact', label: 'Contact Us' },
   ];
@@ -77,13 +79,13 @@ export default function Navbar() {
     //   )}
     // </nav>
     <nav className="bg-white border-b border-gray-200 sticky top-0 z-10 shadow-md">
-  <div className="container mx-auto px-4 flex items-center h-16 justify-between">
+  <div className="container mx-auto px-4 flex items-center h-20 justify-between">
     {/* Logo Section */}
     <div className="flex items-center">
       <div className="flex-shrink-0 pr-6">
         <Link href="/" passHref>
           {/* <img className="h-12 w-auto" src="/img/logo.jpeg" alt="Logo" /> */}
-          <img className="h-12 w-auto" src="/img/logo.png" alt="Logo" />
+          <img className="h-20 w-auto" src="/img/logo.png" alt="Logo" />
           {/* <img className="h-12 w-auto" src="/img/logo_hz.png" alt="Logo" /> */}
         </Link>
       </div>
@@ -92,7 +94,7 @@ export default function Navbar() {
         {links.map((link) => (
           <Link key={link.name} href={`/${link.name}`} passHref>
             <span
-              className={`relative text-gray-800 hover:text-tetra transition-colors duration-300 ease-in-out 
+              className={`relative text-gray-800 text-lg hover:text-tetra transition-colors duration-300 ease-in-out 
               before:absolute before:left-0 before:bottom-0 before:w-full before:h-[2px] 
               before:bg-tetra before:scale-x-0 before:origin-left 
               before:transition-transform before:duration-300 before:ease-in-out 
@@ -118,7 +120,7 @@ export default function Navbar() {
       {links.map((link) => (
         <Link key={link.name} href={`/${link.name}`} passHref>
           <span
-            className={`block py-2 text-gray-800 hover:text-tetra transition-colors duration-300 ease-in-out 
+            className={`block py-2 text-gray-800 text-lg hover:text-tetra transition-colors duration-300 ease-in-out 
             ${isActive(link.name) ? 'text-tetra' : ''}`}
             onClick={closeMenu}
           >

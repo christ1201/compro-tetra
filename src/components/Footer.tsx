@@ -40,10 +40,10 @@ const Footer = () => {
               Contact
             </div>
             <a href='mailto:admin@tetralogistic.com' target='_blank'>
-              <div className="flex gap-x-2">
+              <div className="flex gap-x-2 py-2">
                 <FontAwesomeIcon icon={faEnvelope} className="!h-5" style={{ color: '#BB985E' }} />
                 <div className="flex-col font-normal hover:underline text-md">
-                  <p>admin@tetralogistic.com</p>
+                  <p>admin@tetralogistik.com</p>
                 </div>
               </div>
             </a>
@@ -61,22 +61,22 @@ const Footer = () => {
         <div className="space-y-2">
           <div className="text-tetra font-semibold text-xl">Services</div>
           <div className="flex flex-col space-y-3">
-            <Link href="/services/#">
+            <Link href="/services/#custom-consultation">
               <div className="text-md flex-col font-base hover:underline">
                 <p>Custom Consultation</p>
               </div>
             </Link>
-            <Link href="/services/#">
+            <Link href="/services/#international-freight-forwarding">
               <div className="text-md flex-col font-base hover:underline">
                 <p>International Freight Forwarding</p>
               </div>
             </Link>
-            <Link href="/services/#">
+            <Link href="/services/#customs-brokerage">
               <div className="text-md flex-col font-base hover:underline">
-                <p>Domestic Interisland</p>
+                <p>Customs Brokerage</p>
               </div>
             </Link>
-            <Link href="/services/#">
+            <Link href="/services/#domestic-interisland">
               <div className="text-md flex-col font-base hover:underline">
                 <p>Domestic Interisland</p>
               </div>
