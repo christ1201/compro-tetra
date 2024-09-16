@@ -26,36 +26,180 @@ export default function About() {
           About Us
         </div>
       </div>
+      {/* <section
+        className="grid grid-cols-1 lg:grid-cols-2 justify-between p-6 lg:p-14 sm:p-10"
+        id="about_tetra"
+        data-aos="fade-zoom-in"
+      >
+        <div className="text-start max-lg:pb-8 lg:text-end text-4xl md:text-5xl font-bold text-tetra-alt order-1 lg:order-2 space-y-4 lg:pl-2">
+          <div>A Decade of Expertise Wrapped in an E2E Supply Chain and Logistic Management Service</div>
+        </div>
+        <div className="flex flex-col space-y-4 text-tetra-alt order-2 lg:order-1 text-lg max-sm:text-base lg:text-end text-start">
+          <div>
+            Tetra Mitra Logistic is an end-to-end logistic service company established in 2024 by a group of supply chain experts of more than 10 years. We have managed logistics to more than 100 countries, ship goods from the farthest east to the farthest west of the nation, and delivered more than xxx [units] of various goods in the span of two decades. Throughout those years, we learned that our passion for the industry and problem solving have naturally positioned us as the top of the supply chain landscape. 
+          </div>
+        </div>
+      </section>
       <section
         className="grid grid-cols-1 lg:grid-cols-2 justify-between p-6 lg:p-14 sm:p-10"
         id="about_tetra"
         data-aos="fade-zoom-in"
       >
-        <div className="text-start max-lg:pb-8 lg:text-end text-4xl md:text-5xl font-bold text-tetra-alt order-1 lg:order-2">
-          Empowering Your Business with Reliable and Customized Logistics
-          Solutions
+        <div className="text-start max-lg:pb-8 text-4xl md:text-5xl font-bold text-tetra space-y-4  pr-2">
+          Running our Business with Integrity and Innovation at Every Step
         </div>
-        <div className="flex flex-col space-y-4 text-tetra-alt order-2 lg:order-1 text-lg max-sm:text-base text-end">
+        <div className="flex flex-col space-y-4 text-tetra-alt text-lg max-sm:text-base text-start">
           <div>
-            <b>PT. TETRA MITRA LOGISTIK</b> is one of the leading freight
-            forwarding and custom broker acquired in 2003, then rebranded in
-            2023. Our objective is to provide excellence service in all freight
-            forwarding areas to our customers, principals, and overseas
-            associates.
-          </div>
-          <div>
-            Our strength is our highly-experienced and hardworking team that
-            provides our customers and associates with excellent service quality
-            to achieve maximum benefit.
-          </div>
-          <div>
-            With our reliable resources, professional, and highly-dedicated
-            staff, we are providing an advanced solution and will be your best
-            in logistics partnership through freight services, export and import
-            clearance, and other logistics-related services.
+          Having delved in the industry for a long time, our founding partners and teams are more than familiar with the complexity and advancement of the supply chain landscape. Throughout those years, we have expanded our network with numerous leading freight companies and developed a good understanding with the custom authorities. Our consistency and notable due diligence earns us a strong credibility with all parties involved in the shipping process. Our integral connection and involvement in the industry enable us to bring forth trailblazing solutions.
           </div>
         </div>
       </section>
+      <section
+        className="grid grid-cols-1 justify-between p-6 lg:p-14 sm:p-10"
+        id="about_tetra"
+        data-aos="fade-zoom-in"
+      >
+        <div className="text-center max-lg:pb-8 text-4xl md:text-5xl font-bold text-tetra-alt space-y-4 pb-8">
+          <div>Unlocking Our Clients Global Potential</div>
+        </div>
+        <div className="flex flex-col space-y-4 text-tetra-alt text-lg max-sm:text-base text-start">
+          <div>
+          We love to learn about what makes each of our clients unique. From shipping to and from countries unheard of, to delivering goods restricted in most places, our clients vary in nature and business goals. When partnering with us, our team will cultivate a mutualistic relationship with you to understand more of what makes your business different; you bring your business landscape distinctness and challenges, while we tailor advances and possibilities specific for your supply chain needs.
+          </div>
+          <div className="pt-4">
+          As years of experience have taught us, the intricate red tape and timing for these advancement and opportunities are best paired with the constant collaboration and guidance throughout our partnership. When partnering with us, feel empowered and confident that your logistics strategy and operations are in good hands at all times.
+          </div>
+        </div>
+      </section> */}
+      {/* <section
+  className="grid grid-cols-1 lg:grid-cols-2 gap-8 p-8 lg:p-16"
+  id="about_tetra"
+  data-aos="fade-zoom-in"
+>
+  <div className="text-start lg:text-end text-4xl md:text-5xl font-bold text-tetra-alt space-y-4 lg:pl-6">
+    A Decade of Expertise Wrapped in an E2E Supply Chain and Logistic Management Service
+  </div>
+  <div className="text-tetra-alt text-lg max-sm:text-base lg:text-end text-start leading-relaxed space-y-6">
+    <p>
+    Tetra Mitra Logistic is an end-to-end logistic service company established in 2024 by a group of supply chain experts of more than 10 years. We have managed logistics to more than 100 countries, ship goods from the farthest east to the farthest west of the nation, and delivered more than xxx [units] of various goods in the span of two decades. Throughout those years, we learned that our passion for the industry and problem solving have naturally positioned us as the top of the supply chain landscape. 
+    </p>
+  </div>
+      </section>
+
+      <section
+        className="grid grid-cols-1 lg:grid-cols-2 gap-8 p-8 lg:p-16 bg-gray-100"
+        id="integrity_innovation"
+        data-aos="fade-zoom-in"
+      >
+        <div className="text-start text-4xl md:text-5xl font-bold text-tetra space-y-4 pr-6">
+          Running Our Business with Integrity and Innovation at Every Step
+        </div>
+        <div className="text-tetra-alt text-lg max-sm:text-base leading-relaxed space-y-6">
+          <p>
+          Having delved in the industry for a long time, our founding partners and teams are more than familiar with the complexity and advancement of the supply chain landscape. Throughout those years, we have expanded our network with numerous leading freight companies and developed a good understanding with the custom authorities. Our consistency and notable due diligence earns us a strong credibility with all parties involved in the shipping process. Our integral connection and involvement in the industry enable us to bring forth trailblazing solutions.
+
+          </p>
+        </div>
+      </section>
+
+      <section
+        className="grid grid-cols-1 justify-center text-center p-8 lg:p-16 bg-white"
+        id="global_potential"
+        data-aos="fade-zoom-in"
+      >
+        <div className="text-4xl md:text-5xl font-bold text-tetra-alt mb-6">
+          Unlocking Our Clients' Global Potential
+        </div>
+        <div className="text-tetra-alt text-lg max-sm:text-base leading-relaxed space-y-6">
+          <p>
+          We love to learn about what makes each of our clients unique. From shipping to and from countries unheard of, to delivering goods restricted in most places, our clients vary in nature and business goals. When partnering with us, our team will cultivate a mutualistic relationship with you to understand more of what makes your business different; you bring your business landscape distinctness and challenges, while we tailor advances and possibilities specific for your supply chain needs.
+
+          </p>
+          <p>
+          As years of experience have taught us, the intricate red tape and timing for these advancement and opportunities are best paired with the constant collaboration and guidance throughout our partnership. When partnering with us, feel empowered and confident that your logistics strategy and operations are in good hands at all times.
+          </p>
+        </div>
+      </section> */}
+
+<section
+  className="relative p-12 lg:p-24 text-tetra-alt"
+  id="about_tetra"
+  // style={{ backgroundImage: "url('/img/container.png')" }}
+  data-aos="fade-zoom-in"
+>
+  {/* Background Overlay */}
+  <div className="absolute inset-0 bg-gradient-to-b from-tetra to-tetra-alt opacity-70"></div>
+
+  <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
+    {/* Left Section */}
+    <div className="text-start lg:text-end text-3xl md:text-5xl font-bold text-white lg:order-2 space-y-6 ">
+      <div>
+        <span className="bg-gradient-to-r from-green-600 to-blue-700 bg-clip-text text-transparent">
+          A Decade of Expertise
+        </span>
+        <span className="block ">Wrapped in E2E Supply Chain and Logistic Management Service</span>
+      </div>
+    </div>
+
+    {/* Right Section */}
+    <div className="relative text-white text-lg lg:text-xl max-sm:text-base lg:text-end text-start leading-relaxed space-y-8 lg:order-1">
+      <p>
+        Tetra Mitra Logistic is an end-to-end logistic service company established in 2024 by a group of supply chain experts of more than 10 years. We have managed logistics to more than 100 countries, ship goods from the farthest east to the farthest west of the nation, and delivered more than xxx [units] of various goods in the span of two decades. Throughout those years, we learned that our passion for the industry and problem solving have naturally positioned us as the top of the supply chain landscape. 
+      </p>
+    </div>
+  </div>
+</section>
+
+<section
+  className="relative grid grid-cols-1 lg:grid-cols-2 gap-8 p-12 lg:p-24"
+  id="integrity_innovation"
+  data-aos="fade-up"
+>
+  {/* Left Section */}
+  <div className="text-start text-4xl md:text-5xl font-bold text-tetra-alt lg:pr-12 space-y-6">
+    <span className="block">Running Our Business With Integrity and Innovation</span>
+  </div>
+
+  {/* Right Section */}
+  <div className="text-tetra-alt text-lg max-sm:text-base leading-relaxed space-y-6">
+    <p>
+    Having delved in the industry for a long time, our founding partners and teams are more than familiar with the complexity and advancement of the supply chain landscape. Throughout those years, we have expanded our network with numerous leading freight companies and developed a good understanding with the custom authorities.
+    </p>
+    <p>
+    Our consistency and notable due diligence earns us a strong credibility with all parties involved in the shipping process. Our integral connection and involvement in the industry enable us to bring forth trailblazing solutions.
+    </p>
+  </div>
+</section>
+
+<section
+  className="relative bg-gradient-to-r from-tetra-alt to-tetra p-12 lg:p-24 text-white"
+  id="global_potential"
+  data-aos="fade-zoom-in"
+>
+  <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+    {/* Title */}
+    <div className="text-center lg:text-left text-4xl md:text-5xl font-bold space-y-6 lg:col-span-2 ">
+      Unlocking Our Clients' Global Potential
+    </div>
+
+    {/* Left Section */}
+    <div className="text-lg leading-relaxed space-y-6">
+      <p>
+      We love to learn about what makes each of our clients unique. From shipping to and from countries unheard of, to delivering goods restricted in most places, our clients vary in nature and business goals. When partnering with us, our team will cultivate a mutualistic relationship with you to understand more of what makes your business different; you bring your business landscape distinctness and challenges, while we tailor advances and possibilities specific for your supply chain needs.
+
+      </p>
+    </div>
+    {/* Right Section */}
+    <div className="text-lg leading-relaxed space-y-6">
+      <p>
+      As years of experience have taught us, the intricate red tape and timing for these advancement and opportunities are best paired with the constant collaboration and guidance throughout our partnership. When partnering with us, feel empowered and confident that your logistics strategy and operations are in good hands at all times.
+
+      </p>
+    </div>
+  </div>
+</section>
+
+
       <section className="bg-gray-100 py-8 " id="vision&mission">
         <div
           className="text-center text-4xl md:text-5xl font-bold text-tetra-alt pt-14"
