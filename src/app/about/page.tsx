@@ -18,14 +18,14 @@ export default function About() {
   return (
     <div className="bg-white">
       <Navbar></Navbar>
-      <div
+      {/* <div
         className="bg-black bg-opacity-50 bg-cover bg-center h-40 w-full"
         style={{ backgroundImage: "url(/img/container.png)" }}
       >
         <div className="text-5xl text-center pt-14 text-white font-bold bg-black bg-opacity-30 h-full">
           About Us
         </div>
-      </div>
+      </div> */}
       {/* <section
         className="grid grid-cols-1 lg:grid-cols-2 justify-between p-6 lg:p-14 sm:p-10"
         id="about_tetra"
@@ -200,7 +200,7 @@ export default function About() {
 </section>
 
 
-      <section className="bg-gray-100 py-8 " id="vision&mission">
+      {/* <section className="bg-gray-100 py-8 " id="vision&mission">
         <div
           className="text-center text-4xl md:text-5xl font-bold text-tetra-alt pt-14"
           data-aos="fade-right"
@@ -253,7 +253,53 @@ export default function About() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
+      <section className="bg-gradient-to-b from-white to-gray-200 py-16" id="vision&mission">
+  <div
+    className="text-center text-4xl md:text-5xl font-extrabold text-tetra-alt pb-8"
+    data-aos="fade-right"
+    data-aos-easing="ease-in"
+    data-aos-duration="1500"
+  >
+    Vision & Mission
+  </div>
+  <div className="flex flex-col lg:flex-row lg:justify-center p-6 lg:p-14 space-y-12 lg:space-y-0 lg:space-x-20">
+    {/* Vision */}
+    <div
+      className="flex flex-col lg:flex-row items-center lg:items-start text-center lg:text-left w-full"
+      data-aos="fade-right"
+      data-aos-easing="ease-in"
+      data-aos-duration="1000"
+    >
+      <div className="flex flex-col font-bold">
+        <h3 className="text-tetra-alt text-3xl md:text-4xl pt-6 lg:pt-0">Vision</h3>
+        <p className="text-gray-600 text-lg md:text-xl pt-2">
+          "To be the most trusted and innovative logistics partner, transforming
+          the way businesses connect with global markets through seamless and
+          efficient transportation solutions."
+        </p>
+      </div>
+    </div>
+
+    {/* Mission */}
+    <div
+      className="flex flex-col lg:flex-row items-center lg:items-start text-center lg:text-left w-full"
+      data-aos="fade-right"
+      data-aos-easing="ease-in"
+      data-aos-duration="1000"
+    >
+      <div className="flex flex-col font-bold">
+        <h3 className="text-tetra-alt text-3xl md:text-4xl pt-6 lg:pt-0">Mission</h3>
+        <p className="text-gray-600 text-lg md:text-xl pt-2">
+          “To build long-lasting relationships with our clients by offering expert
+          consultation, transparent communication, and tailored solutions that
+          align with their unique business needs.”
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
       <section
         className="flex flex-col  p-6 lg:p-24 sm:p-14 my-5"
         data-aos="fade-zoom-in"
