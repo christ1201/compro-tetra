@@ -20,7 +20,7 @@ const Modal: React.FC<ModalProps> = ({
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
       <div className="bg-white rounded-lg shadow-xl max-w-md w-full p-6 max-sm:w-5/6">
-        <h2 className="text-2xl font-bold mb-4">{title}</h2>
+        <h2 className="text-2xl font-bold mb-4 text-tetra-alt">{title}</h2>
         <p className="text-gray-700 mb-6">{content}</p>
         <div className="flex justify-end w-full space-x-2">
           <button

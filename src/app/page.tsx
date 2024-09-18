@@ -126,10 +126,10 @@ export default function Home() {
           Your browser does not support the video tag.
         </video>
         {/* Dark Overlay */}
-        <div className="absolute top-0 left-0 w-full h-full bg-black opacity-10 z-[1]"></div>
+        <div className="absolute top-0 left-0 w-full h-full bg-black opacity-10 z-0"></div>
         {/* Centered Text */}
         <div className="absolute w-full h-full flex flex-col items-center justify-end px-16 pb-32">
-          <h1 className="text-white text-4xl sm:text-6xl font-bold text-center drop-shadow-2xl">
+          <h1 className="text-white text-4xl sm:text-6xl font-bold text-center" style={{ textShadow: '4px 4px 10px rgba(0, 0, 0, 0.9)' }}>
             Driving Global Connections,
             <br />
             Delivering Excellence.
@@ -181,7 +181,7 @@ export default function Home() {
       </div>
       <div className="flex flex-col lg:grid lg:grid-cols-2 justify-center items-center bg-gradient-to-b from-blue-100 to-white p-6 w-full pt-24 gap-8">
         {/* Text Section */}
-        <div className="text-start mb-12 w-full lg:px-16 sm:px-8 max-lg:order-2 px-3">
+        <div className="text-start mb-12 w-full lg:px-16 sm:px-8 max-lg:order-2 px-3" data-aos="fade-right">
           <h1 className="text-3xl md:text-4xl font-extrabold text-gray-800">
             Looking to Move Goods to, from, and around Indonesia at ease?
           </h1>
@@ -215,7 +215,7 @@ export default function Home() {
         </div>
 
         {/* Image Section */}
-        <div className="w-full flex justify-center lg:px-12 sm:px-6 max-lg:order-1 px-3">
+        <div className="w-full flex justify-center lg:px-12 sm:px-6 max-lg:order-1 px-3" data-aos="fade-in">
           <img
             src="/img/container.png"
             alt="Logistics Image"
