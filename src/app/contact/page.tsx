@@ -30,7 +30,7 @@ export default function Contact() {
         <section>
           <div className="w-full wrapper pb-7 space-y-6">
             <section className="space-y-6 text-sm sm:text-base px-6">
-              <div className="flex gap-x-4 items-center">
+              <div className="flex gap-x-4ß">
                 {/* <font-awesome-icon :icon="['far', 'envelope']" className="!h-8"/> */}
                 <FontAwesomeIcon
                   icon={faLocationDot}

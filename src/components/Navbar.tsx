@@ -108,8 +108,8 @@ export default function Navbar() {
       </div>
     </div>
     {/* Mobile Menu Button */}
-    <div className="flex md:hidden items-center">
-      <button onClick={() => setOpenMenu(!openMenu)} className="focus:outline-none">
+    <div className="hidden max-md:flex items-center">
+      <button onClick={() => setOpenMenu(!openMenu)}>
         <FontAwesomeIcon icon={faBars} className='!w-6 !h-6'/>
       </button>
     </div>
@@ -120,7 +120,7 @@ export default function Navbar() {
       {links.map((link) => (
         <Link key={link.name} href={`/${link.name}`} passHref>
           <span
-            className={`block py-2 text-gray-800 text-lg hover:text-tetra transition-colors duration-300 ease-in-out 
+            className={`block py-3 text-gray-800 font-semibold text-lg hover:text-tetra transition-colors duration-300 ease-in-out  text-center
             ${isActive(link.name) ? 'text-tetra' : ''}`}
             onClick={closeMenu}
           >

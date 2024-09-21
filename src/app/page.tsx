@@ -11,6 +11,8 @@ import {
   faHandshake,
   faGlobeAsia,
   faShippingFast,
+  faBoxOpen,
+  faMapLocationDot,
 } from "@fortawesome/free-solid-svg-icons";
 import styles from "./page.module.css";
 import Footer from "@/components/Footer";
@@ -19,6 +21,11 @@ import "aos/dist/aos.css"; // Import the AOS styles
 import Link from "next/link";
 import { services } from "@/data/services";
 import Modal from "@/components/Modal";
+import Users from "@/components/icons/Users";
+import Container from "@/components/icons/Container";
+import GlobePoint from "@/components/icons/GlobePoint";
+import Certified from "@/components/icons/Certified";
+import Partner from "@/components/icons/Partner";
 
 interface ModalContent {
   title: string;
@@ -93,7 +100,7 @@ export default function Home() {
   const no_wa = "628123456789";
 
   return (
-    <div className="bg-white">
+    <div className="bg-white overscroll-x-none">
       {/* Navbar with animation */}
       <div
         className={`fixed top-0 left-0 w-full z-[100] transition-transform duration-500 ease-in-out ${
@@ -157,7 +164,7 @@ export default function Home() {
                 Trusted Hands to Ship Your Goods, Wherever They Need to be.
               </div>
               <div
-                className="text-tetra-alt pb-4 max-sm:text-center text-xl pt-4"
+                className="text-tetra-alt pb-4 max-sm:text-center text-xl pt-4 text-justify"
                 data-aos="fade-in"
               >
                 <div>
@@ -179,37 +186,37 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col lg:grid lg:grid-cols-2 justify-center items-center bg-gradient-to-b from-blue-100 to-white p-6 w-full pt-24 gap-8">
+      <div className="flex flex-col lg:grid lg:grid-cols-2 justify-center items-center bg-gradient-to-b from-blue-100 to-white p-6 w-full pt-24 gap-8 text-justify">
         {/* Text Section */}
-        <div className="text-start mb-12 w-full lg:px-16 sm:px-8 max-lg:order-2 px-3" data-aos="fade-right">
+        <div className="text-start mb-12 w-full lg:px-16 sm:px-8 max-lg:order-2 px-3" data-aos="fade-in">
           <h1 className="text-3xl md:text-4xl font-extrabold text-gray-800">
             Looking to Move Goods to, from, and around Indonesia at ease?
           </h1>
-          <p className="text-lg md:text-xl text-gray-600 mt-4 text-start">
+          <p className="text-lg md:text-xl text-gray-600 mt-4 text-justify ">
             We provide seamless logistics solutions to handle your goods with
             care, no matter the distance.
           </p>
           <p className="text-3xl md:text-4xl font-extrabold text-gray-800 mt-12">
             Looking to Import or Export Goods?
           </p>
-          <p className="text-lg md:text-xl text-gray-600 mt-4">
+          <p className="text-lg md:text-xl text-gray-600 mt-4 text-justify">
             Looking to import goods from{" "}
             <span className="font-bold">
               USA, China, Japan, India, Malaysia
             </span>{" "}
             to Indonesia?
           </p>
-          <p className="text-lg md:text-xl text-gray-600 mt-4">
+          <p className="text-lg md:text-xl text-gray-600 mt-4 text-justify">
             Looking to ship products from Indonesia to{" "}
             <span className="font-bold">
               USA, China, Japan, India, Malaysia
             </span>
             ?
           </p>
-          <p className="text-lg md:text-xl text-gray-600 mt-4">
+          <p className="text-lg md:text-xl text-gray-600 mt-4 text-justify">
             Or deliver your products across the nation?
           </p>
-          <p className="text-3xl lg:text-4xl font-bold text-tetra animate-pulse duration-1000 pt-4">
+          <p className="text-3xl lg:text-4xl font-bold text-tetra animate-pulse duration-1000 pt-4 text-justify">
             We've got you covered!
           </p>
         </div>
@@ -223,119 +230,24 @@ export default function Home() {
           />
         </div>
       </div>
-
-      <div className="flex flex-col p-8 md:px-20">
-        {/* <div className="h-auto flex items-center justify-center bg-gray-50 p-4">
-          <div className="border-4 border-tetra-alt rounded-xl p-6 w-full max-w-5xl relative">
-            <div className="text-center text-2xl font-bold text-gray-700 mb-4">
-              2nd degree:{" "}
-              <span className="text-tetra">
-                Tetra Mitra Logistic Operations*
-              </span>
-            </div>
-            <div className="border-2 border-tetra-alt rounded-xl p-6 max-w-3xl mx-auto relative">
-              <div className="text-center text-xl font-bold text-gray-700 mb-4">
-                1st degree:{" "}
-                <span className="text-tetra">
-                  Tetra Mitra Logistic Solutions*
-                </span>
-              </div>
-              <div className="border border-tetra-alt rounded-xl p-6 max-w-xl mx-auto">
-                <div className="text-center text-lg font-semibold text-gray-700">
-                  0th degree: Your business needs
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> */}
-      </div>
-      {/* <div className="h-auto flex items-center justify-center bg-gray-50 lg:p-24 p-8 relative flex-col">
-          <div className="z-10  text-3xl sm:text-4xl font-bold pb-6 text-start">
-          Learn How Our Degree of Services Can Assist You to do All of These,
-          Hassle-free, Safely, and Efficiently
-        </div>
-          <img
-            src="/img/container.png"
-            className="absolute inset-0 w-full h-full object-cover opacity-20"
-            alt="Background"
-          />
-          <div className="border-4 border-tetra-alt rounded-xl p-6 w-full max-w-5xl relative shadow-lg">
-            <div className="text-start text-2xl font-bold text-gray-700 mb-4">
-              <FontAwesomeIcon icon={faTruck} className="text-tetra mr-2" />
-              2nd degree:{" "}
-              <span className="text-tetra">
-                Tetra Mitra Logistic Operations*
-              </span>
-            </div>
-            <div className="border-2 border-tetra-alt rounded-xl p-6 max-w-3xl mx-auto relative">
-              <div className="text-start text-xl font-bold text-gray-700 mb-4">
-                <FontAwesomeIcon
-                  icon={faBoxes}
-                  className="text-tetra mr-2"
-                />
-                1st degree:{" "}
-                <span className="text-tetra">
-                  Tetra Mitra Logistic Solutions*
-                </span>
-              </div>
-              <div className="border border-tetra-alt rounded-xl p-6 max-w-xl mx-auto">
-                <div className="text-start text-lg font-semibold text-gray-700">
-                  <FontAwesomeIcon
-                    icon={faBusinessTime}
-                    className="text-tetra mr-2"
-                  />
-                  0th degree:{" "}
-                  <span className="text-tetra-alt">Your business needs</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="font-bold text-xl mt-4"><span className="text-red-600">*</span>Our Solutions and Operations Service are also available independently</div>
-      </div> */}
-      <div className="flex flex-col items-center justify-center py-12 bg-gradient-to-t from-tetra to-tetra-alt">
-        {/* <h1 className="text-4xl font-bold text-gray-800 mb-8 text-center">
-        Explore Our Services: Hassle-Free, Safe, and Efficient
-      </h1> */}
+      <div className="flex flex-col items-center justify-center py-12 bg-gradient-to-t from-tetra to-tetra-alt text-justify">
         <h1
-          className="text-4xl font-bold text-white mb-8 text-start lg:px-24 px-8"
+          className="text-4xl font-bold text-white mb-8 text-justify lg:px-24 px-8"
           data-aos="fade-in"
         >
           Learn How Our Degree of Services Can Assist You to do All of These,
           Hassle-free, Safely, and Efficiently
         </h1>
-
-        {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-7xl px-6">
-        <div className="rounded-lg shadow-lg bg-white hover:shadow-2xl transition-shadow duration-300 p-6 text-center max-md:order-3">
-          <FontAwesomeIcon icon={faTruck} className="text-green-600 text-4xl mb-4" />
-          <h2 className="text-2xl font-semibold text-gray-800">
-            2nd Degree: <span className="text-green-600">Tetra Mitra Logistic Operations*</span>
-          </h2>
-        </div>
-        
-        <div className="rounded-lg shadow-lg bg-white hover:shadow-2xl transition-shadow duration-300 p-6 text-center max-md:order-2">
-          <FontAwesomeIcon icon={faBoxes} className="text-yellow-600 text-4xl mb-4" />
-          <h2 className="text-2xl font-semibold text-gray-800">
-            1st Degree: <span className="text-yellow-600">Tetra Mitra Logistic Solutions*</span>
-          </h2>
-        </div>
-
-        <div className="rounded-lg shadow-lg bg-white hover:shadow-2xl transition-shadow duration-300 p-6 text-center max-md:order-1">
-          <FontAwesomeIcon icon={faBusinessTime} className="text-red-600 text-4xl mb-4" />
-          <h2 className="text-2xl font-semibold text-gray-800">
-            0th Degree: <span className="text-red-600">Your Business Needs</span>
-          </h2>
-        </div>
-      </div> */}
         <div
-          className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-7xl px-6 py-12 "
-          data-aos="fade-left"
+          className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-7xl px-6 py-12 text-justify"
+          data-aos="fade-in"
         >
           <div className="relative rounded-md shadow-lg bg-white hover:shadow-2xl transition-shadow duration-300 p-6 text-center max-md:order-3">
             {/* Triangle */}
             <div className="max-lg:hidden absolute left-0 top-1/2 transform -translate-y-1/2 h-0 w-0 border-t-[80px] border-t-transparent border-b-[84px] border-b-transparent border-r-[50px] border-r-white -ml-12"></div>
             <div className="max-lg:hidden absolute left-1 top-1/2 transform -translate-y-1/2 h-0 w-0 border-t-[80px] border-t-transparent border-b-[84px] border-b-transparent border-r-[50px] border-r-tetra -ml-12"></div>
             <FontAwesomeIcon
-              icon={faTruck}
+              icon={faMapLocationDot}
               className="text-green-600 text-4xl mb-4"
             />
             <h2 className="text-2xl font-semibold text-gray-800">
@@ -350,7 +262,7 @@ export default function Home() {
             <div className="max-lg:hidden absolute left-0 top-1/2 transform -translate-y-1/2 h-0 w-0 border-t-[80px] border-t-transparent border-b-[84px] border-b-transparent border-r-[50px] border-r-white -ml-12"></div>
             <div className="max-lg:hidden absolute left-1 top-1/2 transform -translate-y-1/2 h-0 w-0 border-t-[80px] border-t-transparent border-b-[84px] border-b-transparent border-r-[50px] border-r-tetra -ml-12"></div>
             <FontAwesomeIcon
-              icon={faBoxes}
+              icon={faBoxOpen}
               className="text-yellow-600 text-4xl mb-4"
             />
             <h2 className="text-2xl font-semibold text-gray-800">
@@ -392,11 +304,10 @@ export default function Home() {
         className={`${styles.parallax} min-h-screen flex flex-col p-8 md:p-20`}
       > */}
         {/* Parallax Background Layer */}
-        <div className="absolute inset-0 bg-fixed bg-[url('/img/bg-pattern.png')] bg-cover opacity-30 z-0"></div>
-
         {/* Title Section */}
         <div
-          className="text-white text-4xl sm:text-5xl font-extrabold text-center pb-20 z-10"
+          className="text-white text-4xl sm:text-5xl font-extrabold text-center pb-20 z-10 "
+          style={{ textShadow: '1px 1px 4px rgba(0, 0, 0, 0.9)' }}
           data-aos="fade-up"
         >
           1st Degree: <span className="text-tetra">Solutions</span>
@@ -421,14 +332,14 @@ export default function Home() {
                 Custom Consultation
               </div>
 
-              <div className="text-tetra-alt text-lg font-medium bg-white/50 max-w-[640px] text-start p-6 mt-6 rounded-lg shadow-lg hover:bg-white/70 transition-all duration-500">
+              <div className="text-tetra-alt text-lg font-medium bg-white/50 max-w-[640px] p-6 mt-6 rounded-lg shadow-lg hover:bg-white/70 transition-all duration-500 text-justify">
                 <p className="mb-4">
                   Derived specifically from your business needs, consults with
                   our dedicated team to build just the right logistic solutions
                   suited to your business strategy and financial investment.
                   Perfect for :
                 </p>
-                <ul className="list-decimal text-start pl-6 font-semibold space-y-3">
+                <ul className="list-decimal pl-6 font-semibold space-y-3 text-justify">
                   <li>First time importers /exporters to and from Indonesia</li>
                   <li>
                     Well-established businesses optimizing their supply chain
@@ -443,6 +354,7 @@ export default function Home() {
         {/* Title */}
         <div
           className="text-white text-4xl sm:text-5xl font-bold text-center py-16"
+          style={{ textShadow: '1px 1px 4px rgba(0, 0, 0, 0.9)' }}
           data-aos="fade-up"
         >
           2nd Degree: <span className="text-green-500">Operations</span>
@@ -455,7 +367,7 @@ export default function Home() {
               {/* Freight Forwarding */}
               <div
                 className="flex flex-col items-center hover:scale-105 transition duration-500 cursor-pointer"
-                onClick={() => openModal("freight")}
+                // onClick={() => openModal("freight")}
               >
                 <div className="rounded-full bg-tetra-alt w-24 h-24 flex items-center justify-center mb-2 shadow-xl">
                   <FontAwesomeIcon
@@ -502,14 +414,14 @@ export default function Home() {
             </div>
 
             {/* Shared Description for All Solutions */}
-            <div className="text-lg text-tetra-alt font-medium mt-6">
+            <div className="text-lg text-tetra-alt font-medium mt-6 text-justify">
               <p>
                 International Freight, Custom Brokerage, and Domestic
                 Interisland For clients coming with a definitive list of ports
                 to visit, we'll take care of the laundry list to ensure your
                 logistic experience is smooth. Suitable for :
               </p>
-              <ul className="list-decimal text-start pl-6 font-semibold mt-4 space-y-2">
+              <ul className="list-decimal pl-6 font-semibold mt-4 space-y-2">
                 <li>
                   Businesses with specific shipping requirements (air / marine /
                   domestic interisland).
@@ -520,11 +432,23 @@ export default function Home() {
                 </li>
               </ul>
             </div>
+            <a href="/services">
+              <div
+                className="flex max-sm:items-center max-sm:justify-center pt-8"
+                data-aos="fade-in"
+              >
+                <button className="bg-tetra max-w-fit min-h-14 rounded-lg hover:bg-opacity-90 p-4 hover:translate-x-2 transition-transform duration-700">
+                  <span className="text-white font-semibold text-xl">
+                    Learn More About Our Services
+                  </span>
+                </button>
+              </div>
+            </a>
           </div>
         </div>
 
         {/* Modal */}
-        {modalContent && (
+        {/* {modalContent && (
           <Modal
             isOpen={isModalOpen}
             onClose={() => setIsModalOpen(false)}
@@ -532,156 +456,56 @@ export default function Home() {
             content={modalContent.content}
             link={modalContent.link}
           />
-        )}
+        )} */}
       </div>
-      {/* <section className="bg-gradient-to-l from-tetra-alt to-tetra px-14 pb-16">
-      <div
-          className="text-white text-4xl sm:text-5xl font-bold text-center py-16"
-          data-aos="fade-up"
-        >
-          2nd Degree: <span className="text-green-500">Operations</span>
-        </div>
-        <div
-          className="grid lg:grid-cols-3 grid-cols-1 gap-8 w-full items-center justify-center text-center gap-y-16 pt-8"
-          data-aos="fade-up"
-        >
-          <div className="flex flex-row  bg-gradient-to-l from-white to-tetra  text-center p-6 pt-16 rounded-3xl relative shadow-lg hover:scale-105 transition-all">
-            <Link href={"/"} className="flex flex-row w-full justify-center">
-              <div className="rounded-full bg-tetra-alt w-24 h-24 flex items-center justify-center absolute left-1/2 transform -translate-x-1/2 -top-12">
-                <FontAwesomeIcon
-                  icon={faGlobeAsia}
-                  className="!w-12 !h-12"
-                  color="#BB985E"
-                />
-              </div>
-              <div className="text-2xl sm:text-3xl font-bold text-tetra-alt flex items-center justify-center">
-                International Freight
-              </div>
-            </Link>
-          </div>
-          <div className=" bg-gradient-to-l from-white to-tetra p-6 pt-16  rounded-3xl relative shadow-lg hover:scale-105 transition-all text-center">
-            <div className="rounded-full bg-tetra-alt w-24 h-24 flex items-center justify-center absolute left-1/2 transform -translate-x-1/2 -top-12">
-                <FontAwesomeIcon
-                  icon={faBoxes}
-                  className="!w-12 !h-12"
-                  color="#BB985E"
-                />
-              </div>
-            <Link href={"/"} className="flex flex-row w-full justify-center">
-              <div className="text-2xl sm:text-3xl font-bold text-tetra-alt text-center px-4">
-                Custom Brokerage
-              </div>
-            </Link>
-          </div>
-          <div className=" bg-gradient-to-l from-white to-tetra text-center p-6 pt-16 rounded-3xl relative shadow-lg hover:scale-105 transition-all">
-            <div className="rounded-full bg-tetra-alt w-24 h-24 flex items-center justify-center absolute left-1/2 transform -translate-x-1/2 -top-12">
-                <FontAwesomeIcon
-                  icon={faShippingFast}
-                  className="!w-12 !h-12"
-                  color="#BB985E"
-                />
-              </div>
-            <Link href={"/"} className="flex flex-row w-full justify-center">
-              <div className="text-2xl sm:text-3xl font-bold text-tetra-alt px-4">
-                Domestic Shipping
-              </div>
-            </Link>
-          </div>
-          <div className="lg:col-span-3 flex w-full items-center justify-center">
-            <div className=" text-tetra-alt font-base text-lg bg-white max-w-[640px] text-start p-6 rounded-lg shadow-lg">
-              For clients coming with a definitive list of ports to visit, we'll
-              take care of the laundry list to ensure your logistic experience
-              is smooth. Suitable for
-              <ul className="list-decimal text-start p-6 font-semibold">
-                <li>
-                  Businesses with specific shipping requirements
-                  (air/marine/domestic interisland)
-                </li>
-                <li>
-                  Businesses aiming to keep a lean day-to-day operations by
-                  appointing logistics experts to deal with the ever-moving and
-                  complex logistics operations.
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section> */}
-      {/* <section className="bg-gradient-to-l from-tetra-alt to-tetra px-4 lg:px-14 pb-16">
-        <div
-          className="text-white text-4xl sm:text-5xl font-bold text-center py-16"
-          data-aos="fade-up"
-        >
-          2nd Degree: <span className="text-green-500">Operations</span>
+      <section className="bg-gradient-to-b from-tetra-alt/70 to-tetra-alt p-8 md:p-20">
+      <div className="mb-8">
+        <h2 className="text-3xl lg:text-5xl font-bold text-white text-center pb-8">
+          Our Years Of Experience, Expertise, and Global Connections
+        </h2>
+      </div>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10 text-center px-6 lg:px-24">
+        {/* Fact 1 */}
+        <div className="flex flex-col items-center">
+          <Container/>
+          <h3 className="text-3xl font-bold text-white">1.000 <span className="text-tetra">+</span></h3>
+          <p className="text-lg font-medium text-white">Numbers of Cargo transported</p>
         </div>
 
-        <div className="flex justify-center items-center" data-aos="fade-up">
-          <div className="relative bg-white max-w-4xl w-full p-10 rounded-3xl shadow-2xl bg-gradient-to-l from-white/80 to-tetra/50 backdrop-blur-md hover:shadow-3xl hover:scale-105 transition-transform duration-700">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-10 text-center mb-8">
-              <Link href={"/services#international-freight-forwarding"}>
-                <div className="flex flex-col items-center hover:scale-105 transition duration-500">
-                  <div className="rounded-full bg-tetra-alt w-24 h-24 flex items-center justify-center mb-2 shadow-xl">
-                    <FontAwesomeIcon
-                      icon={faGlobeAsia}
-                      className="text-tetra text-3xl !h-10"
-                    />
-                  </div>
-                  <span className="text-2xl sm:text-3xl font-bold text-gray-700">
-                    International Freight
-                  </span>
-                </div>
-              </Link>
-              <Link href={"/services#customs-brokerage"}>
-                <div className="flex flex-col items-center hover:scale-105 transition duration-500">
-                  <div className="rounded-full bg-tetra-alt w-24 h-24 flex items-center justify-center mb-2 shadow-xl">
-                    <FontAwesomeIcon
-                      icon={faBoxes}
-                      className="text-tetra text-3xl !h-10"
-                    />
-                  </div>
-                  <span className="text-2xl sm:text-3xl font-bold text-gray-700">
-                    Customs Brokerage
-                  </span>
-                </div>
-              </Link>
-              <Link href={"/services#domestic-interisland"}>
-                <div className="flex flex-col items-center hover:scale-105 transition duration-500">
-                  <div className="rounded-full bg-tetra-alt w-24 h-24 flex items-center justify-center mb-2 shadow-xl">
-                    <FontAwesomeIcon
-                      icon={faShippingFast}
-                      className="text-tetra text-3xl !h-10"
-                    />
-                  </div>
-                  <span className="text-2xl sm:text-3xl font-bold text-gray-700">
-                    Domestic Interisland
-                  </span>
-                </div>
-              </Link>
-            </div>
-            <div className="text-lg text-tetra-alt font-medium mt-6">
-              <p>
-                International Freight, Custom Brokerage, and Domestic
-                Interisland For clients coming with a definitive list of ports
-                to visit, we'll take care of the laundry list to ensure your
-                logistic experience is smooth. Suitable for :
-              </p>
-              <ul className="list-decimal text-start pl-6 font-semibold mt-4 space-y-2">
-                <li>
-                  Businesses with specific shipping requirements (air / marine /
-                  domestic interisland).
-                </li>
-                <li>
-                  Businesses aiming to streamline day-to-day operations by
-                  appointing logistics experts to manage complex operations.
-                </li>
-              </ul>
-            </div>
-          </div>
+        {/* Fact 2 */}
+        <div className="flex flex-col items-center">
+          <Users/>
+          <h3 className="text-3xl font-bold text-white">120 <span className="text-tetra">+</span></h3>
+          <p className="text-lg font-medium text-white">Clients we worked with</p>
         </div>
-      </section> */}
 
+        {/* Fact 3 */}
+        <div className="flex flex-col items-center">
+          <Partner/>
+          <h3 className="text-3xl font-bold text-white">80.069 <span className="text-tetra">+</span></h3>
+          <p className="text-lg font-medium text-white">Numbers of Delivery Partners</p>
+        </div>
+
+        {/* Fact 4 */}
+        <div className="flex flex-col items-center">
+          <Certified/>
+          <h3 className="text-3xl font-bold text-white">50 <span className="text-tetra">+</span></h3>
+          <p className="text-lg font-medium text-white">Numbers of Certified Professionals</p>
+        </div>
+         {/* Fact 5 */}
+        <div className="flex flex-col items-center">
+          <GlobePoint/>
+          <h3 className="text-3xl font-bold text-white">10 <span className="text-tetra">+</span></h3>
+          <p className="text-lg font-medium text-white">Countries delivered</p>
+        </div>
+      </div>
+      <div className="border border-white my-10"></div>
+      <div className="text-3xl md:text-4xl font-bold text-tetra text-center">Industries we've worked with</div>
+      <div className="text-xl md:text-2xl font-medium text-white text-center pt-4">Chemicals, Mining Minerals & Resources, FMCG (diapers), Livestocks, <br/> and many more... </div>
+    </section>
       {/* Marquee Title Section */}
-      <div className="bg-white flex flex-col p-8 md:p-20" data-aos="fade-right">
+      <div className="bg-white flex flex-col p-8 md:p-20" data-aos="fade-in">
         <div className="flex flex-col text-tetra-alt text-4xl sm:text-5xl font-bold">
             Decades of Experience,{" "} <br/>
           <a className="bg-gradient-to-r from-green-500 to-blue-500 bg-clip-text text-transparent">Countless Success Stories</a>
