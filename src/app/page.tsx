@@ -82,10 +82,18 @@ export default function Home() {
   }, []);
 
   const marqueeData = [
-    { id: 1, text: "PT. Indah Bersama Tbk.", logo: "/img/logo.jpeg" },
-    { id: 2, text: "PT. Harmoni Nusantara", logo: "/img/logo.jpeg" },
-    { id: 3, text: "PT. Sejahtera Mandiri", logo: "/img/logo.jpeg" },
-    { id: 4, text: "PT. Bersama Kita", logo: "/img/logo.jpeg" },
+    { id: 1, text: "TML", logo: "/img/marquee/1.jpeg" },
+    { id: 2, text: "TML", logo: "/img/marquee/2.jpeg" },
+    { id: 3, text: "TML", logo: "/img/marquee/3.jpeg" },
+    { id: 4, text: "TML", logo: "/img/marquee/4.jpeg" },
+    { id: 5, text: "TML", logo: "/img/marquee/5.jpeg" },
+    { id: 6, text: "TML", logo: "/img/marquee/6.jpeg" },
+    { id: 7, text: "TML", logo: "/img/marquee/1.jpeg" },
+    { id: 8, text: "TML", logo: "/img/marquee/2.jpeg" },
+    { id: 9, text: "TML", logo: "/img/marquee/3.jpeg" },
+    { id: 10, text: "TML", logo: "/img/marquee/4.jpeg" },
+    { id: 11, text: "TML", logo: "/img/marquee/5.jpeg" },
+    { id: 12, text: "TML", logo: "/img/marquee/6.jpeg" },
   ];
 
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -96,7 +104,7 @@ export default function Home() {
     setIsModalOpen(true);
   };
 
-  const loopedData = [...marqueeData, ...marqueeData];
+  // const marqueeData = [...marqueeData, ...marqueeData];
   const no_wa = "628123456789";
 
   return (
@@ -230,7 +238,93 @@ export default function Home() {
           />
         </div>
       </div>
-      <div className="flex flex-col items-center justify-center py-12 bg-gradient-to-t from-tetra to-tetra-alt text-justify">
+
+      <div className="bg-white">
+      {/* Header Section */}
+      <div className="bg-tetra-alt py-6 px-4 lg:px-24" data-aos="fade-in">
+        <h1 className="text-white text-4xl lg:text-5xl font-bold">
+          Our <span className="text-tetra">Services</span>
+        </h1>
+      </div>
+
+      {/* Subheading Section */}
+      <div className="px-6 py-8 lg:px-24 text-center" data-aos="fade-in">
+        <h2 className="text-2xl lg:text-3xl font-bold text-gray-700">
+          Learn how our integrated services can help you achieve your logistics goals.
+        </h2>
+      </div>
+
+      {/* Circular Design Section */}
+      <div className="flex flex-col lg:flex-row items-center justify-center lg:space-x-10 px-6 py-8">
+        {/* Circular Diagram */}
+  <div className="relative flex items-center justify-center h-[300px] w-[300px] sm:h-[400px] sm:w-[400px] lg:h-[500px] lg:w-[500px] mx-auto bg-transparent">
+    <svg viewBox="0 0 500 500" className="absolute z-20 bg-transparent" fill="none" data-aos="fade-in">
+      {/* Outer Circle Text (2nd Degree) */}
+      <path id="outer-circle" d="M 250, 250 m -200, 0 a 200,200 0 1,1 400,0 a 200,200 0 1,1 -400,0" />
+      <text fill="white" fontSize="14" fontWeight="bold">
+        <textPath href="#outer-circle" textAnchor="start" startOffset="14%">
+          2nd degree: TML Operations solutions
+        </textPath>
+      </text>
+
+      {/* Middle Circle Text (1st Degree) */}
+      <path id="middle-circle" d="M 250, 250 m -150, 0 a 150,150 0 1,1 300,0 a 150,150 0 1,1 -300,0" />
+      <text fill="white" fontSize="14" fontWeight="bold">
+        <textPath href="#middle-circle" textAnchor="start" startOffset="12%">
+          1st degree: TML Strategy solutions
+        </textPath>
+      </text>
+
+      {/* Inner Circle Text (0th Degree) */}
+      <path id="inner-circle" d="M 250, 250 m -100, 0 a 100,100 0 1,1 200,0 a 100,100 0 1,1 -200,0" />
+      <text fill="white" fontSize="14" fontWeight="bold">
+        <textPath href="#inner-circle" textAnchor="start" startOffset="4%">
+          0th degree: Your business aspirations
+        </textPath>
+      </text>
+    </svg>
+
+    {/* Circles for Background */}
+    <div className="absolute inset-0 flex items-center justify-center z-10" data-aos="fade-in">
+      {/* Outer Circle */}
+      <div className="rounded-full bg-tetra-alt w-[275px] h-[275px] sm:w-[375px] sm:h-[375px] lg:w-[450px] lg:h-[450px] absolute"></div>
+
+      {/* Middle Circle */}
+      <div className="rounded-full bg-gray-500 w-[200px] h-[200px] sm:w-[300px] sm:h-[300px] lg:w-[350px] lg:h-[350px] absolute"></div>
+
+      {/* Inner Circle */}
+      <div className="rounded-full bg-tetra w-[150px] h-[150px] sm:w-[200px] sm:h-[200px] lg:w-[250px] lg:h-[250px] absolute"></div>
+    </div>
+  </div>
+
+        {/* Description Section */}
+        <div className="lg:w-1/2 space-y-8 mt-8 lg:mt-0" data-aos="fade-right">
+          <div className="bg-tetra p-6 rounded-lg shadow-lg">
+            <h3 className="text-white text-lg font-bold">Started from your business aspirations</h3>
+            <p className="text-white text-sm text-justify">
+              From developing your supply chain game-plan to running the actual logistics, TML services run with your business aspirations at its heart.
+            </p>
+          </div>
+
+          <div className="bg-tetra-alt/70 p-6 rounded-lg shadow-lg">
+            <h3 className="text-white text-lg font-bold">Powered by TML Strategy Solutions</h3>
+            <p className="text-white text-sm text-justify">
+              Develop a streamlined logistics game plan that benefits from decades of industry knowledge, the latest tech advancements, and regulations.
+            </p>
+          </div>
+
+          <div className="bg-tetra-alt p-6 rounded-lg shadow-lg">
+            <h3 className="text-white text-lg font-bold">Delivered with TML Operations Solutions</h3>
+            <p className="text-white text-sm text-justify">
+              Experience highly integrated and efficient logistics operations for quick, reliable, and safe deliveries across the globe.
+            </p>
+          </div>
+          <div className="text-justify text-sm text-tetra-alt"><span className="text-red-600">*</span> Our Strategy and Operations solutions are also available separately</div>
+        </div>
+      </div>
+    </div>
+
+      {/* <div className="flex flex-col items-center justify-center py-12 bg-gradient-to-t from-tetra to-tetra-alt text-justify">
         <h1
           className="text-4xl font-bold text-white mb-8 text-justify lg:px-24 px-8"
           data-aos="fade-in"
@@ -243,7 +337,7 @@ export default function Home() {
           data-aos="fade-in"
         >
           <div className="relative rounded-md shadow-lg bg-white hover:shadow-2xl transition-shadow duration-300 p-6 text-center max-md:order-3">
-            {/* Triangle */}
+           
             <div className="max-lg:hidden absolute left-0 top-1/2 transform -translate-y-1/2 h-0 w-0 border-t-[80px] border-t-transparent border-b-[84px] border-b-transparent border-r-[50px] border-r-white -ml-12"></div>
             <div className="max-lg:hidden absolute left-1 top-1/2 transform -translate-y-1/2 h-0 w-0 border-t-[80px] border-t-transparent border-b-[84px] border-b-transparent border-r-[50px] border-r-tetra -ml-12"></div>
             <FontAwesomeIcon
@@ -274,7 +368,7 @@ export default function Home() {
           </div>
 
           <div className="relative rounded-md shadow-lg bg-white hover:shadow-2xl transition-shadow duration-300 p-6 text-center max-md:order-1">
-            {/* Triangle */}
+ 
             <div className="max-lg:hidden absolute left-0 top-1/2 transform -translate-y-1/2 h-0 w-0 border-t-[80px] border-t-transparent border-b-[84px] border-b-transparent border-r-[50px] border-r-white -ml-12"></div>
             <div className="max-lg:hidden absolute left-1 top-1/2 transform -translate-y-1/2 h-0 w-0 border-t-[80px] border-t-transparent border-b-[84px] border-b-transparent border-r-[50px] border-r-tetra -ml-12"></div>
             <FontAwesomeIcon
@@ -295,7 +389,7 @@ export default function Home() {
           * Our Solutions and Operations Services are also available
           independently
         </p>
-      </div>
+      </div> */}
       {/* Services Section with Parallax Effect */}
       <div
         className={`${styles.parallax} min-h-screen flex flex-col p-8 md:p-20`}
@@ -307,10 +401,10 @@ export default function Home() {
         {/* Title Section */}
         <div
           className="text-white text-4xl sm:text-5xl font-extrabold text-center pb-20 z-10 "
-          style={{ textShadow: '1px 1px 4px rgba(0, 0, 0, 0.9)' }}
+          // style={{ textShadow: '1px 1px 1px rgba(0, 0, 0, 0.9)' }}
           data-aos="fade-up"
         >
-          1st Degree: <span className="text-tetra">Solutions</span>
+          1st Degree: <span className="">Solutions</span>
         </div>
 
         {/* Solution Cards Section */}
@@ -354,10 +448,10 @@ export default function Home() {
         {/* Title */}
         <div
           className="text-white text-4xl sm:text-5xl font-bold text-center py-16"
-          style={{ textShadow: '1px 1px 4px rgba(0, 0, 0, 0.9)' }}
+          // style={{ textShadow: '1px 1px 1px rgba(0, 0, 0, 0.9)' }}
           data-aos="fade-up"
         >
-          2nd Degree: <span className="text-green-500">Operations</span>
+          2nd Degree: <span className="">Operations</span>
         </div>
 
         {/* Solutions Grid */}
@@ -437,11 +531,9 @@ export default function Home() {
                 className="flex max-sm:items-center max-sm:justify-center pt-8"
                 data-aos="fade-in"
               >
-                <button className="bg-tetra max-w-fit min-h-14 rounded-lg hover:bg-opacity-90 p-4 hover:translate-x-2 transition-transform duration-700">
-                  <span className="text-white font-semibold text-xl">
+                  <span className="text-tetra font-bold text-xl hover:underline hover:text-tetra/90">
                     Learn More About Our Services
                   </span>
-                </button>
               </div>
             </a>
           </div>
@@ -459,13 +551,13 @@ export default function Home() {
         )} */}
       </div>
       <section className="bg-gradient-to-b from-tetra-alt/70 to-tetra-alt p-8 md:p-20">
-      <div className="mb-8">
+      <div className="mb-8" data-aos="fade-in">
         <h2 className="text-3xl lg:text-5xl font-bold text-white text-center pb-8">
           Our Years Of Experience, Expertise, and Global Connections
         </h2>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10 text-center px-6 lg:px-24">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10 text-center px-6 lg:px-24" data-aos="fade-in">
         {/* Fact 1 */}
         <div className="flex flex-col items-center">
           <Container/>
@@ -500,9 +592,9 @@ export default function Home() {
           <p className="text-lg font-medium text-white">Countries delivered</p>
         </div>
       </div>
-      <div className="border border-white my-10"></div>
-      <div className="text-3xl md:text-4xl font-bold text-tetra text-center">Industries we've worked with</div>
-      <div className="text-xl md:text-2xl font-medium text-white text-center pt-4">Chemicals, Mining Minerals & Resources, FMCG (diapers), Livestocks, <br/> and many more... </div>
+      <div className="border border-white my-10" data-aos="fade-in"></div>
+      <div className="text-3xl md:text-4xl font-bold text-tetra text-center" data-aos="fade-in">Industries we've worked with</div>
+      <div className="text-xl md:text-2xl font-medium text-white text-center pt-4" data-aos="fade-in">Chemicals, Mining Minerals & Resources, FMCG (diapers), Livestocks, <br/> and many more... </div>
     </section>
       {/* Marquee Title Section */}
       <div className="bg-white flex flex-col p-8 md:p-20" data-aos="fade-in">
@@ -512,11 +604,11 @@ export default function Home() {
         </div>
       </div>
       {/* Marquee Section */}
-      <div className={`${styles.marqueeContainer} bg-white max-h-[35vh] p-6`}>
+      <div className={`${styles.marqueeContainer} bg-white p-6`}>
         <div className={styles.marqueeContent}>
-          {loopedData.map((item) => (
+          {marqueeData.map((item) => (
             <div key={item.id} className={styles.card}>
-              <img className="object-contain" src={item.logo} alt={item.text} />
+              <img className="object-cover" src={item.logo} alt={item.text} />
             </div>
           ))}
         </div>

@@ -91,7 +91,7 @@ export default function About() {
         id="global_potential"
         data-aos="fade-zoom-in"
       >
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Title */}
           <div className="text-center lg:text-left text-4xl md:text-5xl font-bold space-y-6 lg:col-span-2 ">
             Unlocking Our Clients' Global Potential
@@ -111,7 +111,7 @@ export default function About() {
             </p>
           </div>
           {/* Right Section */}
-          <div className="text-lg leading-relaxed space-y-6 text-justify">
+          <div className="text-lg leading-relaxed space-y-6 text-justify justify-start">
             <p>
               As years of experience have taught us, the intricate red tape and
               timing for these advancement and opportunities are best paired
@@ -338,16 +338,7 @@ export default function About() {
         <div className="grid grid-cols-2">
           <div>
             <div className="md:text-xl text-lg font-medium text-tetra-alt py-2 pt-6 text-justify">
-              Partner with us and discover how our customized logistics
-              solutions can drive your business forward.
-            </div>
-            <div className="md:text-xl text-lg font-medium text-tetra-alt py-2 text-justify">
-              Whether you need expert consultation, seamless freight forwarding,
-              or reliable interisland transport, we're here to help.
-            </div>
-            <div className="md:text-xl text-lg font-medium text-tetra-alt py-2 pb-6 text-justify">
-              Let's work together to simplify your supply chain and ensure your
-              goods reach their destination efficiently and securely.
+              Harness on our connectivity across the industry and around the globe to solve your logistics challenges
             </div>
           </div>
           <div className="h-full w-full flex justify-center items-center">
