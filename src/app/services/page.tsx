@@ -128,21 +128,21 @@ export default function Services() {
               >
                 <h2 className="text-tetra text-4xl font-bold">01</h2>
                 <h3 className="text-3xl font-bold text-tetra-alt mt-2">
-                  Customs Consulting
+                  Custom Consulting
                 </h3>
                 <p className="text-tetra-alt mt-4 text-xl font-semibold text-justify">
                   Discover the best way to run your supply chain, <span className="text-tetra font-semibold">effortlessly.</span>
                 </p>
                 <p className="text-tetra-alt mt-4 text-lg text-justify">
                   Our team of experts will develop a bespoke supply chain
-                  customs strategy that only experts with <span className="text-tetra font-semibold">20 years of experience</span> can do. 
+                  custom strategy. 
                 </p>
-                <p className="text-tetra-alt mt-4 text-lg text-justify">
+                {/* <p className="text-tetra-alt mt-4 text-lg text-justify">
                   Starting from your goal,<span className="text-tetra font-semibold"> we based our strategy on
                   multiple factors</span>  that we have learnt throughout our decades
                   long experience are <span className="text-tetra font-semibold">specifically influencing your business
                   logistic practice</span>. 
-                </p>
+                </p> */}
                 <p className="text-tetra-alt mt-4 text-lg text-justify font-semibold">
                   Skip the additional liability, risks and
                   costs of entering and understanding the logistic process all
@@ -191,7 +191,7 @@ export default function Services() {
             </div>
             <div
               className={`min-h-screen flex flex-col md:flex-row items-center`}
-              id="customs-brokerage"
+              id="custom-clearance"
             >
               <div
                 className="md:w-1/2 w-full"
@@ -215,10 +215,10 @@ export default function Services() {
               >
                 <h2 className="text-tetra text-4xl font-bold">03</h2>
                 <h3 className="text-3xl font-bold text-tetra-alt mt-2">
-                  Customs Brokerage
+                  Custom Clearance
                 </h3>
                 <p className="text-tetra-alt mt-4 text-lg text-justify">
-                   Master the complex regulations and procedures of international customs with <span className="text-tetra font-semibold">our licensed customs broker</span>.
+                   Master the complex regulations and procedures of international custom with <span className="text-tetra font-semibold">our licensed custom broker</span>.
                 </p>
                 <p className="text-tetra-alt mt-4 text-lg text-justify font-semibold">
                   Our streamlined yet detailed process ensures a compliant and timely international shipping

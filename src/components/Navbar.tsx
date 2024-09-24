@@ -4,6 +4,7 @@ import { useRouter } from 'next/navigation';
 import { usePathname } from 'next/navigation';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
+import Bars from './icons/Bars';
 
 export default function Navbar() {
   const [openMenu, setOpenMenu] = useState(false);
@@ -108,9 +109,10 @@ export default function Navbar() {
       </div>
     </div>
     {/* Mobile Menu Button */}
-    <div className="hidden max-md:flex items-center">
+    <div className="md:hidden flex items-center">
       <button onClick={() => setOpenMenu(!openMenu)}>
-        <FontAwesomeIcon icon={faBars} className='!w-6 !h-6'/>
+        {/* <FontAwesomeIcon icon={faBars} className='!w-6 !h-6'/> */}
+        <Bars/>
       </button>
     </div>
   </div>

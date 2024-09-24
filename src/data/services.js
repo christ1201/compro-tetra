@@ -33,9 +33,9 @@ export const services = [
     },
     {
       icon: faBoxes,
-      title: "Customs Brokerage",
-      id: "#customs-brokerage",
-       ref:"/services#customs-brokerage",
+      title: "Custom Clearance",
+      id: "#custom-clearance",
+       ref:"/services#custom-clearance",
       description: 'Navigate the complexities of international trade with ease through our Customs Brokerage services. Our team of seasoned professionals simplifies the customs clearance process, ensuring your goods comply with all regulations and reach their destination without delays. Trust us to handle the paperwork, so you can focus on what matters most—growing your business.',
       image:'/img/services/brokerage.jpg'
     },

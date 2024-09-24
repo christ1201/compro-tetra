@@ -41,10 +41,10 @@ const modalContents: { [key: string]: ModalContent } = {
     link: "/services#international-freight-forwarding",
   },
   brokerage: {
-    title: "Customs Brokerage",
+    title: "Customs Clearance",
     content:
-      "Navigate the complexities of international trade with ease through our Customs Brokerage services. Our team of seasoned professionals simplifies the customs clearance process, ensuring your goods comply with all regulations and reach their destination without delays. Trust us to handle the paperwork, so you can focus on what matters most—growing your business.",
-    link: "/services#customs-brokerage",
+      "Navigate the complexities of international trade with ease through our Customs Clearance services. Our team of seasoned professionals simplifies the customs clearance process, ensuring your goods comply with all regulations and reach their destination without delays. Trust us to handle the paperwork, so you can focus on what matters most—growing your business.",
+    link: "/services#customs-clearence",
   },
   domestic: {
     title: "Domestic Shipping",
@@ -144,7 +144,9 @@ export default function Home() {
         <div className="absolute top-0 left-0 w-full h-full bg-black opacity-10 z-0"></div>
         {/* Centered Text */}
         <div className="absolute w-full h-full flex flex-col items-center justify-end px-16 pb-32">
-          <h1 className="text-white text-4xl sm:text-6xl font-bold text-center" style={{ textShadow: '4px 4px 10px rgba(0, 0, 0, 0.9)' }}>
+          <h1 className="text-white text-4xl sm:text-6xl font-bold text-center" 
+          style={{ textShadow: '0px 3px 3px rgba(0, 0, 0, 0.9)' }}
+          >
             Driving Global Connections,
             <br />
             Delivering Excellence.
@@ -169,7 +171,7 @@ export default function Home() {
                 className="text-tetra-alt text-3xl sm:text-4xl font-bold max-sm:text-center"
                 data-aos="fade-in"
               >
-                Trusted Hands to Ship Your Goods, Wherever They Need to be.
+                Trusted Hands to Ship Your Cargo, Wherever They Need to be.
               </div>
               <div
                 className="text-tetra-alt pb-4 max-sm:text-center text-xl pt-4 text-justify"
@@ -196,19 +198,22 @@ export default function Home() {
       </div>
       <div className="flex flex-col lg:grid lg:grid-cols-2 justify-center items-center bg-gradient-to-b from-blue-100 to-white p-6 w-full pt-24 gap-8 text-justify">
         {/* Text Section */}
-        <div className="text-start mb-12 w-full lg:px-16 sm:px-8 max-lg:order-2 px-3" data-aos="fade-in">
+        <div
+          className="text-start mb-12 w-full lg:px-16 sm:px-8 max-lg:order-2 px-3"
+          data-aos="fade-in"
+        >
           <h1 className="text-3xl md:text-4xl font-extrabold text-gray-800">
-            Looking to Move Goods to, from, and around Indonesia at ease?
+            Looking to Move Cargo to, from, and around Indonesia at ease?
           </h1>
           <p className="text-lg md:text-xl text-gray-600 mt-4 text-justify ">
-            We provide seamless logistics solutions to handle your goods with
+            We provide seamless logistics solutions to handle your cargo with
             care, no matter the distance.
           </p>
           <p className="text-3xl md:text-4xl font-extrabold text-gray-800 mt-12">
-            Looking to Import or Export Goods?
+            Looking to Import or Export Cargo?
           </p>
           <p className="text-lg md:text-xl text-gray-600 mt-4 text-justify">
-            Looking to import goods from{" "}
+            Looking to import cargo from{" "}
             <span className="font-bold">
               USA, China, Japan, India, Malaysia
             </span>{" "}
@@ -230,7 +235,10 @@ export default function Home() {
         </div>
 
         {/* Image Section */}
-        <div className="w-full flex justify-center lg:px-12 sm:px-6 max-lg:order-1 px-3" data-aos="fade-in">
+        <div
+          className="w-full flex justify-center lg:px-12 sm:px-6 max-lg:order-1 px-3"
+          data-aos="fade-in"
+        >
           <img
             src="/img/container.png"
             alt="Logistics Image"
@@ -240,89 +248,136 @@ export default function Home() {
       </div>
 
       <div className="bg-white">
-      {/* Header Section */}
-      <div className="bg-tetra-alt py-6 px-4 lg:px-24" data-aos="fade-in">
-        <h1 className="text-white text-4xl lg:text-5xl font-bold">
-          Our <span className="text-tetra">Services</span>
-        </h1>
-      </div>
+        {/* Header Section */}
+        <div className="bg-tetra-alt py-6 px-4 lg:px-24" data-aos="fade-in">
+          <h1 className="text-white text-4xl lg:text-5xl font-bold">
+            Our <span className="text-tetra">Services</span>
+          </h1>
+        </div>
 
-      {/* Subheading Section */}
-      <div className="px-6 py-8 lg:px-24 text-center" data-aos="fade-in">
-        <h2 className="text-2xl lg:text-3xl font-bold text-gray-700">
-          Learn how our integrated services can help you achieve your logistics goals.
-        </h2>
-      </div>
+        {/* Subheading Section */}
+        <div className="px-6 py-8 lg:px-24 text-center" data-aos="fade-in">
+          <h2 className="text-2xl lg:text-3xl font-bold text-gray-700">
+            Learn how our integrated services can help you achieve your
+            logistics goals.
+          </h2>
+        </div>
 
-      {/* Circular Design Section */}
-      <div className="flex flex-col lg:flex-row items-center justify-center lg:space-x-10 px-6 py-8">
-        {/* Circular Diagram */}
-  <div className="relative flex items-center justify-center h-[300px] w-[300px] sm:h-[400px] sm:w-[400px] lg:h-[500px] lg:w-[500px] mx-auto bg-transparent">
-    <svg viewBox="0 0 500 500" className="absolute z-20 bg-transparent" fill="none" data-aos="fade-in">
-      {/* Outer Circle Text (2nd Degree) */}
-      <path id="outer-circle" d="M 250, 250 m -200, 0 a 200,200 0 1,1 400,0 a 200,200 0 1,1 -400,0" />
-      <text fill="white" fontSize="14" fontWeight="bold">
-        <textPath href="#outer-circle" textAnchor="start" startOffset="14%">
-          2nd degree: TML Operations solutions
-        </textPath>
-      </text>
+        {/* Circular Design Section */}
+        <div className="flex flex-col lg:flex-row items-center justify-center lg:space-x-10 px-6 py-8">
+          {/* Circular Diagram */}
+          <div className="relative flex items-center justify-center h-[300px] w-[300px] sm:h-[400px] sm:w-[400px] lg:h-[500px] lg:w-[500px] mx-auto bg-transparent">
+            <svg
+              viewBox="0 0 500 500"
+              className="absolute z-20 bg-transparent"
+              fill="none"
+              data-aos="fade-in"
+            >
+              {/* Outer Circle Text (2nd Degree) */}
+              <path
+                id="outer-circle"
+                d="M 250, 250 m -200, 0 a 200,200 0 1,1 400,0 a 200,200 0 1,1 -400,0"
+              />
+              <text fill="white" fontSize="14" fontWeight="bold">
+                <textPath
+                  href="#outer-circle"
+                  textAnchor="start"
+                  startOffset="14%"
+                >
+                  2nd degree: TML Operations solutions
+                </textPath>
+              </text>
 
-      {/* Middle Circle Text (1st Degree) */}
-      <path id="middle-circle" d="M 250, 250 m -150, 0 a 150,150 0 1,1 300,0 a 150,150 0 1,1 -300,0" />
-      <text fill="white" fontSize="14" fontWeight="bold">
-        <textPath href="#middle-circle" textAnchor="start" startOffset="12%">
-          1st degree: TML Strategy solutions
-        </textPath>
-      </text>
+              {/* Middle Circle Text (1st Degree) */}
+              <path
+                id="middle-circle"
+                d="M 250, 250 m -150, 0 a 150,150 0 1,1 300,0 a 150,150 0 1,1 -300,0"
+              />
+              <text fill="white" fontSize="14" fontWeight="bold">
+                <textPath
+                  href="#middle-circle"
+                  textAnchor="start"
+                  startOffset="12%"
+                >
+                  1st degree: TML Strategy solutions
+                </textPath>
+              </text>
 
-      {/* Inner Circle Text (0th Degree) */}
-      <path id="inner-circle" d="M 250, 250 m -100, 0 a 100,100 0 1,1 200,0 a 100,100 0 1,1 -200,0" />
-      <text fill="white" fontSize="14" fontWeight="bold">
-        <textPath href="#inner-circle" textAnchor="start" startOffset="4%">
-          0th degree: Your business aspirations
-        </textPath>
-      </text>
-    </svg>
+              {/* Inner Circle Text (0th Degree) */}
+              <path
+                id="inner-circle"
+                d="M 250, 250 m -100, 0 a 100,100 0 1,1 200,0 a 100,100 0 1,1 -200,0"
+              />
+              <text fill="white" fontSize="14" fontWeight="bold">
+                <textPath
+                  href="#inner-circle"
+                  textAnchor="start"
+                  startOffset="4%"
+                >
+                  0th degree: Your business aspirations
+                </textPath>
+              </text>
+            </svg>
 
-    {/* Circles for Background */}
-    <div className="absolute inset-0 flex items-center justify-center z-10" data-aos="fade-in">
-      {/* Outer Circle */}
-      <div className="rounded-full bg-tetra-alt w-[275px] h-[275px] sm:w-[375px] sm:h-[375px] lg:w-[450px] lg:h-[450px] absolute"></div>
+            {/* Circles for Background */}
+            <div
+              className="absolute inset-0 flex items-center justify-center z-10"
+              data-aos="fade-in"
+            >
+              {/* Outer Circle */}
+              <div className="rounded-full bg-tetra-alt w-[275px] h-[275px] sm:w-[375px] sm:h-[375px] lg:w-[450px] lg:h-[450px] absolute"></div>
 
-      {/* Middle Circle */}
-      <div className="rounded-full bg-gray-500 w-[200px] h-[200px] sm:w-[300px] sm:h-[300px] lg:w-[350px] lg:h-[350px] absolute"></div>
+              {/* Middle Circle */}
+              <div className="rounded-full bg-gray-500 w-[200px] h-[200px] sm:w-[300px] sm:h-[300px] lg:w-[350px] lg:h-[350px] absolute"></div>
 
-      {/* Inner Circle */}
-      <div className="rounded-full bg-tetra w-[150px] h-[150px] sm:w-[200px] sm:h-[200px] lg:w-[250px] lg:h-[250px] absolute"></div>
-    </div>
-  </div>
-
-        {/* Description Section */}
-        <div className="lg:w-1/2 space-y-8 mt-8 lg:mt-0" data-aos="fade-right">
-          <div className="bg-tetra p-6 rounded-lg shadow-lg">
-            <h3 className="text-white text-lg font-bold">Started from your business aspirations</h3>
-            <p className="text-white text-sm text-justify">
-              From developing your supply chain game-plan to running the actual logistics, TML services run with your business aspirations at its heart.
-            </p>
+              {/* Inner Circle */}
+              <div className="rounded-full bg-tetra w-[150px] h-[150px] sm:w-[200px] sm:h-[200px] lg:w-[250px] lg:h-[250px] absolute"></div>
+            </div>
           </div>
 
-          <div className="bg-tetra-alt/70 p-6 rounded-lg shadow-lg">
-            <h3 className="text-white text-lg font-bold">Powered by TML Strategy Solutions</h3>
-            <p className="text-white text-sm text-justify">
-              Develop a streamlined logistics game plan that benefits from decades of industry knowledge, the latest tech advancements, and regulations.
-            </p>
-          </div>
+          {/* Description Section */}
+          <div
+            className="lg:w-1/2 space-y-8 mt-8 lg:mt-0"
+            data-aos="fade-right"
+          >
+            <div className="bg-tetra p-6 rounded-lg shadow-lg">
+              <h3 className="text-white text-lg font-bold">
+                Started from your business aspirations
+              </h3>
+              <p className="text-white text-sm text-justify">
+                From developing your supply chain game-plan to running the
+                actual logistics, TML services run with your business
+                aspirations at its heart.
+              </p>
+            </div>
 
-          <div className="bg-tetra-alt p-6 rounded-lg shadow-lg">
-            <h3 className="text-white text-lg font-bold">Delivered with TML Operations Solutions</h3>
-            <p className="text-white text-sm text-justify">
-              Experience highly integrated and efficient logistics operations for quick, reliable, and safe deliveries across the globe.
-            </p>
+            <div className="bg-tetra-alt/70 p-6 rounded-lg shadow-lg">
+              <h3 className="text-white text-lg font-bold">
+                Powered by TML Strategy Solutions
+              </h3>
+              <p className="text-white text-sm text-justify">
+                Develop a streamlined logistics game plan that benefits from
+                decades of industry knowledge, the latest tech advancements, and
+                regulations.
+              </p>
+            </div>
+
+            <div className="bg-tetra-alt p-6 rounded-lg shadow-lg">
+              <h3 className="text-white text-lg font-bold">
+                Delivered with TML Operations Solutions
+              </h3>
+              <p className="text-white text-sm text-justify">
+                Experience highly integrated and efficient logistics operations
+                for quick, reliable, and safe deliveries across the globe.
+              </p>
+            </div>
+            <div className="text-justify text-sm text-tetra-alt">
+              <span className="text-red-600">*</span> Our Strategy and
+              Operations solutions are also available separately
+            </div>
           </div>
-          <div className="text-justify text-sm text-tetra-alt"><span className="text-red-600">*</span> Our Strategy and Operations solutions are also available separately</div>
         </div>
       </div>
-    </div>
 
       {/* <div className="flex flex-col items-center justify-center py-12 bg-gradient-to-t from-tetra to-tetra-alt text-justify">
         <h1
@@ -430,8 +485,7 @@ export default function Home() {
                 <p className="mb-4">
                   Derived specifically from your business needs, consults with
                   our dedicated team to build just the right logistic solutions
-                  suited to your business strategy and financial investment.
-                  Perfect for :
+                  suited to your business strategy and needs. Perfect for :
                 </p>
                 <ul className="list-decimal pl-6 font-semibold space-y-3 text-justify">
                   <li>First time importers /exporters to and from Indonesia</li>
@@ -477,7 +531,7 @@ export default function Home() {
               {/* Custom Brokerage */}
               <div
                 className="flex flex-col items-center hover:scale-105 transition duration-500 cursor-pointer"
-                onClick={() => openModal("brokerage")}
+                // onClick={() => openModal("brokerage")}
               >
                 <div className="rounded-full bg-tetra-alt w-24 h-24 flex items-center justify-center mb-2 shadow-xl">
                   <FontAwesomeIcon
@@ -486,7 +540,7 @@ export default function Home() {
                   />
                 </div>
                 <span className="text-2xl sm:text-3xl font-bold text-gray-700">
-                  Customs Brokerage
+                  Custom Clearance
                 </span>
               </div>
 
@@ -510,9 +564,8 @@ export default function Home() {
             {/* Shared Description for All Solutions */}
             <div className="text-lg text-tetra-alt font-medium mt-6 text-justify">
               <p>
-                International Freight, Custom Brokerage, and Domestic
-                Interisland For clients coming with a definitive list of ports
-                to visit, we'll take care of the laundry list to ensure your
+                International Freight, Custom Clearance, and Domestic
+                Interisland, we'll take care of the laundry list to ensure your
                 logistic experience is smooth. Suitable for :
               </p>
               <ul className="list-decimal pl-6 font-semibold mt-4 space-y-2">
@@ -526,16 +579,17 @@ export default function Home() {
                 </li>
               </ul>
             </div>
-            <a href="/services">
-              <div
-                className="flex max-sm:items-center max-sm:justify-center pt-8"
-                data-aos="fade-in"
-              >
-                  <span className="text-tetra font-bold text-xl hover:underline hover:text-tetra/90">
-                    Learn More About Our Services
-                  </span>
-              </div>
-            </a>
+
+            <div
+              className="flex max-sm:items-center max-sm:justify-center pt-8"
+              data-aos="fade-in"
+            >
+              <a href="/services">
+                <span className="text-tetra font-bold text-xl hover:underline hover:text-tetra/90">
+                  Learn More About Our Services
+                </span>
+              </a>
+            </div>
           </div>
         </div>
 
@@ -551,56 +605,92 @@ export default function Home() {
         )} */}
       </div>
       <section className="bg-gradient-to-b from-tetra-alt/70 to-tetra-alt p-8 md:p-20">
-      <div className="mb-8" data-aos="fade-in">
-        <h2 className="text-3xl lg:text-5xl font-bold text-white text-center pb-8">
-          Our Years Of Experience, Expertise, and Global Connections
-        </h2>
-      </div>
-
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10 text-center px-6 lg:px-24" data-aos="fade-in">
-        {/* Fact 1 */}
-        <div className="flex flex-col items-center">
-          <Container/>
-          <h3 className="text-3xl font-bold text-white">1.000 <span className="text-tetra">+</span></h3>
-          <p className="text-lg font-medium text-white">Numbers of Cargo transported</p>
+        <div className="mb-8" data-aos="fade-in">
+          <h2 className="text-3xl lg:text-5xl font-bold text-white text-center pb-8">
+            Our Years Of Experience, Expertise and Global Connections
+          </h2>
         </div>
 
-        {/* Fact 2 */}
-        <div className="flex flex-col items-center">
-          <Users/>
-          <h3 className="text-3xl font-bold text-white">120 <span className="text-tetra">+</span></h3>
-          <p className="text-lg font-medium text-white">Clients we worked with</p>
-        </div>
+        <div
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10 text-center px-6 lg:px-24"
+          data-aos="fade-in"
+        >
+          {/* Fact 1 */}
+          <div className="flex flex-col items-center">
+            <Container />
+            <h3 className="text-3xl font-bold text-white">
+              1.000 <span className="text-tetra">+</span>
+            </h3>
+            <p className="text-lg font-medium text-white">
+              Numbers of Cargo Transported
+            </p>
+          </div>
 
-        {/* Fact 3 */}
-        <div className="flex flex-col items-center">
-          <Partner/>
-          <h3 className="text-3xl font-bold text-white">80.069 <span className="text-tetra">+</span></h3>
-          <p className="text-lg font-medium text-white">Numbers of Delivery Partners</p>
-        </div>
+          {/* Fact 2 */}
+          <div className="flex flex-col items-center">
+            <Users />
+            <h3 className="text-3xl font-bold text-white">
+              120 <span className="text-tetra">+</span>
+            </h3>
+            <p className="text-lg font-medium text-white">
+              Clients we worked with
+            </p>
+          </div>
 
-        {/* Fact 4 */}
-        <div className="flex flex-col items-center">
-          <Certified/>
-          <h3 className="text-3xl font-bold text-white">50 <span className="text-tetra">+</span></h3>
-          <p className="text-lg font-medium text-white">Numbers of Certified Professionals</p>
+          {/* Fact 3 */}
+          <div className="flex flex-col items-center">
+            <Partner />
+            <h3 className="text-3xl font-bold text-white">
+              45 <span className="text-tetra">+</span>
+            </h3>
+            <p className="text-lg font-medium text-white">
+              Numbers of Delivery Partners
+            </p>
+          </div>
+
+          {/* Fact 4 */}
+          <div className="flex flex-col items-center">
+            <Certified />
+            <h3 className="text-3xl font-bold text-white">
+              10 <span className="text-tetra">+</span>
+            </h3>
+            <p className="text-lg font-medium text-white">
+              Numbers of Certified Professionals
+            </p>
+          </div>
+          {/* Fact 5 */}
+          <div className="flex flex-col items-center">
+            <GlobePoint />
+            <h3 className="text-3xl font-bold text-white">
+              20 <span className="text-tetra">+</span>
+            </h3>
+            <p className="text-lg font-medium text-white">
+              Countries delivered
+            </p>
+          </div>
         </div>
-         {/* Fact 5 */}
-        <div className="flex flex-col items-center">
-          <GlobePoint/>
-          <h3 className="text-3xl font-bold text-white">10 <span className="text-tetra">+</span></h3>
-          <p className="text-lg font-medium text-white">Countries delivered</p>
+        <div className="border border-white my-10" data-aos="fade-in"></div>
+        <div
+          className="text-3xl md:text-4xl font-bold text-tetra text-center"
+          data-aos="fade-in"
+        >
+          Industries we've worked with
         </div>
-      </div>
-      <div className="border border-white my-10" data-aos="fade-in"></div>
-      <div className="text-3xl md:text-4xl font-bold text-tetra text-center" data-aos="fade-in">Industries we've worked with</div>
-      <div className="text-xl md:text-2xl font-medium text-white text-center pt-4" data-aos="fade-in">Chemicals, Mining Minerals & Resources, FMCG (diapers), Livestocks, <br/> and many more... </div>
-    </section>
+        <div
+          className="text-xl md:text-2xl font-medium text-white text-center pt-4"
+          data-aos="fade-in"
+        >
+          Chemicals, Mining Minerals & Resources, FMCG (diapers), Livestocks,{" "}
+          <br /> and many more...{" "}
+        </div>
+      </section>
       {/* Marquee Title Section */}
       <div className="bg-white flex flex-col p-8 md:p-20" data-aos="fade-in">
         <div className="flex flex-col text-tetra-alt text-4xl sm:text-5xl font-bold">
-            Decades of Experience,{" "} <br/>
-          <a className="bg-gradient-to-r from-green-500 to-blue-500 bg-clip-text text-transparent">Countless Success Stories</a>
+          Decades of Experience, <br />
+          <a className="bg-tetra bg-clip-text text-transparent">
+            Countless Success Stories
+          </a>
         </div>
       </div>
       {/* Marquee Section */}

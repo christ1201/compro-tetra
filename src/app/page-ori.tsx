@@ -50,8 +50,8 @@ export default function Home() {
     },
     {
       icon: faBoxes,
-      title: 'Customs Brokerage',
-      description: 'Navigate the complexities of international trade with ease through our Customs Brokerage services. Our team of seasoned professionals simplifies the customs clearance process, ensuring your goods comply with all regulations and reach their destination without delays. Trust us to handle the paperwork, so you can focus on what matters most—growing your business.'
+      title: 'Customs Clearance',
+      description: 'Navigate the complexities of international trade with ease through our Customs Clearance services. Our team of seasoned professionals simplifies the custom clearance process, ensuring your goods comply with all regulations and reach their destination without delays. Trust us to handle the paperwork, so you can focus on what matters most—growing your business.'
     },
     {
       icon: faShippingFast,
@@ -107,7 +107,7 @@ export default function Home() {
             <img className="h-[320px] w-auto object-contain max-md:pb-8" src="/img/logo.png" alt="Logo" />
             <div className="flex flex-col justify-between">
               <div className="text-tetra-alt pb-4 max-sm:text-center text-xl">
-              At PT Tetra Mitra Logistic, we are more than just a logistics provider; we are your strategic partner in delivering seamless and innovative forwarding solutions. With a passion for excellence and a commitment to your success, our experienced team works tirelessly to ensure that your goods reach their destination safely, efficiently, and on time. We blend cutting-edge technology with personalized service to create tailored logistics solutions that drive your business forward. Trust us to handle your logistics needs so you can focus on what you do best—growing your business. Leveraging advanced technology and a team of experienced professionals, the company ensures seamless operations, timely delivery, and cost-effective logistics solutions that drive business success. Whether it's local or international shipping, PT Tetra Mitra Logistic is your trusted partner in navigating the complexities of the global supply chain.
+              At PT Tetra Mitra Logistic, we are more than just a logistics provider; we are your strategic partner in delivering seamless and innovative forwarding solutions. With a passion for excellence and a commitment to your success, our experienced team works tirelessly to ensure that your cargo reach their destination safely, efficiently, and on time. We blend cutting-edge technology with personalized service to create tailored logistics solutions that drive your business forward. Trust us to handle your logistics needs so you can focus on what you do best—growing your business. Leveraging advanced technology and a team of experienced professionals, the company ensures seamless operations, timely delivery, and cost-effective logistics solutions that drive business success. Whether it's local or international shipping, PT Tetra Mitra Logistic is your trusted partner in navigating the complexities of the global supply chain.
               </div>
               {/* <div>
                 test

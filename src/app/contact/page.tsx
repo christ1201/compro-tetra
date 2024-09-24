@@ -30,11 +30,11 @@ export default function Contact() {
         <section>
           <div className="w-full wrapper pb-7 space-y-6">
             <section className="space-y-6 text-sm sm:text-base px-6">
-              <div className="flex gap-x-4ß">
+              <div className="flex gap-x-4">
                 {/* <font-awesome-icon :icon="['far', 'envelope']" className="!h-8"/> */}
                 <FontAwesomeIcon
                   icon={faLocationDot}
-                  className="!w-12 !h-10"
+                  className="!w-10 !h-12 mr-2"
                   color="#BB985E"
                 />
                 <div>
@@ -46,7 +46,7 @@ export default function Contact() {
                     target="_blank"
                     rel="noopener"
                   >
-                    <div className="hover:underline font-normal text-base lg:text-lg text-tetra">
+                    <div className="hover:underline font-normal text-base lg:text-lg text-tetra text-justify">
                       Sudirman 7.8 Tower Level 16 Unit 182
                       <br />
                       Jl. Jend. Sudirman Kav. 7-8 <br />
@@ -67,7 +67,7 @@ export default function Contact() {
                   color="#BB985E"
                 />
                 <div>
-                  <div className="text-tetra-alt  sm:text-2xl text-xl font-semibold">
+                  <div className="text-tetra-alt  sm:text-2xl text-xl font-semibold text-justify">
                     Whatsapp
                   </div>
                   <a
@@ -75,7 +75,7 @@ export default function Contact() {
                     target="_blank"
                     rel="noopener"
                   >
-                    <div className="hover:underline font-normal text-base lg:text-lg text-tetra">
+                    <div className="hover:underline font-normal text-base lg:text-lg text-tetra text-justify">
                       {"+" + no_wa}
                     </div>
                   </a>
@@ -89,12 +89,12 @@ export default function Contact() {
                   color="#BB985E"
                 />
                 <div>
-                  <div className="text-tetra-alt  md:text-2xl text-xl font-semibold">
+                  <div className="text-tetra-alt  md:text-2xl text-xl font-semibold text-justify">
                     Email
                   </div>
-                  <a href="mailto:admin@tetralogistik.com">
-                    <div className="hover:underline font-normal text-base lg:text-lg text-tetra">
-                      admin@tetralogistik.com
+                  <a href="mailto:sales@tatralogistik.com">
+                    <div className="hover:underline font-normal text-base lg:text-lg text-tetra text-justify">
+                      sales@tatralogistik.com
                     </div>
                   </a>
                 </div>

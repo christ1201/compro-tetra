@@ -31,7 +31,10 @@ export default function About() {
           {/* Left Section */}
           <div className="text-start lg:text-end text-3xl md:text-5xl font-bold text-white lg:order-2 space-y-6 ">
             <div>
-              <span className="bg-gradient-to-r from-green-600 to-blue-700 bg-clip-text text-transparent">
+              {/* <span className="bg-gradient-to-t from-tetra to-tetra-alt bg-clip-text text-transparent">
+                A Decade of Expertise
+              </span> */}
+              <span className="bg-gradient-to-tl from-tetra to-tetra-alt bg-clip-text text-transparent">
                 A Decade of Expertise
               </span>
               <span className="block">
@@ -46,9 +49,9 @@ export default function About() {
               Tetra Mitra Logistic is an end-to-end logistic service company
               established in 2024 by a group of supply chain experts of more
               than 10 years. We have managed logistics to more than 100
-              countries, ship goods from the farthest east to the farthest west
+              countries, ship cargo from the farthest east to the farthest west
               of the nation, and delivered more than xxx [units] of various
-              goods in the span of two decades. Throughout those years, we
+              cargo in the span of two decades. Throughout those years, we
               learned that our passion for the industry and problem solving have
               naturally positioned us as the top of the supply chain landscape.
             </p>
@@ -101,7 +104,7 @@ export default function About() {
           <div className="text-lg leading-relaxed space-y-6 text-justify">
             <p>
               We love to learn about what makes each of our clients unique. From
-              shipping to and from countries unheard of, to delivering goods
+              shipping to and from countries unheard of, to delivering cargo
               restricted in most places, our clients vary in nature and business
               goals. When partnering with us, our team will cultivate a
               mutualistic relationship with you to understand more of what makes
