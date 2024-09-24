@@ -25,8 +25,16 @@ export default function About() {
         data-aos="fade-zoom-in"
       >
         {/* Background Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-tetra to-tetra-alt opacity-70"></div>
-
+        {/* <div className="absolute inset-0 bg-gradient-to-b from-tetra to-tetra-alt opacity-70"></div> */}
+        <div
+          className="absolute inset-0"
+          style={{
+            backgroundImage: "url('/img/about.png')",
+            backgroundSize: "cover", // Adjusts the image to cover the div
+            backgroundPosition: "center", // Centers the image
+            backgroundRepeat: "no-repeat" // Prevents image repetition
+          }}
+        ></div>
         <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           {/* Left Section */}
           <div className="text-start lg:text-end text-3xl md:text-5xl font-bold text-white lg:order-2 space-y-6 ">
@@ -34,7 +42,7 @@ export default function About() {
               {/* <span className="bg-gradient-to-t from-tetra to-tetra-alt bg-clip-text text-transparent">
                 A Decade of Expertise
               </span> */}
-              <span className="bg-gradient-to-tl from-tetra to-tetra-alt bg-clip-text text-transparent">
+              <span className="bg-gradient-to-tl from-tetra to-tetra/80 bg-clip-text text-transparent">
                 A Decade of Expertise
               </span>
               <span className="block">
