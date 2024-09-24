@@ -141,7 +141,7 @@ export default function Home() {
           Your browser does not support the video tag.
         </video>
         {/* Dark Overlay */}
-        <div className="absolute top-0 left-0 w-full h-full bg-black opacity-10 z-0"></div>
+        <div className="absolute top-0 left-0 w-full h-full bg-black opacity-10 -z-100"></div>
         {/* Centered Text */}
         <div className="absolute w-full h-full flex flex-col items-center justify-end px-16 pb-32">
           <h1 className="text-white text-4xl sm:text-6xl font-bold text-center" 
@@ -670,7 +670,7 @@ export default function Home() {
           </div>
         </div>
         <div className="border border-white my-10" data-aos="fade-in"></div>
-        <div
+        {/* <div
           className="text-3xl md:text-4xl font-bold text-tetra text-center"
           data-aos="fade-in"
         >
@@ -682,7 +682,50 @@ export default function Home() {
         >
           Chemicals, Mining Minerals & Resources, FMCG (diapers), Livestocks,{" "}
           <br /> and many more...{" "}
+        </div> */}
+      <section>
+        <div className="text-center text-white py-8" data-aos="fade-in">
+          <h1 className="text-3xl md:text-5xl font-bold mb-4">
+            We Have Shipped Across <br /> the Nation and <span className="text-tetra">Worldwide</span> for
+          </h1>
         </div>
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 px-3 md:px-16 lg:px-32 max-md:space-y-3 pb-8" data-aos="fade-down">
+          <div className="bg-white shadow-xl rounded-lg transition duration-300 transform hover:scale-105">
+            <h2 className="text-2xl font-bold text-tetra-alt bg-gradient-to-r from-tetra to-tetra/70 py-2 px-4 rounded-t-md text-center">
+              Import
+            </h2>
+            <ul className="text-justify mt-4 space-y-2 font-medium list-disc px-8">
+              {['Home Building Material', 'Maternity and Baby Product', 'Machinery', 'Spare Parts', 'Chemical Product (General Cargo and DG Cargo)', 'Electronics', 'Raw Material for Food and Beverages', 'Printing Ink', 'Electrical Product', 'Safety Working Product', 'Glass Product', 'Project Machine', 'Shoes', 'Bags', 'Molding', 'Coffee Machine', 'Etc...'].map((item, idx) => (
+                <li key={idx} className="text-gray-600">{item}</li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Export Section */}
+          <div className="bg-white shadow-xl rounded-lg transition duration-300 transform hover:scale-105">
+            <h2 className="text-2xl font-bold text-tetra-alt bg-gradient-to-r from-tetra to-tetra/70 py-2 px-4 rounded-t-md text-center">
+              Export
+            </h2>
+            <ul className="text-justify mt-4 space-y-2 font-medium list-disc px-8">
+              {['Chemical Product (General Cargo and DG Cargo)', 'Plastic Product', 'Maternity and Baby Product', 'Hair Styling Product', 'Molding', 'Food and Beverages', 'Palm Oil Product', 'Coffee Machine', 'Pharmaceutical Product', 'Etc...'].map((item, idx) => (
+                <li key={idx} className="text-gray-600">{item}</li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Domestic Interisland Section */}
+          <div className="bg-white shadow-xl rounded-lg transition duration-300 transform hover:scale-105">
+            <h2 className="text-2xl font-bold text-tetra-alt bg-gradient-to-r from-tetra to-tetra/70 py-2 px-4 rounded-t-md text-center">
+              Domestic Interisland
+            </h2>
+            <ul className="text-justify mt-4 space-y-2 font-medium list-disc px-8">
+              {['Plastic Product', 'Shoes', 'Bags', 'Home Building Material', 'Etc...'].map((item, idx) => (
+                <li key={idx} className="text-gray-600">{item}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </section>
       </section>
       {/* Marquee Title Section */}
       <div className="bg-white flex flex-col p-8 md:p-20" data-aos="fade-in">
@@ -712,7 +755,7 @@ export default function Home() {
         <div className="md:text-4xl text-3xl font-bold text-tetra-alt">
           Ready to Elevate Your Logistics Experience?
         </div>
-        <div className="grid grid-cols-2">
+        <div className="grid md:grid-cols-2 grid-cols-1">
           <div>
             <div className="md:text-xl text-lg font-medium text-tetra-alt py-2 pt-6 text-justify">
               Harness on our connectivity across the industry and around the globe to solve your logistics challenges

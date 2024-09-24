@@ -338,7 +338,7 @@ export default function About() {
         <div className="md:text-4xl text-3xl font-bold text-tetra-alt">
           Ready to Elevate Your Logistics Experience?
         </div>
-        <div className="grid grid-cols-2">
+        <div className="grid md:grid-cols-2 grid-cols-1">
           <div>
             <div className="md:text-xl text-lg font-medium text-tetra-alt py-2 pt-6 text-justify">
               Harness on our connectivity across the industry and around the globe to solve your logistics challenges

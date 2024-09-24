@@ -128,7 +128,7 @@ export default function Services() {
               >
                 <h2 className="text-tetra text-4xl font-bold">01</h2>
                 <h3 className="text-3xl font-bold text-tetra-alt mt-2">
-                  Custom Consulting
+                  Custom Consultation
                 </h3>
                 <p className="text-tetra-alt mt-4 text-xl font-semibold text-justify">
                   Discover the best way to run your supply chain, <span className="text-tetra font-semibold">effortlessly.</span>
