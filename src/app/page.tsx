@@ -705,40 +705,32 @@ export default function Home() {
       </div>
 
       {/* Connect Section */}
-      <div className="bg-white min-h-[60vh] flex flex-col p-8 md:p-20 text-center items-center">
-        <div
-          className="max-w-2xl flex flex-col items-center space-y-6"
-          data-aos="fade-down"
-          data-aos-easing="ease-out"
-          data-aos-duration="1000"
-        >
-          <div className="rounded-full bg-tetra-alt w-24 h-24 flex items-center justify-center">
-            <FontAwesomeIcon
-              icon={faUsers}
-              className="!w-12 !h-12"
-              color="#BB985E"
-            />
-          </div>
-          <div className="flex flex-col text-tetra-alt text-4xl sm:text-5xl font-bold">
-            Chat With Us to Find The Right Solution For Your Logistic Needs
-          </div>
-          {/* <div className="text-tetra-alt lg:text-2xl text-xl">
-            Chat with us to find the right solution for your logistic needs
-          </div> */}
-          <a href="/contact">
-            <div
-              className="flex max-sm:items-center max-sm:justify-center"
-              data-aos="fade-in"
-            >
-              <button className="bg-tetra max-w-fit min-w-40 min-h-14 rounded-lg hover:bg-opacity-90 p-2 hover:translate-x-2 transition-transform duration-700">
-                <span className="text-white font-semibold text-xl">
-                  Contact Us
-                </span>
-              </button>
-            </div>
-          </a>
+      <section
+        className="flex flex-col p-6 lg:p-24 sm:p-14 my-5"
+        data-aos="fade-zoom-in"
+      >
+        <div className="md:text-4xl text-3xl font-bold text-tetra-alt">
+          Ready to Elevate Your Logistics Experience?
         </div>
-      </div>
+        <div className="grid grid-cols-2">
+          <div>
+            <div className="md:text-xl text-lg font-medium text-tetra-alt py-2 pt-6 text-justify">
+              Harness on our connectivity across the industry and around the globe to solve your logistics challenges
+            </div>
+          </div>
+          <div className="h-full w-full flex justify-center items-center">
+            <a href="/contact">
+              <div className="flex items-center justify-center" data-aos="fade-in">
+                <button className="bg-tetra max-w-fit min-w-40 min-h-14 rounded-lg hover:bg-opacity-90 p-2 hover:translate-x-2 transition-transform duration-700">
+                  <span className="text-white font-semibold text-xl">
+                    Contact Us
+                  </span>
+                </button>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
       {/* Footer */}
       <Footer />
     </div>
