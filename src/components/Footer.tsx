@@ -39,11 +39,11 @@ const Footer = () => {
             <div className="text-tetra font-semibold text-xl">
               Contact
             </div>
-            <a href='mailto:sales@tatralogistik.com' target='_blank'>
+            <a href='mailto:sales@tetralogistik.com' target='_blank'>
               <div className="flex gap-x-2 py-2">
                 <FontAwesomeIcon icon={faEnvelope} className="!h-5" style={{ color: '#BB985E' }} />
                 <div className="flex-col font-normal hover:underline text-md">
-                  <p>sales@tatralogistik.com</p>
+                  <p>sales@tetralogistik.com</p>
                 </div>
               </div>
             </a>

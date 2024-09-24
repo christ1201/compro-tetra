@@ -92,9 +92,9 @@ export default function Contact() {
                   <div className="text-tetra-alt  md:text-2xl text-xl font-semibold text-justify">
                     Email
                   </div>
-                  <a href="mailto:sales@tatralogistik.com">
+                  <a href="mailto:sales@tetralogistik.com">
                     <div className="hover:underline font-normal text-base lg:text-lg text-tetra text-justify">
-                      sales@tatralogistik.com
+                      sales@tetralogistik.com
                     </div>
                   </a>
                 </div>

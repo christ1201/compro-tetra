@@ -694,7 +694,7 @@ export default function Home() {
             <h2 className="text-2xl font-bold text-tetra-alt bg-gradient-to-r from-tetra to-tetra/70 py-2 px-4 rounded-t-md text-center">
               Import
             </h2>
-            <ul className="text-justify mt-4 space-y-2 font-medium list-disc px-8">
+            <ul className="text-justify mt-4 space-y-2 font-medium list-disc px-8 mb-4">
               {['Home Building Material', 'Maternity and Baby Product', 'Machinery', 'Spare Parts', 'Chemical Product (General Cargo and DG Cargo)', 'Electronics', 'Raw Material for Food and Beverages', 'Printing Ink', 'Electrical Product', 'Safety Working Product', 'Glass Product', 'Project Machine', 'Shoes', 'Bags', 'Molding', 'Coffee Machine', 'Etc...'].map((item, idx) => (
                 <li key={idx} className="text-gray-600">{item}</li>
               ))}
@@ -706,7 +706,7 @@ export default function Home() {
             <h2 className="text-2xl font-bold text-tetra-alt bg-gradient-to-r from-tetra to-tetra/70 py-2 px-4 rounded-t-md text-center">
               Export
             </h2>
-            <ul className="text-justify mt-4 space-y-2 font-medium list-disc px-8">
+            <ul className="text-justify mt-4 space-y-2 font-medium list-disc px-8 mb-4">
               {['Chemical Product (General Cargo and DG Cargo)', 'Plastic Product', 'Maternity and Baby Product', 'Hair Styling Product', 'Molding', 'Food and Beverages', 'Palm Oil Product', 'Coffee Machine', 'Pharmaceutical Product', 'Etc...'].map((item, idx) => (
                 <li key={idx} className="text-gray-600">{item}</li>
               ))}
@@ -718,7 +718,7 @@ export default function Home() {
             <h2 className="text-2xl font-bold text-tetra-alt bg-gradient-to-r from-tetra to-tetra/70 py-2 px-4 rounded-t-md text-center">
               Domestic Interisland
             </h2>
-            <ul className="text-justify mt-4 space-y-2 font-medium list-disc px-8">
+            <ul className="text-justify mt-4 space-y-2 font-medium list-disc px-8 mb-4">
               {['Plastic Product', 'Shoes', 'Bags', 'Home Building Material', 'Etc...'].map((item, idx) => (
                 <li key={idx} className="text-gray-600">{item}</li>
               ))}
