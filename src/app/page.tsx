@@ -265,7 +265,7 @@ export default function Home() {
             <br />
             with TML all-encompassing solutions
           </h2>
-          <p className="text-base md:text-lg text-justify font-semibold  pt-8 max-w-3xl">
+          <p className="text-base md:text-lg text-justify font-semibold  pt-8 max-w-3xl text-tetra-alt">
               Our 4 core services target the key activities crucial to boost
               your end-to-end logistic process and classified into 2 service
               offerings based on the logistic stage you are at.
