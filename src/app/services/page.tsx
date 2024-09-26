@@ -103,7 +103,7 @@ export default function Services() {
 
               <div className="text-tetra-alt text-lg font-medium bg-white/50 max-w-[640px] p-6 mt-6 rounded-lg shadow-lg hover:bg-white/70 transition-all duration-500 text-justify">
                 <p className="mb-4">
-                  Custom Consultation, derived specifically from your business
+                  <b>Custom Consultation,</b> derived specifically from your business
                   needs, consults with our dedicated team to build just the
                   right logistic solutions suited to your business strategy and
                   needs. <br></br>Perfect for :
@@ -205,11 +205,14 @@ export default function Services() {
                         Suitable for :
                       </p>
                       <ul className="list-decimal pl-6 font-semibold space-y-3 text-justify">
-                        <li>First time importers / exporters</li>
-                        <li>
-                          Well-established businesses optimizing their supply
-                          chain costs and processes
-                        </li>
+                      <li>
+                        Businesses with specific shipping requirements (air / marine /
+                        domestic interisland).
+                      </li>
+                      <li>
+                        Businesses aiming to streamline day-to-day operations by
+                        appointing logistics experts to manage complex operations.
+                      </li>
                       </ul>
                     </div>
                   </div>
