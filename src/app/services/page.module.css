@@ -5,3 +5,64 @@
     background-position: center; */
 }
   
+/* page.module.css */
+.marqueeContainer {
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%; /* Ensures full-width container */
+  }
+  
+  .marqueeContent {
+    display: flex;
+    animation: marquee 15s linear infinite; /* Slower speed for smaller screens */
+  }
+  
+  .card {
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* padding: 16px; */
+    margin: 0 16px;
+    text-align: center;
+    min-width: 150px; /* Adjusted min-width for smaller screens */
+    min-height: 150px;
+    display: flex;
+    /* flex-direction: row;
+    justify-content: space-between;
+    align-items: center; */
+    object-fit: cover;
+  }
+  
+  /* Keyframes for the marquee animation */
+  @keyframes marquee {
+    0% {
+      transform: translateX(0); /* Start with all content visible */
+    }
+    100% {
+      transform: translateX(-100%); /* Scroll the entire width of the content */
+    }
+  }
+  
+  /* Adjust marquee speed and card layout on medium screens */
+  @media (min-width: 768px) {
+    .marqueeContent {
+      animation: marquee 12s linear infinite; /* Slower speed on medium screens */
+    }
+  
+    .card {
+      min-width: 200px; /* Larger card size on medium screens */
+      min-height: 200px;
+      margin: 0 24px; /* Adjust spacing between cards */
+      object-fit: fill;
+    }
+  }
+
+  /* Paralax */
+  .parallax {
+    background-image: url('/img/parallax-bg.jpg'); /* Add your parallax background image */
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  

@@ -23,7 +23,7 @@ const Footer = () => {
               <Link href="https://maps.app.goo.gl/iUXMuyNvvt76v5nM9" target="_blank" rel="noopener">
                 <div className="flex-col font-normal hover:underline text-md">
                   <p>
-                  Sudirman 7.8 Tower Level 16 Unit 182<br/>
+                  Sudirman 7.8 Tower Level 16 Unit 1 & 2<br/>
                   Jl. Jend. Sudirman Kav. 7-8 <br/>
                   Kel. Karet Tengsin, Kec. Tanah Abang,<br/>
                   Jakarta Pusat, DKI Jakarta - Indonesia<br/>

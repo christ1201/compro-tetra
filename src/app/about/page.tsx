@@ -39,11 +39,8 @@ export default function About() {
           {/* Left Section */}
           <div className="text-start lg:text-end text-3xl md:text-5xl font-bold text-white lg:order-2 space-y-6 ">
             <div>
-              {/* <span className="bg-gradient-to-t from-tetra to-tetra-alt bg-clip-text text-transparent">
-                A Decade of Expertise
-              </span> */}
               <span className="bg-gradient-to-tl from-tetra to-tetra/80 bg-clip-text text-transparent">
-                A Decade of Expertise
+                Years of Expertise
               </span>
               <span className="block">
                 Wrapped in E2E Supply Chain and Logistic Management Service
@@ -53,16 +50,15 @@ export default function About() {
 
           {/* Right Section */}
           <div className="relative text-white text-lg lg:text-xl max-sm:text-base leading-relaxed space-y-8 lg:order-1 text-justify">
-            <p>
-              Tetra Mitra Logistic is an end-to-end logistic service company
-              established in 2024 by a group of supply chain experts of more
-              than 10 years. We have managed logistics to more than 100
-              countries, ship cargo from the farthest east to the farthest west
-              of the nation, and delivered more than xxx [units] of various
-              cargo in the span of two decades. Throughout those years, we
-              learned that our passion for the industry and problem solving have
-              naturally positioned us as the top of the supply chain landscape.
-            </p>
+            <div>
+              Tetra Mitra Logistic is an end-to-end logistic service company founded by a group of experienced supply chain experts. In such short span of time, our high-performing team have managed logistics to more than 20 countries - shipping cargo from the farthest east to the west of the world and delivering more than 1.000 units of cargo for virtually all industry lines operating globally.
+            </div>
+            <div className="mt-4 mb-2">
+              We work with our clients to navigate the increasing complexity and interconnectivity of the supply chain sectors, improve their operation excellence, expand their business reach efficiently through logistics advancement, with deep understanding of governance's custom process, while still adhering to comply the regulation. 
+            </div>
+            <div className="mt-4 mb-2 text-tetra font-semibold">
+              We are powered by our dedicated experts, vast network of trusted delivery partners, and driven by our vision and mission.
+            </div>
           </div>
         </div>
       </section>
@@ -83,16 +79,17 @@ export default function About() {
         <div className="text-tetra-alt text-lg max-sm:text-base leading-relaxed space-y-6 text-justify">
           <p>
             Having delved in the industry for a long time, our founding partners
-            and teams are more than familiar with the complexity and advancement
-            of the supply chain landscape. Throughout those years, we have
+            and teams are more than familiar with the complexity and variety
+            of the supply chain industry. Throughout those years, we have
             expanded our network with numerous leading freight companies and
             developed a good understanding with the custom authorities.
           </p>
-          <p>
-            Our consistency and notable due diligence earns us a strong
+          <p className="font-semibold text-tetra">
+            {/* Our consistency and notable due diligence earns us a strong
             credibility with all parties involved in the shipping process. Our
             integral connection and involvement in the industry enable us to
-            bring forth trailblazing solutions.
+            bring forth trailblazing solutions. */}
+            Our understanding of custom governance, regulation, and notable compliance  earns us a strong credibility with all parties involved in the shipping process.
           </p>
         </div>
       </section>
@@ -116,9 +113,9 @@ export default function About() {
               restricted in most places, our clients vary in nature and business
               goals. When partnering with us, our team will cultivate a
               mutualistic relationship with you to understand more of what makes
-              your business different; you bring your business landscape
-              distinctness and challenges, while we tailor advances and
-              possibilities specific for your supply chain needs.
+              your business different; you bring your business 
+              distinctness and challenges, while we tailor customized solutions 
+              to match your unique supply chain requirements.
             </p>
           </div>
           {/* Right Section */}
@@ -282,9 +279,7 @@ export default function About() {
               Vision
             </h3>
             <p className="text-lg md:text-xl text-gray-700 leading-relaxed text-justify">
-              To be the most trusted and innovative logistics partner,
-              transforming the way businesses connect with global markets
-              through seamless and efficient transportation solutions.
+              To be the most trusted and inivative logistics partner, transforming the way businesses connect with global markets through seamless and efficient transportation solutions.
             </p>
           </div>
 
@@ -332,8 +327,7 @@ export default function About() {
               Mission
             </h3>
             <p className="text-lg md:text-xl text-gray-700 leading-relaxed text-justify">
-              Empower you with the right services for a resilient, long-lasting,
-              and growing supply chain relationship
+              Support your business with the best-reliable services and cultivate a partnership that thrives for the long haul.
             </p>
           </div>
         </div>

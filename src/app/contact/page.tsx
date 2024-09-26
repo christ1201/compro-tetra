@@ -47,7 +47,7 @@ export default function Contact() {
                     rel="noopener"
                   >
                     <div className="hover:underline font-normal text-base lg:text-lg text-tetra text-justify">
-                      Sudirman 7.8 Tower Level 16 Unit 182
+                      Sudirman 7.8 Tower Level 16 Unit 1 & 2
                       <br />
                       Jl. Jend. Sudirman Kav. 7-8 <br />
                       Kel. Karet Tengsin, Kec. Tanah Abang,
