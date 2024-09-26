@@ -26,7 +26,7 @@ import Container from "@/components/icons/Container";
 import GlobePoint from "@/components/icons/GlobePoint";
 import Certified from "@/components/icons/Certified";
 import Partner from "@/components/icons/Partner";
-import { Transition } from '@headlessui/react';
+import { Transition } from "@headlessui/react";
 
 interface ModalContent {
   title: string;
@@ -151,8 +151,9 @@ export default function Home() {
         <div className="absolute top-0 left-0 w-full h-full bg-black opacity-10 -z-100"></div>
         {/* Centered Text */}
         <div className="absolute w-full h-full flex flex-col items-center justify-end px-16 pb-32">
-          <h1 className="text-white text-4xl sm:text-6xl font-bold text-center" 
-          style={{ textShadow: '0px 3px 3px rgba(0, 0, 0, 0.9)' }}
+          <h1
+            className="text-white text-4xl sm:text-6xl font-bold text-center"
+            style={{ textShadow: "0px 3px 3px rgba(0, 0, 0, 0.9)" }}
           >
             Driving Global Connections,
             <br />
@@ -185,33 +186,52 @@ export default function Home() {
                 data-aos="fade-in"
               >
                 <div className="text-justify">
-                  Tetra Mitra Logistic is an end-to-end logistic service company founded by a group of experienced supply chain experts. In such short span of time, our high-performing team have managed logistics to more than 20 countries - shipping cargo from the farthest east to the west of the world and delivering more than 1.000 units of cargo for virtually all industry lines operating globally.
+                  Tetra Mitra Logistic is an end-to-end logistic service company
+                  founded by a group of experienced supply chain experts. In
+                  such short span of time, our high-performing team have managed
+                  logistics to more than 20 countries - shipping cargo from the
+                  farthest east to the west of the world and delivering more
+                  than 1.000 units of cargo for virtually all industry lines
+                  operating globally.
                 </div>
                 <div className="mt-4 mb-2 text-justify">
-                 We work with our clients to navigate the increasing complexity and interconnectivity of the supply chain sectors, improve their operation excellence, expand their business reach efficiently through logistics advancement, with deep understanding of governance's custom process, while still adhering to comply the regulation. 
+                  We work with our clients to navigate the increasing complexity
+                  and interconnectivity of the supply chain sectors, improve
+                  their operation excellence, expand their business reach
+                  efficiently through logistics advancement, with deep
+                  understanding of governance's custom process, while still
+                  adhering to comply the regulation.
                 </div>
                 <div className="mt-4 mb-2 text-tetra font-semibold text-justify">
-                  We are powered by our dedicated experts, vast network of trusted delivery partners, and driven by our vision and mission.
+                  We are powered by our dedicated experts, vast network of
+                  trusted delivery partners, and driven by our vision and
+                  mission.
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="flex flex-col lg:grid lg:grid-cols-2 justify-center items-center bg-gradient-to-b from-blue-100 to-white p-6 w-full pt-24 gap-8 text-justify">
+      <div className="flex flex-col lg:grid lg:grid-cols-2 justify-center items-center bg-gradient-to-b from-blue-100 to-white p-6 w-full py-24 gap-8 text-justify">
         {/* Text Section */}
         <div
           className="text-start mb-12 w-full lg:px-16 sm:px-8 max-lg:order-2 px-3"
           data-aos="fade-in"
         >
           <h1 className="text-2xl md:text-3xl font-bold text-gray-800">
-           Looking to move your cargo across city, island, country, or continents at ease?
+            Looking to move your cargo across city, island, country, or
+            continents at ease?
           </h1>
           <p className="text-lg md:text-xl text-gray-600 mt-4 text-justify ">
-            We provide <b>seamless logistic solutions</b> to handle your cargo with care, no matter the distance.
+            We provide <b>seamless logistic solutions</b> to handle your cargo
+            with care, no matter the distance.
           </p>
           <p className="text-lg md:text-xl text-gray-600 mt-4 text-justify">
-            Import, export, and ship your cargo from and to any location in the world without any worry with TML services.
+            <b>
+              Import, export, and ship your cargo from and to any location in
+              the world
+            </b>{" "}
+            without any worry with TML services.
           </p>
         </div>
 
@@ -239,14 +259,22 @@ export default function Home() {
         {/* Subheading Section */}
         <div className="px-6 py-8 lg:px-24 text-justify" data-aos="fade-in">
           <h2 className="text-2xl lg:text-3xl font-bold text-gray-700">
-            <span className="text-tetra">Create a smooth, simple, and sophisticated logistic journey</span> <br/>with TML all-encompassing solutions
+            <span className="text-tetra">
+              Create a smooth, simple, and sophisticated logistic journey
+            </span>{" "}
+            <br />
+            with TML all-encompassing solutions
           </h2>
         </div>
 
         {/* Circular Design Section */}
         <div className="flex flex-col lg:flex-row items-center justify-center lg:space-x-10 px-6 lg:px-24 pb-6">
-          <div>
-            <img src="/img/tetra-solution.png" alt="tetra-logistic" className="lg:w-[400px] lg:h-[350px] md:w-[350px] md:h-[300px] w-[300px] h-[250px]" />
+          <div data-aos="fade-in">
+            <img
+              src="/img/tetra-solution.png"
+              alt="tetra-logistic"
+              className="lg:w-[400px] lg:h-[350px] md:w-[350px] md:h-[300px] w-[300px] h-[250px]"
+            />
           </div>
 
           {/* Description Section */}
@@ -254,10 +282,12 @@ export default function Home() {
             className="lg:w-1/2 space-y-8 mt-8 lg:mt-0 pb-8"
             data-aos="fade-right"
           >
-             <p className="text-lg text-justify font-medium sm:mr-8">
-                Our 4 core services target the key activities crucial to boost your end-to-end logistic process and classified into 2 service offerings based on the logistic stage you are at.
-              </p>
-              {/* <h3 className=" text-2xl font-bold">
+            <p className="text-lg text-justify font-medium sm:mr-8">
+              Our 4 core services target the key activities crucial to boost
+              your end-to-end logistic process and classified into 2 service
+              offerings based on the logistic stage you are at.
+            </p>
+            {/* <h3 className=" text-2xl font-bold">
                 With our services, create an effective supply chain...
               </h3> */}
             <div className="bg-tetra p-6 rounded-lg shadow-lg sm:mr-8">
@@ -265,7 +295,13 @@ export default function Home() {
                 Powered by TML Strategy Solutions
               </h3>
               <p className="text-white text-sm text-justify">
-              Develop a streamlined logistics game plan that benefit on decades of industry knowledge, latest tech advancement and evolving regulations with our <b><i>Custom Consultation</i></b> service.
+                Develop a streamlined logistics game plan that benefit on
+                decades of industry knowledge, latest tech advancement and
+                evolving regulations with our{" "}
+                <b>
+                  <i>Custom Consultation</i>
+                </b>{" "}
+                service.
               </p>
             </div>
 
@@ -274,13 +310,21 @@ export default function Home() {
                 Delivered with TML Operations Solutions
               </h3>
               <p className="text-white text-sm text-justify">
-              Experience a highly integrated and efficient logistics operations for a quick, reliable, and safe deliveries across the globe. Our <b><i>Freight Forwarding, Custom Clearance, and Domestic Inter-Island Shipping</i></b> is available for your to-be shipped and en-route cargo.
+                Experience a highly integrated and efficient logistics
+                operations for a quick, reliable, and safe deliveries across the
+                globe. Our{" "}
+                <b>
+                  <i>
+                    Freight Forwarding, Custom Clearance, and Domestic
+                    Inter-Island Shipping
+                  </i>
+                </b>{" "}
+                is available for your to-be shipped and en-route cargo.
               </p>
             </div>
           </div>
         </div>
       </div>
-
 
       {/* <div
         className={`${styles.parallax} min-h-screen flex flex-col p-8 md:p-20`}
@@ -447,9 +491,7 @@ export default function Home() {
             <h3 className="text-3xl font-bold text-white">
               120 <span className="text-tetra">+</span>
             </h3>
-            <p className="text-lg font-medium text-white">
-              Clients Worldwide
-            </p>
+            <p className="text-lg font-medium text-white">Clients Worldwide</p>
           </div>
 
           {/* Fact 3 */}
@@ -479,9 +521,7 @@ export default function Home() {
             <h3 className="text-3xl font-bold text-white">
               20 <span className="text-tetra">+</span>
             </h3>
-            <p className="text-lg font-medium text-white">
-              Countries Served
-            </p>
+            <p className="text-lg font-medium text-white">Countries Served</p>
           </div>
         </div>
         <div className="border border-white my-10" data-aos="fade-in"></div>
@@ -498,56 +538,102 @@ export default function Home() {
           Chemicals, Mining Minerals & Resources, FMCG (diapers), Livestocks,{" "}
           <br /> and many more...{" "}
         </div> */}
-      <section>
-        <div className="text-center text-white py-8" data-aos="fade-in">
-          <h1 className="text-3xl md:text-5xl font-bold mb-4">
-            We have shipped across <br /> the nation and <span className="text-tetra">worldwide</span> for
-          </h1>
-        </div>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 px-3 md:px-16 lg:px-32 max-md:space-y-3 pb-8" data-aos="fade-down">
-          <div className="bg-white h-fit shadow-xl rounded-lg transition duration-300 transform hover:scale-[102%]">
-            <h2 className="text-2xl font-bold text-tetra-alt bg-gradient-to-r from-tetra to-tetra/70 py-2 px-4 rounded-t-md text-center">
-              Import
-            </h2>
-            <ul className="text-justify mt-4 space-y-2 font-medium list-disc px-8 mb-4">
-              {['Home Building Material', 'Maternity and Baby Product', 'Machinery', 'Spare Parts', 'Chemical Product (General Cargo and DG Cargo)', 'Electronics', 'Raw Material for Food and Beverages', 'Printing Ink', 'Electrical Product', 'Safety Working Product', 'Glass Product', 'Project Machine', 'Shoes', 'Bags', 'Molding', 'Coffee Machine', 'Etc...'].map((item, idx) => (
-                <li key={idx} className="text-gray-600">{item}</li>
-              ))}
-            </ul>
+        <section>
+          <div className="text-center text-white py-8" data-aos="fade-in">
+            <h1 className="text-3xl md:text-4xl font-bold mb-4">
+              We have shipped across <br /> the nation and{" "}
+              <span className="text-tetra">worldwide</span> for
+            </h1>
           </div>
+          <div
+            className="grid grid-cols-1 lg:grid-cols-3 gap-6 px-3 md:px-16 lg:px-32 max-md:space-y-3 pb-8"
+            data-aos="fade-down"
+          >
+            <div className="bg-white h-fit shadow-xl rounded-lg transition duration-300 transform hover:scale-[102%]">
+              <h2 className="text-2xl font-bold text-tetra-alt bg-gradient-to-r from-tetra to-tetra/70 py-2 px-4 rounded-t-md text-center">
+                Import
+              </h2>
+              <ul className="text-justify mt-4 space-y-2 font-medium list-disc px-8 mb-4">
+                {[
+                  "Chemical Products",
+                  "Home Building Materials",
+                  "Food and Beverages",
+                  "Shoes & Bags",
+                  "Heavy Machinery",
+                  "Maternity and Baby",
+                  "Product",
+                  "Spare Parts",
+                  "Electronics",
+                  "Printing Ink",
+                  "Electrical Product",
+                  "Safety Working Product",
+                  "Glass Product",
+                  "Project Machine Product",
+                  "Shoes",
+                  "Bags",
+                  "Molding",
+                  "Coffee Machine",
+                ].map((item, idx) => (
+                  <li key={idx} className={`text-gray-600 ${idx < 5 ? 'font-bold text-tetra' : ''}`}>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
 
-          {/* Export Section */}
-          <div className="bg-white   h-fit shadow-xl rounded-lg transition duration-300 transform hover:scale-[102%]">
-            <h2 className="text-2xl font-bold text-tetra-alt bg-gradient-to-r from-tetra to-tetra/70 py-2 px-4 rounded-t-md text-center">
-              Export
-            </h2>
-            <ul className="text-justify mt-4 space-y-2 font-medium list-disc px-8 mb-4">
-              {['Chemical Product (General Cargo and DG Cargo)', 'Plastic Product', 'Maternity and Baby Product', 'Hair Styling Product', 'Molding', 'Food and Beverages', 'Palm Oil Product', 'Coffee Machine', 'Pharmaceutical Product', 'Etc...'].map((item, idx) => (
-                <li key={idx} className="text-gray-600">{item}</li>
-              ))}
-            </ul>
-          </div>
+            {/* Export Section */}
+            <div className="bg-white   h-fit shadow-xl rounded-lg transition duration-300 transform hover:scale-[102%]">
+              <h2 className="text-2xl font-bold text-tetra-alt bg-gradient-to-r from-tetra to-tetra/70 py-2 px-4 rounded-t-md text-center">
+                Export
+              </h2>
+              <ul className="text-justify mt-4 space-y-2 font-medium list-disc px-8 mb-4">
+                {[
+                  "Palm Oil Product",
+                  "Pharmaceutical Product",
+                  "Baby Product",
+                  "Plastic Product",
+                  "Chemical Product",
+                  "Food and Beverages",
+                  "Hair Styling Product",
+                  "Molding",
+                  "Plastic Product",
+                  "Coffee Machine",
+                ].map((item, idx) => (
+                  <li key={idx} className={`text-gray-600 ${idx < 5 ? 'font-bold text-tetra' : ''}`}>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
 
-          {/* Domestic Interisland Section */}
-          <div className="bg-white  h-fit shadow-xl rounded-lg transition duration-300 transform hover:scale-[102%]">
-            <h2 className="text-2xl font-bold text-tetra-alt bg-gradient-to-r from-tetra to-tetra/70 py-2 px-4 rounded-t-md text-center">
-              Domestic Interisland
-            </h2>
-            <ul className="text-justify mt-4 space-y-2 font-medium list-disc px-8 mb-4">
-              {['Plastic Product', 'Shoes', 'Bags', 'Home Building Material', 'Etc...'].map((item, idx) => (
-                <li key={idx} className="text-gray-600">{item}</li>
-              ))}
-            </ul>
+            {/* Domestic Interisland Section */}
+            <div className="bg-white  h-fit shadow-xl rounded-lg transition duration-300 transform hover:scale-[102%]">
+              <h2 className="text-2xl font-bold text-tetra-alt bg-gradient-to-r from-tetra to-tetra/70 py-2 px-4 rounded-t-md text-center">
+                Domestic Interisland
+              </h2>
+              <ul className="text-justify mt-4 space-y-2 font-medium list-disc px-8 mb-4">
+                {[
+                  "Shoes",
+                  "Bags",
+                  "Plastic Product",
+                  "Home Building Material",
+                  "Molding",
+                ].map((item, idx) => (
+                  <li key={idx} className={`text-gray-600 ${idx < 2 ? 'font-bold text-tetra' : ''}`}>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
       </section>
       {/* Marquee Title Section */}
       <div className="bg-white flex flex-col p-8 md:p-20" data-aos="fade-in">
         <div className="flex flex-col text-tetra-alt text-4xl sm:text-5xl font-semibold mb-4">
-        Years of Running the Supply Chain <br></br>
+          Years of Running the Supply Chain <br></br>
           <a className="text-tetra text-4xl font-medium">
-           Repeatedly, Consistently, Flawlessly.
+            Repeatedly, Consistently, Flawlessly.
           </a>
         </div>
       </div>
@@ -573,12 +659,16 @@ export default function Home() {
         <div className="grid md:grid-cols-2 grid-cols-1">
           <div>
             <div className="md:text-xl text-lg font-medium text-tetra-alt py-2 pt-6 text-justify">
-              Harness on our connectivity across the industry and around the globe to solve your logistics challenges
+              Harness on our connectivity across the industry and around the
+              globe to solve your logistics challenges
             </div>
           </div>
           <div className="h-full w-full flex justify-center items-center">
             <a href="/contact">
-              <div className="flex items-center justify-center" data-aos="fade-in">
+              <div
+                className="flex items-center justify-center"
+                data-aos="fade-in"
+              >
                 <button className="bg-tetra max-w-fit min-w-40 min-h-14 rounded-lg hover:bg-opacity-90 p-2 hover:translate-x-2 transition-transform duration-700">
                   <span className="text-white font-semibold text-xl">
                     Contact Us

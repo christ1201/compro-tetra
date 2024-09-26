@@ -61,7 +61,17 @@ const Footer = () => {
         <div className="space-y-2">
           <div className="text-tetra font-semibold text-xl">Services</div>
           <div className="flex flex-col space-y-3">
-            <Link href="/services/#custom-consultation">
+          <Link href="/services/#strategy-solutions">
+              <div className="text-md flex-col font-base hover:underline">
+                <p>Strategy Solutions</p>
+              </div>
+            </Link>
+            <Link href="/services/#operation-solutions">
+              <div className="text-md flex-col font-base hover:underline">
+                <p>Operation Solutions</p>
+              </div>
+            </Link> 
+            {/* <Link href="/services/#custom-consultation">
               <div className="text-md flex-col font-base hover:underline">
                 <p>Custom Consultation</p>
               </div>
@@ -80,7 +90,7 @@ const Footer = () => {
               <div className="text-md flex-col font-base hover:underline">
                 <p>Domestic Interisland</p>
               </div>
-            </Link>
+            </Link> */}
           </div>
         </div>
         {/* About Section */}
@@ -92,7 +102,7 @@ const Footer = () => {
                 <p>Company</p>
               </div>
             </Link>
-            <Link href="/about/#visi&misi">
+            <Link href="/about/#vision&mission">
               <div className="text-md flex-col font-base hover:underline md:pb-16">
                 <p>Vision & Mission</p>
               </div>
