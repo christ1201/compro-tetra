@@ -129,7 +129,7 @@ export default function Services() {
                 <h1 className="text-2xl md:text-3xl font-bold mb-4 text-tetra-alt">
                   Custom Consultation
                 </h1>
-                <p className="text-lg md:text-xl mb-8">
+                <p className="text-lg md:text-xl mb-8 text-tetra-alt">
                   Discover the best way to run your supply chain,{" "}
                   <span className="font-semibold text-tetra">
                     effortlessly.

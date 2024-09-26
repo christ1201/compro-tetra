@@ -265,6 +265,11 @@ export default function Home() {
             <br />
             with TML all-encompassing solutions
           </h2>
+          <p className="text-base md:text-lg text-justify font-semibold  pt-8 max-w-3xl">
+              Our 4 core services target the key activities crucial to boost
+              your end-to-end logistic process and classified into 2 service
+              offerings based on the logistic stage you are at.
+            </p>
         </div>
 
         {/* Circular Design Section */}
@@ -279,18 +284,13 @@ export default function Home() {
 
           {/* Description Section */}
           <div
-            className="lg:w-1/2 space-y-8 mt-8 lg:mt-0 pb-8"
+            className="lg:w-1/2 space-y-8 mt-8 lg:mt-0 pb-8 md:pt-10"
             data-aos="fade-right"
           >
-            <p className="text-lg text-justify font-medium sm:mr-8">
-              Our 4 core services target the key activities crucial to boost
-              your end-to-end logistic process and classified into 2 service
-              offerings based on the logistic stage you are at.
-            </p>
             {/* <h3 className=" text-2xl font-bold">
                 With our services, create an effective supply chain...
               </h3> */}
-            <div className="bg-tetra p-6 rounded-lg shadow-lg sm:mr-8">
+            <div className="bg-tetra p-6 rounded-lg shadow-lg ">
               <h3 className="text-white text-lg font-bold">
                 Powered by TML Strategy Solutions
               </h3>
@@ -305,7 +305,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="bg-tetra-alt p-6 rounded-lg shadow-lg sm:mr-8">
+            <div className="bg-tetra-alt p-6 rounded-lg shadow-lg ">
               <h3 className="text-white text-lg font-bold">
                 Delivered with TML Operations Solutions
               </h3>
