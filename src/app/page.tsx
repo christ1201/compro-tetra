@@ -259,14 +259,14 @@ export default function Home() {
             </div>
 
             {/* Other images */}
-            <Link href="services#strategy-solutions">
-              <img
+            <Link href="services#operation-solutions">
+            <img
                 src="/img/services/home/freight.png"
                 alt="tetra-logistic"
                 className="w-[200px] h-[200px] max-sm:w-[120px] max-sm:h-[120px] hover:scale-105 transition-transform duration-300 z-0"
               />
             </Link>
-            <Link href="services#operation-solutions">
+            <Link href="services#strategy-solutions">
               <img
                 src="/img/services/home/custom.png"
                 alt="tetra-logistic"
