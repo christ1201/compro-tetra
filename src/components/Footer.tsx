@@ -25,7 +25,7 @@ const Footer = () => {
                   <p>
                   Sudirman 7.8 Tower Level 16 Unit 1 & 2<br/>
                   Jl. Jend. Sudirman Kav. 7-8 <br/>
-                  Kel. Karet Tengsin, Kec. Tanah Abang,<br/>
+                  {/* Kel. Karet Tengsin, Kec. Tanah Abang,<br/> */}
                   Jakarta Pusat, DKI Jakarta - Indonesia<br/>
                   10220
                   </p>

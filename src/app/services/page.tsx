@@ -103,10 +103,7 @@ export default function Services() {
 
               <div className="text-tetra-alt text-lg font-medium bg-white/50 max-w-[640px] p-6 mt-6 rounded-lg shadow-lg hover:bg-white/70 transition-all duration-500 text-justify">
                 <p className="mb-4">
-                  <b>Custom Consultation,</b> derived specifically from your business
-                  needs, consults with our dedicated team to build just the
-                  right logistic solutions suited to your business strategy and
-                  needs. <br></br>Perfect for :
+                  <b>Custom Consultation</b> for advice crafted just for you -- consult with our dedicated team to devise the right logistic solutions personalized to your business strategy and needs. <br></br>Perfect for :
                 </p>
                 <ul className="list-decimal pl-6 font-semibold space-y-3 text-justify">
                   <li>First time importers / exporters</li>
@@ -122,8 +119,11 @@ export default function Services() {
             </div>
           </div>
         </section>
-        <section>
-          <div className="flex flex-col p-6 md:p-8 lg:p-24" data-aos="fade-in">
+        <section className=""
+          >
+          <div className="flex flex-col p-6 md:p-8 lg:p-24" data-aos="fade-in"           style={{
+            backgroundImage: `url(/img/services/bg.png)`,
+          }}>
             <div className="text-justify grid grid-cols-1 lg:grid-cols-2">
               <div className="flex justify-center  flex-col">
                 <h1 className="text-2xl md:text-3xl font-bold mb-4 text-tetra-alt">
@@ -200,8 +200,7 @@ export default function Services() {
                           International Freight, Custom Clearance, and Domestic
                           Interisland,
                         </b>{" "}
-                        we'll take care of the laundry list to ensure your
-                        logistic experience is smooth. <br />
+                        whichever you need – we'll handle the paperwork and go through all the checklists to give you a smooth logistic experience. <br />
                         Suitable for :
                       </p>
                       <ul className="list-decimal pl-6 font-semibold space-y-3 text-justify">

@@ -51,10 +51,32 @@ export default function About() {
           {/* Right Section */}
           <div className="relative text-white text-lg lg:text-xl max-sm:text-base leading-relaxed space-y-8 lg:order-1 text-justify">
             <div>
-              Tetra Mitra Logistic is an end-to-end logistic service company founded by a group of experienced supply chain experts. In such short span of time, our high-performing team have managed logistics to more than 20 countries - shipping cargo from the farthest east to the west of the world and delivering more than 1.000 units of cargo for virtually all industry lines operating globally.
+            Tetra Mitra Logistic is an{" "}
+                  <b>
+                    end-to-end logistic service company founded by a group of
+                    experienced supply chain experts
+                  </b>
+                  . In such short span of time, our high-performing team{" "}
+                  <b>have managed logistics to more than 20 countries</b> -
+                  shipping cargo from the farthest east to the west of the world
+                  and{" "}
+                  <b>
+                    delivering more than 1.000 units of cargo for virtually all
+                    industry lines operating globally
+                  </b>
+                  .
             </div>
             <div className="mt-4 mb-2">
-              We work with our clients to navigate the increasing complexity and interconnectivity of the supply chain sectors, improve their operation excellence, expand their business reach efficiently through logistics advancement, with deep understanding of governance's custom process, while still adhering to comply the regulation. 
+            We work with our clients to{" "}
+                  <b>
+                    navigate the increasing complexity and interconnectivity of
+                    the supply chain
+                  </b>{" "}
+                  sectors, improve their <b>operation excellence</b>, expand
+                  their <b>business reach</b>{" "}
+                  efficiently <b>through logistics advancement</b>, with deep
+                  understanding of governance's custom process, while still
+                  adhering to comply the regulation.
             </div>
             <div className="mt-4 mb-2 text-tetra font-semibold">
               We are powered by our dedicated experts, vast network of trusted delivery partners, and driven by our vision and mission.
