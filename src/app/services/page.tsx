@@ -79,33 +79,41 @@ export default function Services() {
       <main className="flex min-h-screen flex-col scroll-smooth">
         <section
           id="strategy-solutions"
-          className="bg-gradient-to-b from-gray-100 to-white p-6"
+          className="relative bg-gradient-to-b from-gray-100 to-white py-24 overflow-hidden"
         >
+          {/* Heading */}
+          <div className="m-6">
+            <div
+              className="relative z-10 text-tetra-alt text-4xl sm:text-5xl font-extrabold text-center mb-20"
+              data-aos="fade-up"
+            >
+              Strategy <span className="text-tetra">Solutions</span>
+            </div>
+                      {/* Main Content */}
           <div
-            className="text-tetra-alt text-4xl sm:text-5xl font-extrabold text-center py-20"
-            // style={{ textShadow: '1px 1px 1px rgba(0, 0, 0, 0.9)' }}
-            data-aos="fade-up"
-          >
-            Strategy <span className="">Solutions</span>
-          </div>
-
-          <div
-            className="flex flex-col gap-12 w-full items-center justify-center"
+            className="relative flex flex-col md:flex-row justify-center items-center gap-16 w-full max-w-7xl mx-auto"
             data-aos="fade-in"
           >
-            <div className="relative w-full max-w-lg bg-gradient-to-l from-gray-400 to-tetra/60 backdrop-blur-md rounded-3xl shadow-2xl hover:shadow-3xl hover:scale-[102%] transition-transform duration-700 p-4 pt-8 md:pt-10 transform">
-              <div className="rounded-full bg-tetra-alt w-24 h-24 flex items-center justify-center absolute left-1/2 transform -translate-x-1/2 -top-12 shadow-xl">
+            {/* Custom Consultation Block */}
+            <div className="relative w-full md:w-2/3 lg:w-1/2 bg-gradient-to-l from-gray-400 to-tetra/60 backdrop-blur-md rounded-3xl shadow-2xl hover:shadow-3xl hover:scale-105 transition-transform duration-700  p-6 pt-10 md:p-12  z-10">
+              {/* Icon at the Top */}
+              <div className="absolute left-1/2 transform -translate-x-1/2 -top-16 rounded-full bg-tetra-alt w-24 h-24 flex items-center justify-center shadow-xl">
                 <FontAwesomeIcon
                   icon={faHandshake}
                   className="!text-tetra text-4xl"
                 />
               </div>
 
-              <div className="text-tetra-alt text-lg font-medium bg-white/50 max-w-[640px] p-6 mt-6 rounded-lg shadow-lg hover:bg-white/70 transition-all duration-500 text-justify">
-                <p className="mb-4">
-                  <b>Custom Consultation</b> for advice crafted just for you -- consult with our dedicated team to devise the right logistic solutions personalized to your business strategy and needs. <br></br>Perfect for :
+              {/* Main Text */}
+              <div className="text-tetra-alt text-lg font-medium text-justify">
+                <p className="mb-6">
+                  <b>Custom Consultation</b> for advice crafted just for you --
+                  consult with our dedicated team to devise the right logistic
+                  solutions personalized to your business strategy and needs.
+                  <br></br>
+                  Perfect for:
                 </p>
-                <ul className="list-decimal pl-6 font-semibold space-y-3 text-justify">
+                <ul className="list-decimal pl-6 font-semibold space-y-3">
                   <li>First time importers / exporters</li>
                   <li>
                     Well-established businesses optimizing their supply chain
@@ -113,29 +121,44 @@ export default function Services() {
                   </li>
                 </ul>
               </div>
-              {/* <div className="text-2xl sm:text-3xl font-bold text-tetra-alt text-center px-4  sm:pt-8 w-full">
-                        Custom Consultation
-                      </div> */}
             </div>
           </div>
+          </div>
+
+          {/* Decorative Background Elements */}
+          {/* Top-left circle */}
+          <div className="absolute z-0 top-0 left-0 w-48 h-48 bg-tetra-alt opacity-20 rounded-full md:w-64 md:h-64 lg:w-96 lg:h-96"></div>
+
+          {/* Bottom-right circle */}
+          <div className="absolute z-0 bottom-0 right-0 w-40 h-40 bg-tetra opacity-30 rounded-full md:w-56 md:h-56 lg:w-72 lg:h-72"></div>
+
+          {/* Additional Floating Elements */}
+          <div className="absolute z-0 top-10 right-1/3 w-20 h-20 bg-white opacity-50 rounded-full md:w-28 md:h-28 lg:w-40 lg:h-40"></div>
+          <div className="absolute z-0 bottom-20 left-1/4 w-14 h-14 bg-tetra opacity-30 rounded-full md:w-20 md:h-20 lg:w-28 lg:h-28"></div>
         </section>
-        <section className=""
-          >
-          <div className="flex flex-col p-6 md:p-8 lg:p-24" data-aos="fade-in"           style={{
+
+        <section
+          className="bg-no-repeat bg-right-bottom lg:bg-cover lg:bg-center bg-auto min-h-screen"
+          style={{
             backgroundImage: `url(/img/services/bg.png)`,
-          }}>
-            <div className="text-justify grid grid-cols-1 lg:grid-cols-2">
-              <div className="flex justify-center  flex-col">
-                <h1 className="text-2xl md:text-3xl font-bold mb-4 text-tetra-alt">
+          }}
+        >
+          <div
+            className="flex flex-col p-6 md:p-8 lg:p-24 items-center justify-center min-h-screen"
+            data-aos="fade-in"
+          >
+            <div className="text-justify grid grid-cols-1 lg:grid-cols-2 pt-8">
+              <div className="flex justify-center flex-col max-lg:rounded-lg max-lg:bg-gradient-to-tr from-gray-200 to-white max-lg:p-8 max-lg:mb-8 max-lg:hover:scale-[102%] max-lg:hover:shadow-2xl max-lg:transition-all max-lg:duration-300">
+                <h1 className="text-2xl md:text-3xl font-bold mb-4 text-tetra-alt ">
                   Custom Consultation
                 </h1>
-                <p className="text-lg md:text-xl mb-8 text-tetra-alt">
+                <p className="text-lg md:text-xl mb-8 text-tetra-alt ">
                   Discover the best way to run your supply chain,{" "}
-                  <span className="font-semibold text-tetra">
+                  <span className="font-bold text-tetra max-lg:text-tetra">
                     effortlessly.
                   </span>
                 </p>
-                <p className="text-tetra-alt text-justify pb-3">
+                <p className="text-tetra-alt text-justify pb-3 ">
                   Our team of experts will develop a bespoke supply chain
                   customs strategy that only experts with{" "}
                   <b>years of experience</b> can do.
@@ -148,9 +171,16 @@ export default function Services() {
                   </b>
                   .
                 </p>
-                <p className="text-tetra text-justify pb-3 italic font-semibold">
-                  Skip the additional liability, risks and costs of entering and
-                  understanding the logistic process all by yourself.
+                <p className="text-tetra text-justify pb-3 italic font-bold max-lg:hidden">
+                  Skip the additional liability, risks and costs of entering{" "}
+                  <br />
+                  and understanding the logistic process <br />
+                  all by yourself.
+                </p>
+                <p className="text-tetra text-justify pb-3 italic font-bold lg:hidden">
+                  Skip the additional liability, risks and costs of entering 
+                  and understanding the logistic process 
+                  all by yourself.
                 </p>
                 {/* <button
                   onClick={handleCustomConsultationClick}
@@ -163,58 +193,83 @@ export default function Services() {
                 <img
                   src="/img/custom-consultation.png"
                   alt=""
-                  className="md:w-[450px] md:h-[420px] w-[300px] h-[300px]"
+                  className="sm:w-[450px] sm:h-[420px] w-[300px] h-[300px]"
                 />
               </div>
             </div>
           </div>
         </section>
-        <section id="operation-solutions" className="pt-4">
+        <section
+          id="operation-solutions"
+          className="relative bg-gradient-to-b from-gray-100 to-white py-24 overflow-hidden"
+        >
+          {/* Heading */}
+          <div className="m-6">
+            <div
+              className="relative z-10 text-tetra-alt text-4xl sm:text-5xl font-extrabold text-center mb-20"
+              data-aos="fade-up"
+            >
+              <span className="text-tetra">Operation</span> Solutions
+            </div>
+            {/* Main Content */}
+            <div
+              className="relative flex flex-col md:flex-row justify-center items-center gap-16 w-full max-w-7xl mx-auto"
+              data-aos="fade-in"
+            >
+              {/* Custom Consultation Block */}
+              <div className="relative w-full md:w-2/3 lg:w-1/2 bg-gradient-to-l from-gray-400 to-tetra/60 backdrop-blur-md rounded-3xl shadow-2xl hover:shadow-3xl hover:scale-105 transition-transform duration-700 p-6 pt-10 md:p-12  z-10">
+                {/* Icon at the Top */}
+                <div className="absolute left-1/2 transform -translate-x-1/2 -top-16 rounded-full bg-tetra-alt w-24 h-24 flex items-center justify-center shadow-xl">
+                  <FontAwesomeIcon
+                    icon={faPeopleGroup}
+                    className="!text-tetra text-4xl"
+                  />
+                </div>
+
+                {/* Main Text */}
+                <div className="text-tetra-alt text-lg font-medium text-justify">
+                  <p className="mb-6">
+                    <b>
+                      International Freight, Custom Clearance, and Domestic
+                      Interisland,
+                    </b>{" "}
+                    whichever you need – we'll handle the paperwork and go
+                    through all the checklists to give you a smooth logistic
+                    experience. <br />
+                    Suitable for :
+                  </p>
+                  <ul className="list-decimal pl-6 font-semibold space-y-3">
+                    <li>
+                      Businesses with specific shipping requirements (air /
+                      marine / domestic interisland).
+                    </li>
+                    <li>
+                      Businesses aiming to streamline day-to-day operations by
+                      appointing logistics experts to manage complex operations.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Decorative Background Elements */}
+          {/* Top-left circle */}
+          <div className="absolute z-0 top-0 right-0 w-48 h-48 bg-tetra-alt opacity-20 rounded-full md:w-64 md:h-64 lg:w-96 lg:h-96"></div>
+
+          {/* Bottom-right circle */}
+          <div className="absolute z-0 left-0 right-0 w-40 h-40 bg-tetra opacity-30 rounded-full md:w-56 md:h-56 lg:w-72 lg:h-72"></div>
+
+          {/* Additional Floating Elements */}
+          <div className="absolute z-0 top-10 right-1/3 w-20 h-20 bg-white opacity-50 rounded-full md:w-28 md:h-28 lg:w-40 lg:h-40"></div>
+          <div className="absolute z-0 bottom-20 left-1/4 w-14 h-14 bg-tetra opacity-30 rounded-full md:w-20 md:h-20 lg:w-28 lg:h-28"></div>
+        </section>
+        <section className="">
           {/* <div className="w-full bg-gradient-to-l from-tetra-alt/50 to-white p-6"> */}
           <div className="w-full  bg-gradient-to-b from-tetra to-tetra/10 p-6">
             <section>
               <div className="flex flex-col">
-                <div
-                  className="text-tetra-alt text-4xl sm:text-5xl font-bold text-center pt-12"
-                  // style={{ textShadow: '1px 1px 1px rgba(0, 0, 0, 0.9)' }}
-                  data-aos="fade-up"
-                >
-                  Operation <span className="">Solutions</span>
-                </div>
-
                 <div className="flex flex-col gap-12 w-full items-center justify-center pt-16">
-                  <div
-                    className="relative w-full max-w-lg bg-gradient-to-l from-gray-400 to-tetra/60 backdrop-blur-md rounded-3xl shadow-2xl hover:shadow-3xl hover:scale-[102%] transition-transform duration-700 p-4 pt-8 md:pt-10 transform"
-                    data-aos="fade-in"
-                  >
-                    <div className="rounded-full bg-tetra-alt w-24 h-24 flex items-center justify-center absolute left-1/2 transform -translate-x-1/2 -top-12 shadow-xl">
-                      <FontAwesomeIcon
-                        icon={faPeopleGroup}
-                        className="!text-tetra text-4xl"
-                      />
-                    </div>
-
-                    <div className="text-tetra-alt text-lg font-medium bg-white/50 max-w-[640px] p-6 mt-6 rounded-lg shadow-lg hover:bg-white/70 transition-all duration-500 text-justify">
-                      <p className="mb-4">
-                        <b>
-                          International Freight, Custom Clearance, and Domestic
-                          Interisland,
-                        </b>{" "}
-                        whichever you need – we'll handle the paperwork and go through all the checklists to give you a smooth logistic experience. <br />
-                        Suitable for :
-                      </p>
-                      <ul className="list-decimal pl-6 font-semibold space-y-3 text-justify">
-                      <li>
-                        Businesses with specific shipping requirements (air / marine /
-                        domestic interisland).
-                      </li>
-                      <li>
-                        Businesses aiming to streamline day-to-day operations by
-                        appointing logistics experts to manage complex operations.
-                      </li>
-                      </ul>
-                    </div>
-                  </div>
                   <div className="py-16 lg:px-20 " data-aos="fade-in">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                       {/* Left side: Services */}
@@ -308,390 +363,9 @@ export default function Services() {
                       </div>
                     </div>
                   </div>
-                  {/* <div className="py-16 lg:px-20" data-aos="fade-in">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-                      <div>
-                        <div className="pb-8">
-                          <div className=" sm:hidden bg-tetra-alt text-white p-6 shadow-lg rounded-lg">
-                            <h3 className="text-xl font-bold mb-2 text-justify">
-                              Deliver your goods, your way
-                            </h3>
-                            <p className="text-base text-justify">
-                              Harness our extensive experience and network in the
-                              logistics industry for a seamless logistic
-                              experience in any place across the world.
-                            </p>
-                          </div>
-                        </div>
-                        <div className="mb-8 text-justify">
-                          <h2 className="text-2xl md:text-3xl font-bold text-tetra-alt mb-2">
-                            Freight Forwarding
-                          </h2>
-                          <p className="text-gray-700 text-lg">
-                            Expect a{" "}
-                            <span className="font-semibold">
-                              simplified and easy logistic experience
-                            </span>{" "}
-                            when our team handles multiple points of contact and
-                            specifics.{" "}
-                            <span className="font-semibold">
-                              Stay connected throughout the shipping journey
-                            </span>{" "}
-                            without unnecessary complexities.
-                          </p>
-                        </div>
-
-                        <div className="mb-8 text-justify">
-                          <h2 className="text-2xl md:text-3xl font-bold text-tetra-alt mb-2">
-                            Customs Clearance
-                          </h2>
-                          <p className="text-gray-700 text-lg">
-                            Master the complex regulations and procedures of
-                            international customs with our licensed and
-                            experienced team. Our streamlined yet detailed
-                            process ensures a custom governance-compliant and
-                            timely international shipping, even for cargo en
-                            route.
-                          </p>
-                        </div>
-
-                        <div className="mb-8 text-justify">
-                          <h2 className="text-2xl md:text-3xl font-bold text-tetra-alt mb-2">
-                            Interisland
-                          </h2>
-                          <p className="text-gray-700 text-lg">
-                            Designed to support bulk deliveries within the
-                            archipelago, reaching even remote places fast and
-                            reliably with our vast delivery network.
-                          </p>
-                        </div>
-                      </div>
-                      <div className="relative">
-                        <img
-                          src="/img/new-container.jpg" // Update this path with the actual image path
-                          alt="container"
-                          className="w-full h-full object-cover"
-                        />
-                        <div className="max-sm:hidden absolute top-4 right-4 bg-tetra-alt text-white p-6 max-w-sm shadow-lg rounded-lg">
-                          <h3 className="text-xl font-bold mb-2 text-justify">
-                            Deliver your goods, your way
-                          </h3>
-                          <p className="text-sm text-justify">
-                            Harness our extensive experience and network in the
-                            logistics industry for a seamless logistic
-                            experience in any place across the world.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div> */}
                 </div>
-                {/* <div
-                  className="flex justify-center items-center"
-                  data-aos="fade-up"
-                >
-                  <div className="relative w-full max-w-5xl bg-gradient-to-l from-gray-400 to-tetra/60 backdrop-blur-md rounded-3xl shadow-2xl hover:shadow-3xl hover:scale-[102%] transition-transform duration-700 p-4 md:p-8 pt-10 transform">
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-10 text-center mb-8">
-                      <div
-                        className="flex flex-col items-center hover:scale-105 transition duration-500 cursor-pointer"
-                        // onClick={() => openModal("freight")}
-                      >
-                        <div className="rounded-full bg-tetra-alt w-24 h-24 flex items-center justify-center mb-2 shadow-xl">
-                          <FontAwesomeIcon
-                            icon={faGlobeAsia}
-                            className="text-tetra text-3xl !h-10"
-                          />
-                        </div>
-                        <span className="text-2xl sm:text-3xl font-bold text-gray-700">
-                          International Freight
-                        </span>
-                      </div>
-
-                      <div
-                        className="flex flex-col items-center hover:scale-105 transition duration-500 cursor-pointer"
-                        // onClick={() => openModal("brokerage")}
-                      >
-                        <div className="rounded-full bg-tetra-alt w-24 h-24 flex items-center justify-center mb-2 shadow-xl">
-                          <FontAwesomeIcon
-                            icon={faBoxes}
-                            className="text-tetra text-3xl !h-10"
-                          />
-                        </div>
-                        <span className="text-2xl sm:text-3xl font-bold text-gray-700">
-                          Custom Clearance
-                        </span>
-                      </div>
-
-                      <div
-                        className="flex flex-col items-center hover:scale-105 transition duration-500 cursor-pointer"
-                        // onClick={() => openModal("domestic")}
-                      >
-                        <div className="rounded-full bg-tetra-alt w-24 h-24 flex items-center justify-center mb-2 shadow-xl">
-                          <FontAwesomeIcon
-                            icon={faShippingFast}
-                            className="text-tetra text-3xl !h-10"
-                          />
-                        </div>
-                        <span className="text-2xl sm:text-3xl font-bold text-gray-700">
-                          Domestic Interisland
-                        </span>
-                      </div>
-                    </div>
-
-                    <div className="text-tetra-alt text-lg font-medium bg-white/50 p-6 mt-6 rounded-lg shadow-lg hover:bg-white/70 transition-all duration-500 text-justify">
-                      <p>
-                        International Freight, Custom Clearance, and Domestic
-                        Interisland, we'll take care of the laundry list to
-                        ensure your logistic experience is smooth. Suitable for
-                        :
-                      </p>
-                      <ul className="list-decimal pl-6 font-semibold mt-4 space-y-2">
-                        <li>
-                          Businesses with specific shipping requirements (air /
-                          marine / domestic interisland).
-                        </li>
-                        <li>
-                          Businesses aiming to streamline day-to-day operations
-                          by appointing logistics experts to manage complex
-                          operations.
-                        </li>
-                      </ul>
-                    </div>
-
-                    <div
-                      className="flex max-sm:items-center max-sm:justify-center pt-8"
-                      data-aos="fade-in"
-                    >
-                      <a href="/services">
-                        <span className="text-tetra-alt font-bold text-xl hover:underline hover:text-alt/50">
-                          Learn More About Our Services
-                        </span>
-                      </a>
-                    </div>
-                  </div>
-                </div> */}
               </div>
             </section>
-            {/* {services.map((service, index) => (
-              <div
-                key={index}
-                className={`min-h-screen flex flex-col md:flex-row ${
-                  index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
-                } items-center`}
-                id={`${service.id.substring(1)}`}
-              >
-                <div
-                  className="md:w-1/2 w-full"
-                  data-aos="fade-up"
-                  data-aos-easing="ease-out"
-                  data-aos-duration="1000"
-                >
-                  <div
-                    className={`${
-                      styles.parallax
-                    } shadow-lg w-full lg:h-[600px] h-[400px] bg-cover ${
-                      index % 2 === 0
-                        ? "md:rounded-r-full bg-left"
-                        : "md:rounded-l-full bg-right"
-                    }`}
-                    style={{
-                      backgroundImage: `url(${service.image})`,
-                    }}
-                  />
-                </div>
-                <div
-                  className="md:w-1/2 md:px-8 mt-8 md:mt-0 p-12"
-                  data-aos="fade-up"
-                  data-aos-easing="ease-out"
-                  data-aos-duration="1000"
-                >
-                  <h2 className="text-tetra text-4xl font-bold">
-                    0{index + 1}
-                  </h2>
-                  <h3 className="text-3xl font-bold text-tetra-alt mt-2">
-                    {service.title}
-                  </h3>
-                  <p className="text-tetra-alt mt-4 text-lg">
-                    {service.description}
-                  </p>
-                </div>
-              </div>
-            ))} */}
-            {/* <div
-              className={`min-h-screen flex flex-col md:flex-row items-center`}
-              id="custom-consultation"
-            >
-              <div
-                className="md:w-1/2 w-full"
-                data-aos="fade-up"
-                data-aos-easing="ease-out"
-                data-aos-duration="1000"
-              >
-                <div
-                  className={`${styles.parallax} 
-                    shadow-lg w-full lg:h-[600px] h-[400px] bg-cover md:rounded-r-full bg-right`}
-                  style={{
-                    backgroundImage: `url(${"/img/services/consultation.jpg"})`,
-                  }}
-                />
-              </div>
-              <div
-                className="md:w-1/2 md:px-8 mt-8 md:mt-0 p-12"
-                data-aos="fade-up"
-                data-aos-easing="ease-out"
-                data-aos-duration="1000"
-              >
-                <h2 className="text-tetra text-4xl font-bold">01</h2>
-                <h3 className="text-3xl font-bold text-tetra-alt mt-2">
-                  Custom Consultation
-                </h3>
-                <p className="text-tetra-alt mt-4 text-xl font-semibold text-justify">
-                  Discover the best way to run your supply chain,{" "}
-                  <span className="text-tetra font-semibold">
-                    effortlessly.
-                  </span>
-                </p>
-                <p className="text-tetra-alt mt-4 text-lg text-justify">
-                  Our team of experts will develop a bespoke supply chain
-                  customs strategy that only experts with 20 years of experience
-                  can do.
-                </p>
-                <p className="text-tetra-alt mt-4 text-lg text-justify">
-                  Starting from your goal,{" "}
-                  <b>we based our strategy on multiple factors</b> that are{" "}
-                  <b>
-                    specifically influencing your business logistic practice
-                  </b>
-                  .
-                </p>
-                <p className="text-tetra mt-4 text-lg text-justify font-semibold">
-                  Skip the additional liability, risks and costs of entering and
-                  understanding the logistic process all by yourself.
-                </p>
-              </div>
-            </div> */}
-            {/* <div
-              className={`min-h-screen flex flex-col md:flex-row-reverse items-center`}
-              id="international-freight-forwarding"
-            >
-              <div
-                className="md:w-1/2 w-full"
-                data-aos="fade-up"
-                data-aos-easing="ease-out"
-                data-aos-duration="1000"
-              >
-                <div
-                  className={`${styles.parallax} 
-                    shadow-lg w-full lg:h-[600px] h-[400px] bg-cover md:rounded-l-full bg-left`}
-                  style={{
-                    backgroundImage: `url(${"/img/services/international.jpg"})`,
-                  }}
-                />
-              </div>
-              <div
-                className="md:w-1/2 md:px-8 mt-8 md:mt-0 p-12"
-                data-aos="fade-up"
-                data-aos-easing="ease-out"
-                data-aos-duration="1000"
-              >
-                <h2 className="text-tetra text-4xl font-bold">02</h2>
-                <h3 className="text-3xl font-bold text-tetra-alt mt-2">
-                  International Freight Forwarding
-                </h3>
-                <p className="text-tetra-alt mt-4 text-lg text-justify">
-                  Expect a{" "}
-                  <span className="text-tetra font-semibold">
-                    simplified and easy logistic experience
-                  </span>{" "}
-                  when our team handle the multiple point of contacts and
-                  specifics.
-                </p>
-                <p className="text-tetra-alt mt-4 text-lg text-justify font-semibold">
-                  Stay connected throughout the journey without the unnecessary
-                  complexities.
-                </p>
-              </div>
-            </div> */}
-            {/* <div
-              className={`min-h-screen flex flex-col md:flex-row items-center`}
-              id="custom-clearance"
-            >
-              <div
-                className="md:w-1/2 w-full"
-                data-aos="fade-up"
-                data-aos-easing="ease-out"
-                data-aos-duration="1000"
-              >
-                <div
-                  className={`${styles.parallax} 
-                    shadow-lg w-full lg:h-[600px] h-[400px] bg-cover md:rounded-r-full bg-right`}
-                  style={{
-                    backgroundImage: `url(${"/img/services/brokerage.jpg"})`,
-                  }}
-                />
-              </div>
-              <div
-                className="md:w-1/2 md:px-8 mt-8 md:mt-0 p-12"
-                data-aos="fade-up"
-                data-aos-easing="ease-out"
-                data-aos-duration="1000"
-              >
-                <h2 className="text-tetra text-4xl font-bold">03</h2>
-                <h3 className="text-3xl font-bold text-tetra-alt mt-2">
-                  Custom Clearance
-                </h3>
-                <p className="text-tetra-alt mt-4 text-lg text-justify">
-                  Master the complex regulations and procedures of international
-                  custom with{" "}
-                  <span className="text-tetra font-semibold">
-                    our licensed and experienced team
-                  </span>
-                  .
-                </p>
-                <p className="text-tetra-alt mt-4 text-lg text-justify font-semibold">
-                  Our streamlined yet detailed process ensures a custom
-                  governance compliant and timely international shipping, even
-                  for cargo en route.
-                </p>
-              </div>
-            </div> */}
-            {/* <div
-              className={`min-h-screen flex flex-col md:flex-row-reverse items-center`}
-              id="domestic-interisland"
-            >
-              <div
-                className="md:w-1/2 w-full"
-                data-aos="fade-up"
-                data-aos-easing="ease-out"
-                data-aos-duration="1000"
-              >
-                <div
-                  className={`${styles.parallax} 
-                    shadow-lg w-full lg:h-[600px] h-[400px] bg-cover md:rounded-l-full bg-left`}
-                  style={{
-                    backgroundImage: `url(${"/img/services/domestic.jpg"})`,
-                  }}
-                />
-              </div>
-              <div
-                className="md:w-1/2 md:px-8 mt-8 md:mt-0 p-12"
-                data-aos="fade-up"
-                data-aos-easing="ease-out"
-                data-aos-duration="1000"
-              >
-                <h2 className="text-tetra text-4xl font-bold">04</h2>
-                <h3 className="text-3xl font-bold text-tetra-alt mt-2">
-                  Domestic Interisland Shipping
-                </h3>
-                <p className="text-tetra-alt mt-4 text-lg text-justify">
-                  <b>
-                    Designed to support bulk deliveries within the archipelago
-                  </b>
-                  , reach <b>even remote places fast and reliably</b> with TML
-                  vast delivery networks.
-                </p>
-              </div>
-            </div> */}
           </div>
         </section>
       </main>

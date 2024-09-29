@@ -79,7 +79,7 @@ export default function Navbar() {
     //     </div>
     //   )}
     // </nav>
-    <nav className="bg-white border-b border-gray-200 sticky top-0 z-10 shadow-md">
+    <nav className="bg-white border-b border-gray-200 sticky top-0 z-50 shadow-md">
   <div className="container mx-auto px-4 flex items-center h-20 justify-between">
     {/* Logo Section */}
     <div className="flex items-center">
