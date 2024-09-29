@@ -30,33 +30,6 @@ import Certified from "@/components/icons/Certified";
 import Partner from "@/components/icons/Partner";
 import { Transition } from "@headlessui/react";
 
-interface ModalContent {
-  title: string;
-  content: string;
-  link: string;
-}
-
-const modalContents: { [key: string]: ModalContent } = {
-  freight: {
-    title: "International Freight",
-    content:
-      "Expand your business horizons with our International Freight Forwarding services. We manage the complexities of global shipping, providing reliable and efficient transportation solutions that connect your products to markets around the world. With a global network of partners and cutting-edge tracking technology, we ensure your cargo arrives safely, on time, and within budget.",
-    link: "/services#international-freight-forwarding",
-  },
-  brokerage: {
-    title: "Customs Clearance",
-    content:
-      "Navigate the complexities of international trade with ease through our Customs Clearance services. Our team of seasoned professionals simplifies the customs clearance process, ensuring your goods comply with all regulations and reach their destination without delays. Trust us to handle the paperwork, so you can focus on what matters most—growing your business.",
-    link: "/services#customs-clearence",
-  },
-  domestic: {
-    title: "Domestic Shipping",
-    content:
-      "Seamlessly connect Indonesia’s vast archipelago with our Domestic Interisland services. Whether you need to move goods between islands or within regions, PT Tetra Mitra Logistic offers reliable and cost-effective transportation solutions that ensure your products reach even the most remote locations. From planning to delivery, we provide end-to-end support, making domestic logistics hassle-free.",
-    link: "/services#domestic-interisland",
-  },
-};
-
 export default function Home() {
   const [showNavbar, setShowNavbar] = useState(false);
   const [isOpenImport, setIsOpenImport] = useState(false);
@@ -107,14 +80,6 @@ export default function Home() {
     { id: 17, text: "TML", logo: "/img/marquee/8.jpeg" },
     { id: 18, text: "TML", logo: "/img/marquee/9.jpeg" },
   ];
-
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [modalContent, setModalContent] = useState<ModalContent | null>(null);
-
-  const openModal = (key: string) => {
-    setModalContent(modalContents[key]);
-    setIsModalOpen(true);
-  };
 
   // const marqueeData = [...marqueeData, ...marqueeData];
   const no_wa = "628123456789";
@@ -174,11 +139,11 @@ export default function Home() {
             className="flex flex-col lg:flex-row md:space-x-10 items-center justify-center"
             data-aos="fade-in"
           >
-              <img
-                className="h-[320px] w-auto object-contain max-md:pb-8"
-                src="/img/logo.png"
-                alt="Logo"
-              />
+            <img
+              className="h-[320px] w-auto object-contain"
+              src="/img/logo.png"
+              alt="Logo"
+            />
             <div className="flex flex-col justify-between">
               {/* <div
                 className="text-tetra-alt text-3xl sm:text-4xl font-bold max-sm:text-center"
@@ -187,7 +152,7 @@ export default function Home() {
                 Trusted Hands to Ship Your Cargo, Wherever They Need to be.
               </div> */}
               <div
-                className="text-tetra-alt pb-4 max-sm:text-center text-xl pt-4 text-justify"
+                className="text-tetra-alt pb-4 max-sm:text-center text-sm md:text-lg pt-4 text-justify"
                 data-aos="fade-in"
               >
                 <div className="text-justify">
@@ -213,11 +178,12 @@ export default function Home() {
                     the supply chain
                   </b>{" "}
                   sectors, improve their <b>operation excellence</b>, expand
-                  their <b>business reach</b> efficiently <b>through logistics advancement</b>, with deep
-                  understanding of governance's custom process, while still
-                  adhering to comply the regulation.
+                  their <b>business reach</b> efficiently{" "}
+                  <b>through logistics advancement</b>, with deep understanding
+                  of governance's custom process, while still adhering to comply
+                  the regulation.
                 </div>
-                <div className="mt-4 mb-2 text-tetra font-semibold text-justify">
+                <div className="mt-4 mb-2 text-tetra font-bold text-justify">
                   We are powered by our dedicated experts, vast network of
                   trusted delivery partners, and driven by our vision and
                   mission.
@@ -236,15 +202,15 @@ export default function Home() {
         </div>
 
         {/* Subheading Section */}
-        <div className="px-6 py-8 lg:px-24 text-justify" data-aos="fade-in">
-          <h2 className="text-2xl lg:text-3xl font-bold text-gray-700">
+        <div className="px-6 py-8 lg:px-24 text-left" data-aos="fade-in">
+          <h2 className="text-xl lg:text-3xl font-bold text-gray-700">
             <span className="text-tetra">
               Create a smooth, simple, and sophisticated logistic journey
             </span>{" "}
             <br />
             with TML all-encompassing solutions
           </h2>
-          <p className="text-base md:text-lg text-justify font-semibold  mt-8 max-w-4xl text-tetra-alt border-l-8 border-tetra rounded-l-md px-4">
+          <p className="text-sm md:text-base text-justify font-semibold  mt-8 max-w-4xl text-tetra-alt border-l-8 border-tetra rounded-l-md px-4">
             Our 4 core services target the key activities crucial to boost your
             end-to-end logistic process and classified into 2 service offerings
             based on the logistic stage you are at.
@@ -283,45 +249,45 @@ export default function Home() {
             />
           </div> */}
           <div data-aos="fade-in" className="grid grid-cols-2 relative">
-  {/* Center the logo absolutely in the middle */}
-  <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-    <img
-      src="/img/services/home/logo.png"
-      alt="tetra-logistic"
-      className="w-[230px] h-[230px] max-sm:w-[150px] max-sm:h-[150px] hover:scale-105 transition-transform duration-300 z-10"
-    />
-  </div>
+            {/* Center the logo absolutely in the middle */}
+            <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+              <img
+                src="/img/services/home/logo.png"
+                alt="tetra-logistic"
+                className="w-[230px] h-[230px] max-sm:w-[120px] max-sm:h-[120px] hover:scale-105 transition-transform duration-300 z-10"
+              />
+            </div>
 
-  {/* Other images */}
-  <Link href="/services">
-    <img
-      src="/img/services/home/freight.png"
-      alt="tetra-logistic"
-      className="w-[200px] h-[200px] max-sm:w-[150px] max-sm:h-[150px] hover:scale-105 transition-transform duration-300 z-0"
-    />
-  </Link>
-  <Link href="/services">
-    <img
-      src="/img/services/home/custom.png"
-      alt="tetra-logistic"
-      className="w-[200px] h-[200px] max-sm:w-[150px] max-sm:h-[150px] hover:scale-105 transition-transform duration-300 z-0 "
-    />
-  </Link>
-  <Link href="/services">
-  <img
-    src="/img/services/home/clearance.png"
-    alt="tetra-logistic"
-    className="w-[200px] h-[200px] max-sm:w-[150px] max-sm:h-[150px] hover:scale-105 transition-transform duration-300 z-0"
-  />
-  </Link>
-  <Link href="/services">
-  <img
-    src="/img/services/home/domestic.png"
-    alt="tetra-logistic"
-    className="w-[200px] h-[200px] max-sm:w-[150px] max-sm:h-[150px] hover:scale-105 transition-transform duration-300 z-0"
-  />
-  </Link>
-</div>
+            {/* Other images */}
+            <Link href="services#strategy-solutions">
+              <img
+                src="/img/services/home/freight.png"
+                alt="tetra-logistic"
+                className="w-[200px] h-[200px] max-sm:w-[120px] max-sm:h-[120px] hover:scale-105 transition-transform duration-300 z-0"
+              />
+            </Link>
+            <Link href="services#operation-solutions">
+              <img
+                src="/img/services/home/custom.png"
+                alt="tetra-logistic"
+                className="w-[200px] h-[200px] max-sm:w-[120px] max-sm:h-[120px] hover:scale-105 transition-transform duration-300 z-0 "
+              />
+            </Link>
+            <Link href="services#operation-solutions">
+              <img
+                src="/img/services/home/clearance.png"
+                alt="tetra-logistic"
+                className="w-[200px] h-[200px] max-sm:w-[120px] max-sm:h-[120px] hover:scale-105 transition-transform duration-300 z-0"
+              />
+            </Link>
+            <Link href="services#operation-solutions">
+              <img
+                src="/img/services/home/domestic.png"
+                alt="tetra-logistic"
+                className="w-[200px] h-[200px] max-sm:w-[120px] max-sm:h-[120px] hover:scale-105 transition-transform duration-300 z-0"
+              />
+            </Link>
+          </div>
 
           {/* Description Section */}
           <div
@@ -332,10 +298,10 @@ export default function Home() {
                 With our services, create an effective supply chain...
               </h3> */}
             <div className="bg-tetra p-6 rounded-lg shadow-lg  hover:scale-[102%] transition-transform duration-300">
-              <h3 className="text-white text-lg sm:text-xl font-bold">
+              <h3 className="text-white text-base sm:text-xl font-bold">
                 Powered by TML Strategy Solutions
               </h3>
-              <p className="text-white  max-sm:text-sm text-base text-justify">
+              <p className="text-white  max-sm:text-xs text-base text-justify mt-2">
                 Develop a streamlined logistics game plan that benefit on
                 decades of industry knowledge, latest tech advancement and
                 evolving regulations with our{" "}
@@ -347,10 +313,10 @@ export default function Home() {
             </div>
 
             <div className="bg-tetra-alt p-6 rounded-lg shadow-lg hover:scale-[102%] transition-transform duration-300 ">
-              <h3 className="text-white text-lg sm:text-xl font-bold">
+              <h3 className="text-white text-base sm:text-xl font-bold">
                 Delivered with TML Operations Solutions
               </h3>
-              <p className="text-white max-sm:text-sm text-base text-justify">
+              <p className="text-white max-sm:text-xs text-base text-justify mt-2">
                 Experience a highly integrated and efficient logistics
                 operations for a quick, reliable, and safe deliveries across the
                 globe. Our{" "}
@@ -368,7 +334,7 @@ export default function Home() {
       </div>
       <section className="bg-gradient-to-b from-tetra-alt/70 to-tetra-alt p-8 md:p-20">
         <div className="mb-8" data-aos="fade-in">
-          <h2 className="text-3xl lg:text-5xl font-bold text-white text-center pb-8">
+          <h2 className="text-3xl lg:text-5xl font-bold text-white text-center sm:pb-8">
             Our Years Of Experience, Expertise and Global Connections
           </h2>
         </div>
@@ -379,47 +345,47 @@ export default function Home() {
           {/* Fact 1 */}
           <div className="flex flex-col items-center">
             <Container />
-            <h3 className="text-3xl font-bold text-white">
+            <h3 className="text-xl sm:text-3xl font-bold text-white">
               1.000 <span className="text-tetra">+</span>
             </h3>
-            <p className="text-lg font-medium text-white">Cargo Transported</p>
+            <p className="text-base sm:text-lg font-medium text-white">Cargo Transported</p>
           </div>
 
           {/* Fact 2 */}
           <div className="flex flex-col items-center">
             <Users />
-            <h3 className="text-3xl font-bold text-white">
+            <h3 className="text-2xl sm:text-3xl  font-bold text-white">
               120 <span className="text-tetra">+</span>
             </h3>
-            <p className="text-lg font-medium text-white">Clients Worldwide</p>
+            <p className="text-base sm:text-lg font-medium text-white">Clients Worldwide</p>
           </div>
 
           {/* Fact 3 */}
           <div className="flex flex-col items-center">
             <Partner />
-            <h3 className="text-3xl font-bold text-white">
+            <h3 className="text-2xl sm:text-3xl  font-bold text-white">
               500 <span className="text-tetra">+</span>
             </h3>
-            <p className="text-lg font-medium text-white">Delivery Partners</p>
+            <p className="text-base sm:text-lg font-medium text-white">Delivery Partners</p>
           </div>
 
           {/* Fact 4 */}
           <div className="flex flex-col items-center">
             <Certified />
-            <h3 className="text-3xl font-bold text-white">
+            <h3 className="text-2xl sm:text-3xl  font-bold text-white">
               10 <span className="text-tetra">+</span>
             </h3>
-            <p className="text-lg font-medium text-white">
+            <p className="text-base sm:text-lg font-medium text-white">
               Certified Professionals
             </p>
           </div>
           {/* Fact 5 */}
           <div className="flex flex-col items-center">
             <GlobePoint />
-            <h3 className="text-3xl font-bold text-white">
+            <h3 className="text-2xl sm:text-3xl  font-bold text-white">
               20 <span className="text-tetra">+</span>
             </h3>
-            <p className="text-lg font-medium text-white">Countries Served</p>
+            <p className="text-base sm:text-lg font-medium text-white">Countries Served</p>
           </div>
         </div>
         <div className="border border-white my-10" data-aos="fade-in"></div>
@@ -431,7 +397,7 @@ export default function Home() {
         }}
       >
         <div className="text-center text-white py-3" data-aos="fade-in">
-          <h1 className="text-4xl md:text-5xl font-bold pt-16 z-10">
+          <h1 className="text-3xl md:text-5xl font-bold pt-16 z-10">
             We have shipped across <br /> the nation and{" "}
             <span className="text-tetra">worldwide</span> for
           </h1>
@@ -446,9 +412,9 @@ export default function Home() {
               >
                 <FontAwesomeIcon
                   icon={faBoxOpen}
-                  className="text-tetra text-2xl"
+                  className="text-tetra text-2xl max-sm:text-lg"
                 />
-                <h2 className="text-2xl font-bold text-tetra">Import</h2>
+                <h2 className="text-2xl max-sm:text-lg font-bold text-tetra">Import</h2>
                 {isOpenImport ? (
                   <FontAwesomeIcon
                     icon={faChevronUp}
@@ -462,7 +428,7 @@ export default function Home() {
                 )}
               </div>
               <div
-                className={`overflow-hidden transition-all duration-500 ease-in-out ${
+                className={`overflow-hidden transition-all duration-500 ease-in-out  max-sm:text-sm ${
                   isOpenImport ? "max-h-[540px]" : "max-h-0"
                 }`}
               >
@@ -507,9 +473,9 @@ export default function Home() {
               >
                 <FontAwesomeIcon
                   icon={faGlobeAsia}
-                  className="text-tetra text-2xl"
+                  className="text-tetra text-2xl max-sm:text-lg"
                 />
-                <h2 className="text-2xl font-bold text-tetra">Export</h2>
+                <h2 className="text-2xl max-sm:text-lg font-bold text-tetra">Export</h2>
                 {isOpenExport ? (
                   <FontAwesomeIcon
                     icon={faChevronUp}
@@ -523,7 +489,7 @@ export default function Home() {
                 )}
               </div>
               <div
-                className={`overflow-hidden transition-all duration-500 ease-in-out ${
+                className={`overflow-hidden transition-all duration-500 ease-in-out max-sm:text-sm ${
                   isOpenExport ? "max-h-96" : "max-h-0"
                 }`}
               >
@@ -561,9 +527,9 @@ export default function Home() {
               >
                 <FontAwesomeIcon
                   icon={faTruck}
-                  className="text-tetra text-2xl"
+                  className="text-tetra text-2xl max-sm:text-lg"
                 />
-                <h2 className="text-2xl font-bold text-tetra">
+                <h2 className="text-2xl max-sm:text-lg font-bold text-tetra">
                   Domestic Interisland
                 </h2>
                 {isOpenDomestic ? (
@@ -579,7 +545,7 @@ export default function Home() {
                 )}
               </div>
               <div
-                className={`overflow-hidden transition-all duration-500 ease-in-out ${
+                className={`overflow-hidden transition-all duration-500 ease-in-out max-sm:text-sm ${
                   isOpenDomestic ? "max-h-96" : "max-h-0"
                 }`}
               >
@@ -606,7 +572,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-     
+
       {/* Marquee Title Section */}
       <div className="bg-white flex flex-col p-8 md:p-20" data-aos="fade-in">
         <div className="flex flex-col text-tetra-alt text-4xl sm:text-5xl font-semibold mb-4">
@@ -637,7 +603,7 @@ export default function Home() {
         </div>
         <div className="grid md:grid-cols-2 grid-cols-1">
           <div>
-            <div className="md:text-xl text-lg font-medium text-tetra-alt py-2 pt-6 text-justify">
+            <div className="md:text-xl text-base font-medium text-tetra-alt py-2 pt-6 text-justify">
               Harness on our connectivity across the industry and around the
               globe to solve your logistics challenges
             </div>
@@ -658,7 +624,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-      {/* Footer */}
       <Footer />
     </div>
   );

@@ -49,7 +49,7 @@ export default function About() {
           </div>
 
           {/* Right Section */}
-          <div className="relative text-white text-lg lg:text-xl max-sm:text-base leading-relaxed space-y-8 lg:order-1 text-justify">
+          <div className="relative text-white text-lg lg:text-xl max-sm:text-sm leading-relaxed space-y-8 lg:order-1 text-justify">
             <div>
             Tetra Mitra Logistic is an{" "}
                   <b>
@@ -98,7 +98,7 @@ export default function About() {
         </div>
 
         {/* Right Section */}
-        <div className="text-tetra-alt text-lg max-sm:text-base leading-relaxed space-y-6 text-justify">
+        <div className="text-tetra-alt text-lg max-sm:text-sm leading-relaxed space-y-6 text-justify">
           <p>
             Having delved in the industry for a long time, our founding partners
             and teams are more than familiar with the complexity and variety
@@ -128,7 +128,7 @@ export default function About() {
           </div>
 
           {/* Left Section */}
-          <div className="text-lg leading-relaxed space-y-6 text-justify">
+          <div className="text-lg max-sm:text-sm leading-relaxed space-y-6 text-justify">
             <p>
               We love to learn about what makes each of our clients unique. From
               shipping to and from countries unheard of, to delivering cargo
@@ -141,7 +141,7 @@ export default function About() {
             </p>
           </div>
           {/* Right Section */}
-          <div className="text-lg leading-relaxed space-y-6 text-justify justify-start">
+          <div className="text-lg max-sm:text-sm leading-relaxed space-y-6 text-justify justify-start">
             <p>
               As years of experience have taught us, the intricate red tape and
               timing for these advancement and opportunities are best paired
@@ -153,61 +153,6 @@ export default function About() {
           </div>
         </div>
       </section>
-
-      {/* <section className="bg-gray-100 py-8 " id="vision&mission">
-        <div
-          className="text-center text-4xl md:text-5xl font-bold text-tetra-alt pt-14"
-          data-aos="fade-right"
-          data-aos-easing="ease-in"
-          data-aos-duration="1500"
-        >
-          Vision & Mission
-        </div>
-        <div className="flex flex-col p-6 lg:p-14 sm:p-6 md:p-12">
-          <div
-            className="flex md:flex-row flex-col max-lg:text-center"
-            data-aos="fade-right"
-            data-aos-easing="ease-in"
-            data-aos-duration="1000"
-          >
-            <div className="pr-5 max-lg:hidden">
-              <img src="/img/target.png" className="w-20 lg:h-fit h-16"></img>
-            </div>
-            <div className="font-bold">
-              <div className="w-full flex items-center justify-center lg:hidden pb-4">
-                <img src="/img/target.png" className="w-16 lg:h-fit h-16"></img>
-              </div>
-              <div className="text-tetra text-3xl md:text-4xl">Vision</div>
-              <div className="text-tetra-alt text-xl md:text-2xl pt-2">
-                "To be the most trusted and innovative logistics partner,
-                transforming the way businesses connect with global markets
-                through seamless and efficient transportation solutions."
-              </div>
-            </div>
-          </div>
-          <div
-            className="flex flex-col md:flex-row pt-12 max-lg:text-center w-full"
-            data-aos="fade-right"
-            data-aos-easing="ease-in"
-            data-aos-duration="1000"
-          >
-            <div className="pr-5 flex max-lg:hidden">
-              <img src="/img/idea.png" className="w-24 lg:h-fit h-24"></img>
-            </div>
-            <div className="flex flex-col font-bold">
-              <div className="w-full flex items-center justify-center lg:hidden pb-4">
-                <img src="/img/idea.png" className="w-16 lg:h-fit h-16"></img>
-              </div>
-              <div className="text-tetra text-3xl md:text-4xl">Mission</div>
-              <div className="text-tetra-alt text-xl md:text-2xl pt-2">
-                “To build long-lasting relationships with our clients by
-                offering expert consultation, transparent communication, and
-                tailored solutions that align with their unique business needs.”
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
       <section
         className="relative overflow-hidden py-24 px-8 lg:px-24 bg-gradient-to-b from-blue-50 to-gray-100"
         id="vision&mission"
@@ -218,7 +163,7 @@ export default function About() {
 
         {/* Title */}
         <div
-          className="text-center text-5xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-b from-tetra to-tetra-alt pb-16 drop-shadow-lg"
+          className="text-center text-5xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-b from-tetra to-tetra-alt sm:pb-16 drop-shadow-lg"
           data-aos="fade-down"
         >
           Vision & Mission
@@ -300,7 +245,7 @@ export default function About() {
             <h3 className="text-4xl md:text-5xl font-bold text-tetra mb-6">
               Vision
             </h3>
-            <p className="text-lg md:text-xl text-gray-700 leading-relaxed text-justify">
+            <p className="max-sm:text-sm text-lg md:text-xl text-gray-700 leading-relaxed text-justify">
               To be the most trusted and inivative logistics partner, transforming the way businesses connect with global markets through seamless and efficient transportation solutions.
             </p>
           </div>
@@ -348,7 +293,7 @@ export default function About() {
             <h3 className="text-4xl md:text-5xl font-bold text-tetra mb-6">
               Mission
             </h3>
-            <p className="text-lg md:text-xl text-gray-700 leading-relaxed text-justify">
+            <p className="max-sm:text-sm text-lg md:text-xl text-gray-700 leading-relaxed text-justify">
               Support your business with the best-reliable services and cultivate a partnership that thrives for the long haul.
             </p>
           </div>
@@ -364,7 +309,7 @@ export default function About() {
         </div>
         <div className="grid md:grid-cols-2 grid-cols-1">
           <div>
-            <div className="md:text-xl text-lg font-medium text-tetra-alt py-2 pt-6 text-justify">
+            <div className="md:text-xl text-base font-medium text-tetra-alt py-2 pt-6 text-justify">
               Harness on our connectivity across the industry and around the globe to solve your logistics challenges
             </div>
           </div>
