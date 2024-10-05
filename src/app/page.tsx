@@ -72,7 +72,7 @@ export default function Home() {
     { id: 9, text: "TML", logo: "/img/marquee/9.jpeg" },
     { id: 10, text: "TML", logo: "/img/marquee/10.jpeg" },
     { id: 11, text: "TML", logo: "/img/marquee/11.jpeg" },
-    { id: 12, text: "TML", logo: "/img/marquee/1.jpeg" },
+    { id: 12, text: "TML", logo: "/img/marquee/12.jpeg" },
     { id: 13, text: "TML", logo: "/img/marquee/2.jpeg" },
     { id: 14, text: "TML", logo: "/img/marquee/3.jpeg" },
     { id: 15, text: "TML", logo: "/img/marquee/4.jpeg" },
