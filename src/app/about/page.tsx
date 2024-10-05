@@ -246,7 +246,7 @@ export default function About() {
               Vision
             </h3>
             <p className="max-sm:text-sm text-lg md:text-xl text-gray-700 leading-relaxed text-justify">
-              To be the most trusted and inivative logistics partner, transforming the way businesses connect with global markets through seamless and efficient transportation solutions.
+              To be the most trusted and innovative logistics partner, transforming the way businesses connect with global markets through seamless and efficient transportation solutions.
             </p>
           </div>
 

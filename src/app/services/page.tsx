@@ -10,6 +10,7 @@ import { services } from "@/data/services";
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import the AOS styles
 import { Transition } from "@headlessui/react";
+import Image from "next/image";
 import {
   faBoxes,
   faHandshake,
@@ -137,9 +138,9 @@ export default function Services() {
           <div className="absolute z-0 top-10 right-1/3 w-20 h-20 bg-white opacity-50 rounded-full md:w-28 md:h-28 lg:w-40 lg:h-40"></div>
           <div className="absolute z-0 bottom-20 left-1/4 w-14 h-14 bg-tetra opacity-30 rounded-full md:w-20 md:h-20 lg:w-28 lg:h-28"></div>
         </section>
-
+{/* 
         <section
-          className="bg-no-repeat bg-right-bottom lg:bg-cover lg:bg-center bg-auto min-h-screen"
+          className="bg-no-repeat bg-right lg:bg-cover lg:bg-center bg-auto min-h-screen bg-opacity-10"
           style={{
             backgroundImage: `url(/img/services/bg.png)`,
           }}
@@ -149,7 +150,7 @@ export default function Services() {
             data-aos="fade-in"
           >
             <div className="text-justify grid grid-cols-1 lg:grid-cols-2 pt-8">
-              <div className="flex justify-center flex-col max-lg:rounded-lg max-lg:bg-gradient-to-tr from-gray-200 to-white max-lg:p-8 max-lg:mb-8 max-lg:hover:scale-[102%] max-lg:hover:shadow-2xl max-lg:transition-all max-lg:duration-300 max-md:order-2">
+              <div className="flex justify-center flex-col max-lg:rounded-lg max-lg:bg-gradient-to-tr from-gray-200 to-white max-lg:p-8 max-lg:mb-8 max-lg:hover:scale-[102%] max-lg:hover:shadow-2xl max-lg:transition-all max-lg:duration-300 max-lg:order-2">
                 <h1 className="text-2xl md:text-4xl font-bold mb-4 text-tetra-alt max-sm:text-center">
                   Custom Consultation
                 </h1>
@@ -183,7 +184,7 @@ export default function Services() {
                   understanding the logistic process all by yourself.
                 </p>
               </div>
-              <div className="flex justify-center items-center max-md:order-1 max-sm:mb-8">
+              <div className="flex justify-center items-center max-lg:order-1 max-lg:mb-8">
                 <img
                   src="/img/custom-consultation.png"
                   alt=""
@@ -192,7 +193,69 @@ export default function Services() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
+        <section
+  className="bg-no-repeat bg-right lg:bg-cover lg:bg-center bg-auto min-h-screen"
+  style={{
+    backgroundImage: `url(/img/services/bg.png)`,
+  }}
+>
+  <div
+    className="flex flex-col p-6 md:p-8 lg:p-24 items-center justify-center min-h-screen"
+    data-aos="fade-in"
+  >
+    <div className="text-justify grid grid-cols-1 lg:grid-cols-2 pt-8">
+    <div className="lg:hidden absolute top-0 left-0 w-full h-full bg-black opacity-20 -z-100"></div>
+      {/* Left Content */}
+      <div className="flex justify-center flex-col max-lg:rounded-lg max-lg:bg-gradient-to-tr from-gray-200 to-white max-lg:p-8 max-lg:mb-8 max-lg:hover:scale-[102%] max-lg:hover:shadow-2xl max-lg:transition-all max-lg:duration-300 max-lg:order-2">
+        <h1 className="text-2xl md:text-4xl font-bold mb-4 text-tetra-alt max-sm:text-center">
+          Custom Consultation
+        </h1>
+        <p className="text-lg md:text-xl mb-8 text-tetra-alt">
+          Discover the best way to run your supply chain,{" "}
+          <span className="font-bold text-tetra max-lg:text-tetra">
+            effortlessly.
+          </span>
+        </p>
+        <p className="text-tetra-alt text-justify pb-3 text-sm md:text-base">
+          Our team of experts will develop a bespoke supply chain customs
+          strategy that only experts with <b>years of experience</b> can do.
+        </p>
+        <p className="text-tetra-alt text-justify pb-3 text-sm md:text-base">
+          Starting from your goal,{" "}
+          <b>we base our strategy on multiple factors</b> that{" "}
+          <b>specifically influence your business logistics practice</b>.
+        </p>
+        <p className="text-tetra text-justify pb-3 italic font-bold max-lg:hidden text-sm md:text-base">
+          Skip the additional liability, risks, and costs of entering <br />
+          and understanding the logistics process <br />
+          all by yourself.
+        </p>
+        <p className="text-tetra text-justify pb-3 italic font-bold lg:hidden text-sm md:text-base">
+          Skip the additional liability, risks, and costs of entering and
+          understanding the logistics process all by yourself.
+        </p>
+      </div>
+
+      {/* Right Image */}
+      <div className="flex justify-center items-center max-lg:order-1 max-lg:mb-8">
+        <div className="sm:w-[450px] sm:h-[420px] w-[300px] h-[300px]">
+          <Image
+            src="/img/custom-consultation.png"
+            alt="Custom Consultation"
+            width={450}
+            height={420}
+            layout="intrinsic"  // for optimal rendering
+            quality={100}  // maximum image quality
+            // className="filter lg:contrast-125 lg:brightness-110 contrast-100 brightness-100"
+             className="filter contrast-125 brightness-110"
+            priority={true}  // loads the image eagerly for performance
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
         <section
           id="operation-solutions"
           className="relative bg-gradient-to-b from-gray-100 to-white py-24 overflow-hidden"
@@ -311,7 +374,7 @@ export default function Services() {
               className="lg:mb-8 lg:text-justify group bg-white lg:bg-transparent lg:border-none border border-gray-200 rounded-lg p-6 lg:p-0 transition-all transform hover:scale-105 max-lg:hover:shadow-xl duration-500"
             >
               <h2 className="text-xl md:text-2xl font-bold text-tetra-alt mb-4 transition-colors duration-500 group-hover:text-tetra">
-                Interisland
+                Domestic Interisland
               </h2>
               <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
                 Designed to support bulk deliveries within the archipelago, reaching even remote places fast and reliably with our vast delivery network.

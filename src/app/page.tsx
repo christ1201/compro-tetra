@@ -70,15 +70,19 @@ export default function Home() {
     { id: 7, text: "TML", logo: "/img/marquee/7.jpeg" },
     { id: 8, text: "TML", logo: "/img/marquee/8.jpeg" },
     { id: 9, text: "TML", logo: "/img/marquee/9.jpeg" },
-    { id: 10, text: "TML", logo: "/img/marquee/1.jpeg" },
-    { id: 11, text: "TML", logo: "/img/marquee/2.jpeg" },
-    { id: 12, text: "TML", logo: "/img/marquee/3.jpeg" },
-    { id: 13, text: "TML", logo: "/img/marquee/4.jpeg" },
-    { id: 14, text: "TML", logo: "/img/marquee/5.jpeg" },
-    { id: 15, text: "TML", logo: "/img/marquee/6.jpeg" },
-    { id: 16, text: "TML", logo: "/img/marquee/7.jpeg" },
-    { id: 17, text: "TML", logo: "/img/marquee/8.jpeg" },
-    { id: 18, text: "TML", logo: "/img/marquee/9.jpeg" },
+    { id: 10, text: "TML", logo: "/img/marquee/10.jpeg" },
+    { id: 11, text: "TML", logo: "/img/marquee/11.jpeg" },
+    { id: 12, text: "TML", logo: "/img/marquee/1.jpeg" },
+    { id: 13, text: "TML", logo: "/img/marquee/2.jpeg" },
+    { id: 14, text: "TML", logo: "/img/marquee/3.jpeg" },
+    { id: 15, text: "TML", logo: "/img/marquee/4.jpeg" },
+    { id: 16, text: "TML", logo: "/img/marquee/5.jpeg" },
+    { id: 17, text: "TML", logo: "/img/marquee/6.jpeg" },
+    { id: 18, text: "TML", logo: "/img/marquee/7.jpeg" },
+    { id: 19, text: "TML", logo: "/img/marquee/8.jpeg" },
+    { id: 20, text: "TML", logo: "/img/marquee/9.jpeg" },
+    { id: 21, text: "TML", logo: "/img/marquee/10.jpeg" },
+    { id: 22, text: "TML", logo: "/img/marquee/11.jpeg" },
   ];
 
   // const marqueeData = [...marqueeData, ...marqueeData];
@@ -380,7 +384,7 @@ export default function Home() {
             </p>
           </div>
           {/* Fact 5 */}
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center sm:col-span-2 lg:col-span-1">
             <GlobePoint />
             <h3 className="text-2xl sm:text-3xl  font-bold text-white">
               20 <span className="text-tetra">+</span>
@@ -473,7 +477,7 @@ export default function Home() {
               >
                 <FontAwesomeIcon
                   icon={faGlobeAsia}
-                  className="text-tetra text-2xl max-sm:text-lg"
+                  className="text-tetra text-3xl max-sm:text-lg"
                 />
                 <h2 className="text-2xl max-sm:text-lg font-bold text-tetra">Export</h2>
                 {isOpenExport ? (
