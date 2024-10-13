@@ -160,7 +160,7 @@ export default function Home() {
                 data-aos="fade-in"
               >
                 <div className="text-justify">
-                  Tetra Mitra Logistic is an{" "}
+                  Tetra Mitra Logistik is an{" "}
                   <b>
                     end-to-end logistic service company founded by a group of
                     experienced supply chain experts
